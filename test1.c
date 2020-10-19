@@ -3,6 +3,6 @@ int main(void)
 {
 	printf("ω・｀)ﾉ ﾔｧ\n");ko
 
-	printf("(@^^)/~~~バイバイ\n");
+	printf("(@^^)/~~~バイバイバイバイ\n");
 	return 0;
 }
