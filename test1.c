@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(void)
 {
-	printf("ω・｀)ﾉ ﾔｧ\n");ko
+	printf("ω・｀)ﾉ ﾔｧ\n");//こんにちは未来の僕
 
 	printf("(@^^)/~~~バイバイバイバイ\n");
 	return 0;
