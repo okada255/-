@@ -101,5 +101,8 @@
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -167,6 +167,7 @@
     <ClInclude Include="..\..\..\gummy\gummy\GameL\UserData.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameL\WinInputs.h" />
     <ClInclude Include="..\..\..\gummy\gummy\main.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
