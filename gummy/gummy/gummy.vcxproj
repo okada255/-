@@ -138,7 +138,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\Risu.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\Draw2DTex_Source.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawFont.cpp" />
@@ -158,6 +157,7 @@
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="OPning.c" />
+    <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Downloads\Risu.h" />

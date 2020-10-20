@@ -78,7 +78,7 @@
     <ClCompile Include="ObjCandy.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\Risu.cpp">
+    <ClCompile Include="Risu.cpp">
       <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
   </ItemGroup>
