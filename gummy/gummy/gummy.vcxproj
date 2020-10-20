@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\Risu.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\Draw2DTex_Source.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawFont.cpp" />
@@ -157,7 +158,6 @@
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="OPning.c" />
-    <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
@@ -179,7 +179,6 @@
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
     <ClInclude Include="ObjGummy.h" />
-    <ClInclude Include="Risu.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg" />
