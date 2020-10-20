@@ -69,6 +69,18 @@
     <ClCompile Include="ObjDonatu.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
+    <ClCompile Include="ObjGummy.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjCookie.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjChoco.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjCandy.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h">
@@ -118,6 +130,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGummy.h">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjCookie.h">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjChoco.h">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjCandy.h">
+      <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
