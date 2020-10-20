@@ -2,17 +2,21 @@
 #include"GameL/SceneObjManager.h"
 #include"ObjDonatu.h"
 #include"GameHead.h"//
+#include"GameL/WinInputs.h"
 
 using namespace GameL;
 
-class CObjDonatu :public CObj
+void CObjDonatu::Init()
 {
-public:
-	CObjDonatu(){};
-	~CObjDonatu() {};
-	void Init();
-	void Action();
-	void Draw();
 
-private:
-};
+}
+
+void CObjDonatu::Action()
+{
+
+}
+
+void CObjDonatu::Draw()
+{
+
+}

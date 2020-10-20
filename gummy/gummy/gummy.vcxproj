@@ -151,6 +151,7 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\SetWindow.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\UserData.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp" />
     <ClCompile Include="ObjDpnatu.cpp" />
     <ClCompile Include="OPning.c" />
   </ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="..\..\..\gummy\gummy\GameL\WinInputs.h" />
     <ClInclude Include="..\..\..\gummy\gummy\main.h" />
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
