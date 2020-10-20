@@ -151,6 +151,7 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\SetWindow.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\UserData.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjDpnatu.cpp" />
     <ClCompile Include="OPning.c" />
   </ItemGroup>
   <ItemGroup>

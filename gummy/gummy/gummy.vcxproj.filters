@@ -60,6 +60,9 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ObjDpnatu.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h">
