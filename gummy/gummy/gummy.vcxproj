@@ -160,6 +160,7 @@
     <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\Risu.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameL\DirectXDevice.h" />
@@ -179,7 +180,6 @@
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
     <ClInclude Include="ObjGummy.h" />
-    <ClInclude Include="Risu.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg" />

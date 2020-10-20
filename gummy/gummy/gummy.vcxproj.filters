@@ -60,9 +60,6 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Risu.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -80,6 +77,9 @@
     </ClCompile>
     <ClCompile Include="ObjCandy.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="Risu.cpp">
+      <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -125,9 +125,6 @@
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
-    <ClInclude Include="Risu.h">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -142,6 +139,9 @@
     </ClInclude>
     <ClInclude Include="ObjCandy.h">
       <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\Risu.h">
+      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
