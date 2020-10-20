@@ -151,9 +151,13 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\UserData.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp" />
-    <ClCompile Include="ObjDpnatu.cpp" />
+    <ClCompile Include="ObjCandy.cpp" />
+    <ClCompile Include="ObjChoco.cpp" />
+    <ClCompile Include="ObjCookie.cpp" />
+    <ClCompile Include="ObjDonatu.cpp" />
+    <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="OPning.c" />
-    <ClCompile Include="ObjRisu.cpp" />
+    <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
@@ -171,7 +175,11 @@
     <ClInclude Include="..\..\..\gummy\gummy\main.h" />
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h" />
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h" />
-    <ClInclude Include="ObjRisu.h" />
+    <ClInclude Include="ObjCandy.h" />
+    <ClInclude Include="ObjChoco.h" />
+    <ClInclude Include="ObjCookie.h" />
+    <ClInclude Include="ObjGummy.h" />
+    <ClInclude Include="Risu.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg" />
