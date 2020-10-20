@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MAP1.cpp" />
-    <ClCompile Include="mine.cpp" />
     <ClCompile Include="risu kari.cpp" />
   </ItemGroup>
   <ItemGroup>
