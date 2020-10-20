@@ -138,7 +138,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\Audio.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\Draw2DTex_Source.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawFont.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawTexture.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\GameL_Main.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\HitBoxManager.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\MultiThread.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\SceneManager.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\SceneObjManager.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\SetWindow.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\UserData.cpp" />
+    <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjDonatu.cpp" />
+    <ClCompile Include="ObjDonatu.h" />
     <ClCompile Include="OPning.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\DirectXDevice.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\DrawFont.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\DrawTexture.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\HitBoxManager.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\MultiThread.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\SceneManager.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\SceneObjManager.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\SetWindow.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\UserData.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\GameL\WinInputs.h" />
+    <ClInclude Include="..\..\..\gummy\gummy\main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
