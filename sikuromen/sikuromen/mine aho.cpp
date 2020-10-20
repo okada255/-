@@ -11,16 +11,16 @@
 // _DEBUG
 
 //グローバル変数
-HWND g_hwnd;//ウィンドウハンドル
+HWND g_hWnd;//ウィンドウハンドル
 int g_width;//ウィンドウの横幅
 int g_height;//ウィンドウの縦幅
 
 //プロトタイプ宣言
-LRESULT CALLBACK Wndproc(HWND hwnd, UINT usmg, WPARAM wParam, LPARAM IParam);
+LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM IParam);
 
 
 //Main関数
-int APIENTRY wWinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, LPTSTR szCmdline, int nCmdShow)
+int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR szCmdLine, int nCmdShow)
 {
     //メモリダンプ開始
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEMDF | _CRTDBG_LEAKCHECK_DF);
@@ -50,5 +50,20 @@ int APIENTRY wWinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, LPTSTR szCmd
     {
         return false;
     }
-
+    ShowWindow(g_hWnd, SW_SHOW);
+    //メッセージループ
+    do
+    {
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+        {
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+    } while (msg.message != WM_QUIT);
+    //この時点で解放されてないメモリの情報の表示
+    _CrtDumpMemoryLeaks();
+    return true;
 }
+
+//コールバック関数
+LRESULT CALLBACK WndProc(HWND hWnd,UINT uMsg,WPARAM wP)

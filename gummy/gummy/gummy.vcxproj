@@ -138,7 +138,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\sikuromen\sikuromen\MAP1.cpp" />
     <ClCompile Include="OPning.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MAP2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
