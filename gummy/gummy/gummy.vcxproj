@@ -138,7 +138,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\Audio.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\Draw2DTex_Source.cpp" />
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawFont.cpp" />
