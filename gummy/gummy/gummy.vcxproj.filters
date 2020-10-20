@@ -111,4 +111,15 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="E:\ハム\右向き.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="E:\ハム\後ろ姿.jpg">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="E:\ハム\前向きリス.jpg">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
