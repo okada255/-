@@ -138,19 +138,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\Draw2DTex_Source.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawFont.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\DrawTexture.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\GameL_Main.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\HitBoxManager.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\MultiThread.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\SceneManager.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\SceneObjManager.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\SetWindow.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\UserData.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp" />
-    <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp" />
+    <ClCompile Include="GameL\DirectXDevice.cpp" />
+    <ClCompile Include="GameL\Draw2DTex_Source.cpp" />
+    <ClCompile Include="GameL\DrawFont.cpp" />
+    <ClCompile Include="GameL\DrawTexture.cpp" />
+    <ClCompile Include="GameL\GameL_Main.cpp" />
+    <ClCompile Include="GameL\HitBoxManager.cpp" />
+    <ClCompile Include="GameL\MultiThread.cpp" />
+    <ClCompile Include="GameL\SceneManager.cpp" />
+    <ClCompile Include="GameL\SceneObjManager.cpp" />
+    <ClCompile Include="GameL\SetWindow.cpp" />
+    <ClCompile Include="GameL\UserData.cpp" />
+    <ClCompile Include="GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
     <ClCompile Include="ObjChoco.cpp" />
     <ClCompile Include="ObjCookie.cpp" />
@@ -158,28 +158,30 @@
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="OPning.c" />
     <ClCompile Include="Risu.cpp" />
+    <ClCompile Include="SceneMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\Risu.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\DirectXDevice.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\DrawFont.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\DrawTexture.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\HitBoxManager.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\MultiThread.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\SceneManager.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\SceneObjManager.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\SetWindow.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\UserData.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\GameL\WinInputs.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\main.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h" />
-    <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h" />
+    <ClInclude Include="GameL\Audio.h" />
+    <ClInclude Include="GameL\DirectXDevice.h" />
+    <ClInclude Include="GameL\DrawFont.h" />
+    <ClInclude Include="GameL\DrawTexture.h" />
+    <ClInclude Include="GameL\GameHead.h" />
+    <ClInclude Include="GameL\HitBoxManager.h" />
+    <ClInclude Include="GameL\main.h" />
+    <ClInclude Include="GameL\MultiThread.h" />
+    <ClInclude Include="GameL\SceneManager.h" />
+    <ClInclude Include="GameL\SceneObjManager.h" />
+    <ClInclude Include="GameL\SetWindow.h" />
+    <ClInclude Include="GameL\UserData.h" />
+    <ClInclude Include="GameL\WinInputs.h" />
+    <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjCandy.h" />
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
+    <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjGummy.h" />
+    <ClInclude Include="Risu.h" />
+    <ClInclude Include="SceneMain.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg" />
