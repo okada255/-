@@ -125,9 +125,6 @@
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
-    <ClInclude Include="Risu.h">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
