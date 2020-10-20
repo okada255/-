@@ -13,7 +13,7 @@ void CObjDonatu::Init()
 
 void CObjDonatu::Action()
 {
-
+	
 }
 
 void CObjDonatu::Draw()
