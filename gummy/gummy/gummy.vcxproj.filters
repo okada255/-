@@ -24,9 +24,6 @@
     <ClCompile Include="OPning.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\gummy\gummy\GameL\Audio.cpp">
-      <Filter>リソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\gummy\gummy\GameL\DirectXDevice.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
@@ -63,14 +60,14 @@
     <ClCompile Include="..\..\..\gummy\gummy\GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjDpnatu.cpp">
-      <Filter>ソース ファイル\Snuck</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjBlock.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Risu.cpp">
       <Filter>ソース ファイル\charactor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDonatu.cpp">
+      <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -116,11 +113,22 @@
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
-    <ClInclude Include="ObjBlock.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Risu.h">
       <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="E:\ハム\前向きリス.jpg">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="E:\ハム\右向き.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="E:\ハム\後ろ姿.jpg">
+      <Filter>リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
 </Project>
