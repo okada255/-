@@ -16,6 +16,9 @@
     <Filter Include="ソース ファイル\Snuck">
       <UniqueIdentifier>{21c5eed5-7d56-48ac-9ead-0281d5450190}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\charactor">
+      <UniqueIdentifier>{d4a1de25-b001-43d4-9fde-43f6bd7cd19a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -63,6 +66,9 @@
     <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Risu.cpp">
+      <Filter>ソース ファイル\charactor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h">
@@ -109,6 +115,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Risu.h">
+      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

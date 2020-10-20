@@ -153,6 +153,7 @@
     <ClCompile Include="..\..\..\gummy\gummy\SceneMain.cpp" />
     <ClCompile Include="ObjDpnatu.cpp" />
     <ClCompile Include="OPning.c" />
+    <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="..\..\..\gummy\gummy\main.h" />
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h" />
     <ClInclude Include="..\..\..\gummy\gummy\SceneMain.h" />
+    <ClInclude Include="Risu.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg" />
