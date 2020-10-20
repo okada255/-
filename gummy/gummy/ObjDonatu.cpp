@@ -7,7 +7,7 @@
 using namespace GameL;
 
 void CObjDonatu::Init()
-{
+{//
 
 }
 
