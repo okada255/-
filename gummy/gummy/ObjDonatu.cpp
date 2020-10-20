@@ -13,7 +13,9 @@ void CObjDonatu::Init()
 
 void CObjDonatu::Action()
 {
-
+	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU);
+	float hx = risu->GetX();
+	float hy = risu->GetY();
 }
 
 void CObjDonatu::Draw()
