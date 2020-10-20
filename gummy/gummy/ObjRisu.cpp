@@ -1,7 +1,7 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjRisu.h"
-#include"GameHead.h"//
+#include"GameHead.h"
 #include"GameL/WinInputs.h"
 
 using namespace GameL;
