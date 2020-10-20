@@ -63,6 +63,9 @@
     <ClCompile Include="ObjDpnatu.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
+    <ClCompile Include="ObjBlock.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h">
@@ -106,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\gummy\gummy\ObjDonatu.h">
       <Filter>ソース ファイル\Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBlock.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
