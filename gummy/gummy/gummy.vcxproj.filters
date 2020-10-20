@@ -140,6 +140,9 @@
     <ClInclude Include="ObjCandy.h">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\Risu.h">
+      <Filter>ソース ファイル\charactor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="E:\ハム\前向きリス.jpg">

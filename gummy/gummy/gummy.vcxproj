@@ -160,6 +160,7 @@
     <ClCompile Include="Risu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\Risu.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameHead.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameL\Audio.h" />
     <ClInclude Include="..\..\..\gummy\gummy\GameL\DirectXDevice.h" />
