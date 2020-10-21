@@ -31,8 +31,8 @@
 #include "HitBoxManager.h"
 #include "UserData.h"
 
-#include "..\GameHead.h"
-#include "..\main.h"
+#include "GameHead.h"
+#include "main.h"
 
 using namespace GameL;
 
