@@ -6,7 +6,12 @@ enum OBJ_NAME
 	OBJ_NO_NAME,	//オブジェクト名無し(禁止)
 	//ゲームで使うオブジェクトの名前
 	//OBJ_○○と表記
-	OBJ_SWEET,
+	OBJ_CANDY,
+	OBJ_CHOCO,
+	OBJ_COOKIE,
+	OBJ_DONATU,
+	OBJ_GUMMY,
+	OBJ_RISU,
 	OBJ_BLOCK,
 
 };
@@ -52,7 +57,11 @@ struct UserData
 //------------------------------------------------
 
 //ゲームシーンオブジェクトヘッダ------------------
-//#include"OBJSweet.h"
+#include"OBJGummy.h"
+#include"ObjChoco.h"
+#include"ObjCookie.h"
+#include"ObjDonatu.h"
+#include"Objcandy.h"
 
 //------------------------------------------------
 
