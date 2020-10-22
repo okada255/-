@@ -3,14 +3,17 @@
 
 using namespace GameL;
 
-class CSceneMain :public CScene
+class CObjRisu : public  CObj
 {
 public:
-	CSceneMain();
-	~CSceneMain();
-	void InitScene();
-	void Scene();
+	CObjRisu();
+	~CObjRisu();
+	void Action();
+	void Init();
+	void Draw();
+	//
 private:
+
 	float m_x;
 	float m_y;
 };
