@@ -13,7 +13,6 @@ enum OBJ_NAME
 	OBJ_GUMMY,
 	OBJ_RISU,
 	OBJ_BLOCK,
-	OBJ_RISU,
 
 };
 //------------------------------------------------

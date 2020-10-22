@@ -101,12 +101,6 @@
     <ClInclude Include="ObjCandy.h">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClInclude>
-    <ClInclude Include="GameL\GameHead.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="GameL\main.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjBlock.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
@@ -151,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="ObjRisu.h">
       <Filter>ソース ファイル\charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameHead.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

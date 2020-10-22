@@ -6,13 +6,13 @@
 
 using namespace GameL;
 
-void ObjRisu::Init()
+void CObjRisu::Init()
 {
 	m_x = 0;
 	m_y = 0;
 }
 
-void ObjRisu::Action()
+void CObjRisu::Action()
 {
 
 	if (Input::Getkey(VK_RIGHT) == true)
@@ -58,9 +58,9 @@ void ObjRisu::Action()
 	{
 		m_x = 800.0f - 32.0f;
 	}
-	if (m_x + 32.0f > 600.0f)
+	if (m_y + 32.0f > 600.0f)
 	{
-		m_x = 600.0f - 32.0f;
+		m_y = 600.0f - 32.0f;
 	}
 	if (m_y < 0.0f)
 	{
@@ -73,11 +73,11 @@ void ObjRisu::Action()
 
 }
 
-void ObjRisu::Draw()
+void CObjRisu::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f }
-	REFT_F src;
-	REFT_F dst;
+	RECT_F src;
+	RECT_F dst;
 
 	//Ø‚èŽæ‚èˆÊ’u
 	src.m_top = 0.0f;
