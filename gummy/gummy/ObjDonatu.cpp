@@ -1,7 +1,7 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjDonatu.h"
-#include"GameL/GameHead.h"
+#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 
