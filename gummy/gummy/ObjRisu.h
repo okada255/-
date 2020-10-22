@@ -11,4 +11,6 @@ public:
 	void InitScene();
 	void Scene();
 private:
+	float m_x;
+	float m_y;
 };
