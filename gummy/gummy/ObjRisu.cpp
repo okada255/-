@@ -20,6 +20,9 @@ void CObjRisu::Init()
 void CObjRisu::Action()
 {
 
+	m_vx = 0.0f;
+	m_vy = 0.0f;
+
 	if (Input::GetVkey(VK_RIGHT) == true)
 	{
 		m_vx += 1.0f;
@@ -38,6 +41,11 @@ void CObjRisu::Action()
 	if (Input::GetVkey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
+	}
+
+	if (m_x > 800.0f)
+	{
+		m_x = 0.0f;//Œ´“_‰ñ‹A
 	}
 
 	float r = 0.0f;
