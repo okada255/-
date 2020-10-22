@@ -1,5 +1,5 @@
 using namespace GameL;
-
+#include"GameL/SceneObjManager.h"
 class CObjGummy : public  CObj
 {
 public:

@@ -9,7 +9,8 @@ using namespace GameL;
 
 void CObjChoco::Init()
 {//
-
+	float m_x= 0;
+	float m_y= 0;
 }
 
 void CObjChoco::Action()
@@ -35,7 +36,7 @@ void CObjChoco::Draw()
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
-	src.m_right = src.m_left + 64.0f;
+	src.m_right = 0.0f;
 	src.m_bottom = 64.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
