@@ -23,6 +23,7 @@ void CObjRisu::Action()
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 
+	//キーの入力方向にベクトルの速度を入れる
 	if (Input::GetVkey(VK_RIGHT) == true)
 	{
 		m_vx += 1.0f;
