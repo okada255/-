@@ -156,8 +156,8 @@
     <ClCompile Include="ObjCookie.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
+    <ClCompile Include="ObjRisu.cpp" />
     <ClCompile Include="OPning.c" />
-    <ClCompile Include="Risu.cpp" />
     <ClCompile Include="SceneMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -180,7 +180,7 @@
     <ClInclude Include="ObjCookie.h" />
     <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjGummy.h" />
-    <ClInclude Include="Risu.h" />
+    <ClInclude Include="ObjRisu.h" />
     <ClInclude Include="SceneMain.h" />
   </ItemGroup>
   <ItemGroup>
