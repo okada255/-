@@ -61,7 +61,7 @@ struct UserData
 #include"ObjChoco.h"
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
-#include"Objcandy.h"
+#include"ObjCandy.h"
 #include"ObjRisu.h"
 
 //------------------------------------------------
