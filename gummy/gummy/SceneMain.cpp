@@ -18,6 +18,7 @@ using namespace GameL;
 #include"ObjChoco.h"
 #include"ObjDonatu.h"
 #include"ObjGummy.h"
+#include"ObjRisu.h"
 
 
 //コンストラクタ

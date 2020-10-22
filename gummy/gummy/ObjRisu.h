@@ -15,4 +15,6 @@ public:
 private:
 	float m_x;
 	float m_y;
+	float m_vx;
+	float m_vy;
 };
