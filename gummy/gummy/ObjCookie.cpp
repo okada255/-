@@ -1,4 +1,4 @@
-#include"GameL/DrawTexture.h"
+/*#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjCookie.h"
 #include"GameL/GameHead.h"
@@ -28,3 +28,4 @@ void CObjCookie::Draw()
 {
 
 }
+*/

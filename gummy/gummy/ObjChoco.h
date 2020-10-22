@@ -1,4 +1,4 @@
-using namespace GameL;
+/*using namespace GameL;
 
 class CObjChoco : public  CObj
 {
@@ -15,3 +15,4 @@ private:
 	float m_y;
 };
 
+*/
