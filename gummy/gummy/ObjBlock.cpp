@@ -3,7 +3,7 @@
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
 
-#include"GameHead.h"
+#include"GameL/GameHead.h"
 #include"ObjBlock.h"
 
 //使用ネームスペース

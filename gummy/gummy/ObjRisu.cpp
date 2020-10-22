@@ -8,8 +8,8 @@ using namespace GameL;
 
 void ObjRisu::Init()
 {
-	float m_x = 0;
-	float m_y = 0;
+	m_x = 0;
+	m_y = 0;
 }
 
 void ObjRisu::Action()
