@@ -3,40 +3,45 @@
 #include"ObjRisu.h"
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
+#include"GameL/HitBoxManager.h"
 
 using namespace GameL;
 
 void CObjRisu::Init()
 {
-	m_x = 0;
-	m_y = 0;
-}
+	m_x = 100;
+	m_y = (600 / 2) - 16;
+	m_vx = 0.0f;
+	m_vy = 0.0f;
 
+	//“–‚½‚è”»’è
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_RISU, 1);
+}
 void CObjRisu::Action()
 {
 
 	if (Input::GetVkey(VK_RIGHT) == true)
 	{
-		m_x += 1.0f;
+		m_vx += 1.0f;
 	}
 
 	if (Input::GetVkey(VK_LEFT) == true)
 	{
-		m_x -= 1.0f;
+		m_vx -= 1.0f;
 	}
 
 	if (Input::GetVkey(VK_UP) == true)
 	{
-		m_y -= 1.0f;
+		m_vy -= 1.0f;
 	}
 
 	if (Input::GetVkey(VK_DOWN) == true)
 	{
-		m_y += 1.0f;
+		m_vy += 1.0f;
 	}
 
 	float r = 0.0f;
-	r = m_vx = *m_vx + m_vy * m_vy;
+	r = m_vx * m_vx + m_vy * m_vy;
 	r = sqrt(r);
 
 	if (r == 0.0f)
@@ -71,6 +76,9 @@ void CObjRisu::Action()
 		m_x = 0.0f;
 	}
 
+	//HitBox‚Ì“à—eXV
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);
 }
 
 void CObjRisu::Draw()
