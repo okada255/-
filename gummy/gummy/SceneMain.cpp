@@ -12,6 +12,7 @@ using namespace GameL;
 //使用ヘッダー
 #include"SceneMain.h"
 #include"ObjBlock.h"
+#include"GameL/GameHead.h"
 
 
 //コンストラクタ

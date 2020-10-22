@@ -57,7 +57,7 @@ struct UserData
 //------------------------------------------------
 
 //ゲームシーンオブジェクトヘッダ------------------
-#include"OBJGummy.h"
+#include"ObjGummy.h"
 #include"ObjChoco.h"
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
