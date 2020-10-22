@@ -1,7 +1,7 @@
-/*#include"GameL/DrawTexture.h"
+#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjDonatu.h"
-#include"GameHead.h"
+#include"GameL/GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 
@@ -49,4 +49,3 @@ void CObjDonatu::Draw()
 	//•`‰æ
 	Draw::Draw(0, &src, &dst, c, 0.0f);
 }
-*/

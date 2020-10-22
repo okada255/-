@@ -24,6 +24,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="OPning.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="ObjDonatu.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>

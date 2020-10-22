@@ -4,14 +4,14 @@
 
 //GameLで使用するヘッダー
 #include"GameL/SceneObjManager.h"
-#include"GameHead.h"
+#include"GameL/GameHead.h"
 
 //使用するネームスペース
 using namespace GameL;
 
 //使用ヘッダー
 #include"SceneMain.h"
-#include"GameHead.h"
+#include"GameL/GameHead.h"
 #include"ObjBlock.h"
 #include"ObjCookie.h"
 #include"ObjCandy.h"
@@ -40,7 +40,7 @@ void CSceneMain::InitScene()
 	CObjBlock* objb = new CObjBlock();
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	/*//Candyオブジェクト作成
+	//Candyオブジェクト作成
 	CObjCandy* objb = new CObjCandy();
 	Objs::InsertObj(objb, OBJ_CANDY, 9);
 
@@ -58,7 +58,7 @@ void CSceneMain::InitScene()
 
 	//Gummyオブジェクト作成
 	CObjGummy* objb = new CObjGummy();
-	Objs::InsertObj(objb, OBJ_GUMMY, 9);*/
+	Objs::InsertObj(objb, OBJ_GUMMY, 9);
 }
 
 //実行中メソッド
