@@ -1,4 +1,4 @@
-/*#include"GameL/DrawTexture.h"
+#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjDonatu.h"
 #include"GameL/GameHead.h"
@@ -22,4 +22,3 @@ void CObjDonatu::Draw()
 {
 
 }
-*/
