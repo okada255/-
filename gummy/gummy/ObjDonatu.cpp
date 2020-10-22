@@ -1,4 +1,4 @@
-#include"GameL/DrawTexture.h"
+/*#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjDonatu.h"
 #include"GameHead.h"
@@ -49,3 +49,4 @@ void CObjDonatu::Draw()
 	//•`‰æ
 	Draw::Draw(0, &src, &dst, c, 0.0f);
 }
+*/

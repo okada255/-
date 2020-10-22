@@ -1,4 +1,4 @@
-using namespace GameL;
+/*using namespace GameL;
 #include"GameL/SceneObjManager.h"
 
 class CObjChoco : public  CObj
@@ -16,3 +16,4 @@ private:
 	float m_y;
 };
 
+*/

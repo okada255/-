@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "GameL\SceneManager.h"
 
 using namespace GameL;
@@ -14,3 +14,4 @@ private:
 	float m_x;
 	float m_y;
 };
+*/

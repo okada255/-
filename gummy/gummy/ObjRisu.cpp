@@ -1,4 +1,4 @@
-#include"GameL/DrawTexture.h"
+/*#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjRisu.h"
 #include"GameHead.h"
@@ -92,4 +92,4 @@ void ObjRisu::Draw()
 	src.m_bottom = 32.0f + m_y;
 
 	Draw::Draw(0, &src, &dst, c, 0.0f);
-}
+}*/
