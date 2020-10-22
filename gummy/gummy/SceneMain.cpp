@@ -5,6 +5,9 @@
 //GameLで使用するヘッダー
 #include"GameL/SceneObjManager.h"
 #include"GameHead.h"
+#include"GameL/DrawFont.h"
+#include"GameL/DrawTexture.h"
+#include"GameL/SceneManager.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -18,6 +21,7 @@ using namespace GameL;
 #include"ObjChoco.h"
 #include"ObjDonatu.h"
 #include"ObjGummy.h"
+#include"GameL/UserData.h"
 
 
 //コンストラクタ
@@ -36,9 +40,22 @@ CSceneMain::~CSceneMain()
 //初期化メソッド
 void CSceneMain::InitScene()
 {
-	//Blockオブジェクト作成
-	CObjBlock* objb = new CObjBlock();
-	Objs::InsertObj(objb, OBJ_BLOCK, 9);
+	//マップデータ
+	unique_ptr<wchar_t>p;
+	int size;
+	int map[32][32];
+	p = Save::ExternalDataOpen(L"MAP1,csv", &size);
+	int count = 1;
+	for (int i = 0; i < 32; i++)
+	{
+		for (int j = 0; j < 32; j++)
+		{
+			int w = 0;
+			swscanf_s(&p.get()[count], L"%d", &w);
+			map[i][j] = w;
+			count += 2;
+		}
+	}
 
 	/*//Candyオブジェクト作成
 	CObjCandy* objb = new CObjCandy();

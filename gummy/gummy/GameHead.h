@@ -11,9 +11,9 @@ enum OBJ_NAME
 	OBJ_COOKIE,
 	OBJ_DONATU,
 	OBJ_GUMMY,
-	OBJ_RISU,
+	//OBJ_RISU,
 	OBJ_BLOCK,
-	OBJ_RISU,
+	//OBJ_RISU,
 
 };
 //------------------------------------------------
