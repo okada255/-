@@ -1,4 +1,4 @@
-/*#include"GameL/DrawTexture.h"
+#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjRisu.h"
 #include"GameL/GameHead.h"
@@ -19,4 +19,4 @@ void ObjRisu::Action()
 void ObjRisu::Draw()
 {
 
-}*/
+}
