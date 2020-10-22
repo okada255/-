@@ -13,4 +13,5 @@ public:
 	void Action();
 	void Draw();
 private:
+	int m_map[32][32];//マップ情報（仮）
 };
