@@ -15,22 +15,22 @@ void CObjRisu::Init()
 void CObjRisu::Action()
 {
 
-	if (Input::Getkey(VK_RIGHT) == true)
+	if (Input::GetVkey(VK_RIGHT) == true)
 	{
 		m_x += 1.0f;
 	}
 
-	if (Input::Getkey(VK_LEFT) == true)
+	if (Input::GetVkey(VK_LEFT) == true)
 	{
 		m_x -= 1.0f;
 	}
 
-	if (Input::Getkey(VK_UP) == true)
+	if (Input::GetVkey(VK_UP) == true)
 	{
 		m_y -= 1.0f;
 	}
 
-	if (Input::Getkey(VK_DOWN) == true)
+	if (Input::GetVkey(VK_DOWN) == true)
 	{
 		m_y += 1.0f;
 	}
@@ -75,7 +75,7 @@ void CObjRisu::Action()
 
 void CObjRisu::Draw()
 {
-	float c[4] = { 1.0f,1.0f,1.0f,1.0f }
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 	RECT_F src;
 	RECT_F dst;
 

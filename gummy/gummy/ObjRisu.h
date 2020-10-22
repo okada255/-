@@ -9,8 +9,8 @@ public:
 	CObjRisu();
 	~CObjRisu();
 	void Init();
-	void action();
-	void draw();
+	void Action();
+	void Draw();
 
 private:
 	float m_x;
