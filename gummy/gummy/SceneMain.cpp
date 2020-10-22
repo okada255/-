@@ -4,7 +4,7 @@
 
 //GameLで使用するヘッダー
 #include"GameL/SceneObjManager.h"
-#include"GameL/GameHead.h"
+#include"GameHead.h"
 
 //使用するネームスペース
 using namespace GameL;
