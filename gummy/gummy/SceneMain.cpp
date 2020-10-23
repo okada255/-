@@ -4,24 +4,22 @@
 
 //GameLで使用するヘッダー
 #include"GameL/SceneObjManager.h"
-#include"GameHead.h"
-#include"GameL/DrawFont.h"
-#include"GameL/DrawTexture.h"
-#include"GameL/SceneManager.h"
+#include"GameL/GameHead.h"
+#include"GameL/UserData.h"
 
 //使用するネームスペース
 using namespace GameL;
 
 //使用ヘッダー
 #include"SceneMain.h"
-#include"GameHead.h"
+#include"GameL/GameHead.h"
 #include"ObjBlock.h"
 #include"ObjCookie.h"
 #include"ObjCandy.h"
 #include"ObjChoco.h"
 #include"ObjDonatu.h"
 #include"ObjGummy.h"
-#include"GameL/UserData.h"
+#include"ObjRisu.h"
 
 
 //コンストラクタ
@@ -40,25 +38,16 @@ CSceneMain::~CSceneMain()
 //初期化メソッド
 void CSceneMain::InitScene()
 {
-	//マップデータ
-	unique_ptr<wchar_t>p;
-	int size;
-	int map[32][32];
-	p = Save::ExternalDataOpen(L"MAP1,csv", &size);
-	int count = 1;
-	for (int i = 0; i < 32; i++)
-	{
-		for (int j = 0; j < 32; j++)
-		{
-			int w = 0;
-			swscanf_s(&p.get()[count], L"%d", &w);
-			map[i][j] = w;
-			count += 2;
-		}
-	}
-	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
+	//外部データの読み込み（ステージ情報）
+	unique_ptr<wchar_t> p;//ステージ情報ポインター
+	int size;             //ステージ情報の大きさ
+	p = Save::ExternalDataOpen(L"MAP1.csv", &size);//外部データ読み込み
 
-	/*//Candyオブジェクト作成
+	//Blockオブジェクト作成
+	CObjBlock* objb = new CObjBlock();
+	Objs::InsertObj(objb, OBJ_BLOCK, 9);
+
+	//Candyオブジェクト作成
 	CObjCandy* objb = new CObjCandy();
 	Objs::InsertObj(objb, OBJ_CANDY, 9);
 
@@ -76,7 +65,11 @@ void CSceneMain::InitScene()
 
 	//Gummyオブジェクト作成
 	CObjGummy* objb = new CObjGummy();
-	Objs::InsertObj(objb, OBJ_GUMMY, 9);*/
+	Objs::InsertObj(objb, OBJ_GUMMY, 9);
+
+	//リス作成
+	CObjRisu* objb = new CObjRisu();
+	Objs::InsertObj(objb, OBJ_RISU, 9);
 }
 
 //実行中メソッド

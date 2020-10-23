@@ -1,4 +1,4 @@
-/*#include"GameHead.h"
+/*#include"GameL/GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"ObjCandy.h"

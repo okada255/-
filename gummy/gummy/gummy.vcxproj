@@ -157,6 +157,7 @@
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="ObjRisu.cpp" />
+    <ClCompile Include="OPning.c" />
     <ClCompile Include="SceneMain.cpp" />
   </ItemGroup>
   <ItemGroup>

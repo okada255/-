@@ -1,17 +1,20 @@
-/*#pragma once
+#pragma once
 #include "GameL\SceneManager.h"
 
 using namespace GameL;
 
-class CSceneMain :public CScene
+class CObjRisu :public CObj
 {
 public:
-	CSceneMain();
-	~CSceneMain();
-	void InitScene();
-	void Scene();
+	CObjRisu();
+	~CObjRisu();
+	void Init();
+	void Action();
+	void Draw();
+
 private:
 	float m_x;
 	float m_y;
+	float m_vx;
+	float m_vy;
 };
-*/

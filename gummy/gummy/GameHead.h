@@ -11,9 +11,8 @@ enum OBJ_NAME
 	OBJ_COOKIE,
 	OBJ_DONATU,
 	OBJ_GUMMY,
-	//OBJ_RISU,
+	OBJ_RISU,
 	OBJ_BLOCK,
-	//OBJ_RISU,
 
 };
 //------------------------------------------------
@@ -58,12 +57,12 @@ struct UserData
 //------------------------------------------------
 
 //ゲームシーンオブジェクトヘッダ------------------
-#include"ObjGummy.h"
+/*#include"ObjGummy.h"
 #include"ObjChoco.h"
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
-#include"ObjCandy.h"
-#include"ObjRisu.h"
+#include"Objcandy.h"
+#include"ObjRisu.h"*/
 
 //------------------------------------------------
 
@@ -73,5 +72,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneMain 
+#define SET_GAME_START  
 //-----------------------------------------------

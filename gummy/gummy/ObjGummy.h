@@ -1,5 +1,5 @@
 /*using namespace GameL;
-#include"GameL/SceneObjManager.h"
+
 class CObjGummy : public  CObj
 {
 public:
@@ -14,5 +14,4 @@ private:
 	float m_x;
 	float m_y;
 };
-
 */

@@ -1,5 +1,4 @@
 /*using namespace GameL;
-#include"GameL/SceneObjManager.h"
 
 class CObjDonatu : public  CObj
 {
