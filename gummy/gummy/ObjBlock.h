@@ -7,7 +7,7 @@ using namespace GameL;
 class CObjBlock :public CObj
 {
 public:
-	CObjBlock() {};
+	CObjBlock(int map[32][32]);
 	~CObjBlock() {};
 	void Init();
 	void Action();

@@ -56,6 +56,7 @@ void CSceneMain::InitScene()
 			count += 2;
 		}
 	}
+	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
 
 	/*//Candyオブジェクト作成
 	CObjCandy* objb = new CObjCandy();

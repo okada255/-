@@ -11,11 +11,18 @@
 //使用ネームスペース
 using namespace GameL;
 
+CObjBlock::CObjBlock(int map[32][32])
+{
+    //MAPデータをコピー
+    memcpy(m_map, map, sizeof(int) * (32 * 32));
+}
+
 //イニシャライズ
 void CObjBlock::Init()
 {
 
 }
+
 
 //アクション
 void CObjBlock::Action()
