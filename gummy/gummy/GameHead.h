@@ -57,12 +57,13 @@ struct UserData
 //------------------------------------------------
 
 //ゲームシーンオブジェクトヘッダ------------------
-/*#include"ObjGummy.h"
+#include"ObjGummy.h"
 #include"ObjChoco.h"
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
 #include"Objcandy.h"
-#include"ObjRisu.h"*/
+#include"ObjRisu.h"
+#include"ObjBlock.h"
 
 //------------------------------------------------
 
@@ -72,5 +73,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  
+#define SET_GAME_START CSceneMain
 //-----------------------------------------------

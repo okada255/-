@@ -14,4 +14,5 @@ public:
 	void Draw();
 private:
 	int m_map[32][32];//マップ情報（仮）
+	void BlockDraw(float x, float y, RECT_F* dst, float c[]);
 };

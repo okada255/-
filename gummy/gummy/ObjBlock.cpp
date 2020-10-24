@@ -46,13 +46,13 @@ void CObjBlock::Draw()
             if (m_map[i][j] > 0)
             {
                 //ï\é¶à íuÇÃê›íË
-                dst.m_top = i * 64.0f;
-                dst.m_left = j * 64.0f;
-                dst.m_right = dst.m_left + 64.0f;
-                dst.m_bottom = dst.m_top + 64.0f;
+                dst.m_top = i * 32.0f;
+                dst.m_left = j * 32.0f;
+                dst.m_right = dst.m_left + 32.0f;
+                dst.m_bottom = dst.m_top + 32.0f;
                 if (m_map[i][j] == 1)
                 {
-                    BlockDraw(64.0f, 0.0f, &dst, c, 1);
+                    BlockDraw(32.0f, 0.0f, &dst, c);
                     
                 }
             }
@@ -61,4 +61,15 @@ void CObjBlock::Draw()
 }
 
 //BlockDrawä÷êîíËã`
-int BlockDraw
+void CObjBlock::BlockDraw(float x, float y, RECT_F* dst, float c[])
+{
+
+    RECT_F src;
+    src.m_top = y;
+    src.m_left = x;
+    src.m_right = src.m_left + 32.0f;
+    src.m_bottom = src.m_top + 32.0f;
+    //ï`âÊ
+    Draw::Draw(1, &src, dst, c, 0.0f);
+
+}

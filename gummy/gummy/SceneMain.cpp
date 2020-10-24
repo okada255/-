@@ -56,7 +56,7 @@ void CSceneMain::InitScene()
 		}
 	}
 
-	Draw::LoadImageW(L"Block", 1, TEX_SIZE_512);
+	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
 
 
 	//Blockオブジェクト作成
