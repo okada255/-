@@ -52,11 +52,13 @@ void CObjBlock::Draw()
                 dst.m_bottom = dst.m_top + 64.0f;
                 if (m_map[i][j] == 1)
                 {
-                    //BlockDraw(64.0f, 0.0f, &dst, c, 1);
-                    ;
+                    BlockDraw(64.0f, 0.0f, &dst, c, 1);
+                    
                 }
             }
         }
     }
 }
 
+//BlockDrawä÷êîíËã`
+int BlockDraw
