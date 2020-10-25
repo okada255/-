@@ -183,11 +183,6 @@
     <ClInclude Include="ObjRisu.h" />
     <ClInclude Include="SceneMain.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="E:\ハム\前向きリス.jpg" />
-    <Image Include="E:\ハム\右向き.bmp" />
-    <Image Include="E:\ハム\後ろ姿.jpg" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

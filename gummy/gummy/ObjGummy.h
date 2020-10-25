@@ -3,8 +3,8 @@
 class CObjGummy : public  CObj
 {
 public:
-	CObjGummy();
-	~CObjGummy();
+	CObjGummy(){};
+	~CObjGummy(){};
 	void Action();
 	void Init();//
 	void Draw();

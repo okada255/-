@@ -3,8 +3,8 @@
 class CObjCookie : public  CObj
 {
 public:
-	CObjCookie();
-	~CObjCookie();
+	CObjCookie(){};
+	~CObjCookie(){};
 	void Action();
 	void Init();
 	void Draw();
