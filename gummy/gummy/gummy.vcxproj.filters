@@ -45,6 +45,9 @@
     <ClCompile Include="ObjBlock.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="GameL\DirectXDevice.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
@@ -82,10 +85,7 @@
       <Filter>リソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjRisu.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -150,18 +150,7 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjRisu.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="E:\ハム\前向きリス.jpg">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="E:\ハム\右向き.bmp">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="E:\ハム\後ろ姿.jpg">
-      <Filter>リソース ファイル</Filter>
-    </Image>
   </ItemGroup>
 </Project>

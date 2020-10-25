@@ -1,4 +1,4 @@
-/*#include"GameHead.h"
+#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"ObjCandy.h"
@@ -47,4 +47,4 @@ void CObjCandy::Draw()
 
 	//•`‰æ
 	Draw::Draw(0, &src, &dst, c, 0.0f);
-}*/
+}
