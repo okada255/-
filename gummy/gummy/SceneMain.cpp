@@ -57,25 +57,25 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
-
+	Draw::LoadImageW(L"donatu.png", 1, TEX_SIZE_64);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	////Candyオブジェクト作成
-	//CObjCandy* objb = new CObjCandy();
-	//Objs::InsertObj(objb, OBJ_CANDY, 9);
+	/*//Candyオブジェクト作成
+	CObjCandy* obja = new CObjCandy();
+	Objs::InsertObj(obja, OBJ_CANDY, 9);
 
 	////Cookieオブジェクト作成
 	//CObjCookie* objb = new CObjCookie();
-	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
+	//Objs::InsertObj(objb, OBJ_COOKIE, 9);*/
 
-	////Donatuオブジェクト作成
-	//CObjDonatu* objb = new CObjDonatu();
-	//Objs::InsertObj(objb, OBJ_DONATU, 9);
+	//Donatuオブジェクト作成
+	CObjDonatu* obj_b = new CObjDonatu();
+	Objs::InsertObj(obj_b, OBJ_DONATU, 9);
 
-	////Chocoオブジェクト作成
+	/*//Chocoオブジェクト作成
 	//CObjChoco* objb = new CObjChoco();
 	//Objs::InsertObj(objb, OBJ_CANDY, 9);
 
@@ -85,7 +85,7 @@ void CSceneMain::InitScene()
 
 	////リス作成
 	//CObjRisu* objb = new CObjRisu();
-	//Objs::InsertObj(objb, OBJ_RISU, 9);
+	//Objs::InsertObj(objb, OBJ_RISU, 9);*/
 }
 
 //実行中メソッド
