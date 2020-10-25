@@ -42,14 +42,8 @@
     <ClCompile Include="ObjCandy.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
-    <ClCompile Include="Risu.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
     <ClCompile Include="ObjBlock.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
-      <Filter>ヘッダー ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GameL\DirectXDevice.cpp">
       <Filter>リソース ファイル</Filter>
@@ -87,6 +81,12 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ObjRisu.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -100,9 +100,6 @@
     </ClInclude>
     <ClInclude Include="ObjCandy.h">
       <Filter>ソース ファイル\Snuck</Filter>
-    </ClInclude>
-    <ClInclude Include="Risu.h">
-      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
     <ClInclude Include="ObjBlock.h">
       <Filter>ソース ファイル\MAP関連</Filter>
@@ -150,6 +147,9 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="GameHead.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRisu.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
