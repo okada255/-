@@ -1,4 +1,4 @@
-#include"GameL/DrawTexture.h"
+/*#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjGummy.h"
 #include"GameHead.h"
@@ -36,7 +36,7 @@ void CObjGummy::Draw()
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
-	src.m_right =  64.0f;
+	src.m_right = 64.0f;
 	src.m_bottom = 64.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
@@ -47,4 +47,4 @@ void CObjGummy::Draw()
 
 	//•`‰æ
 	Draw::Draw(0, &src, &dst, c, 0.0f);
-}
+}*/
