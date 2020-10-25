@@ -1,7 +1,7 @@
-/*#include"GameL/DrawTexture.h"
+#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjGummy.h"
-#include"GameL/GameHead.h"
+#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 
@@ -48,4 +48,3 @@ void CObjGummy::Draw()
 	//•`‰æ
 	Draw::Draw(0, &src, &dst, c, 0.0f);
 }
-*/
