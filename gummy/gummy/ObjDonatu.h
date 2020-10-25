@@ -6,8 +6,8 @@ using namespace GameL;
 class CObjDonatu : public  CObj
 {
 public:
-	CObjDonatu();
-	~CObjDonatu();
+	CObjDonatu() {};
+	~CObjDonatu() {};
 	void Action();
 	void Init();
 	void Draw();
