@@ -1,4 +1,4 @@
-/*#include"GameL/DrawTexture.h"
+#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjRisu.h"
 #include"GameHead.h"
@@ -24,27 +24,27 @@ void CObjRisu::Action()
 	m_vy = 0.0f;
 
 	//キーの入力方向にベクトルの速度を入れる
-	if (Input::GetVkey(VK_RIGHT) == true)
+	if(Input::GetVkey(VK_RIGHT) == true)
 	{
 		m_vx += 1.0f;
 	}
 
-	if (Input::GetVkey(VK_LEFT) == true)
+	if(Input::GetVkey(VK_LEFT) == true)
 	{
 		m_vx -= 1.0f;
 	}
 
-	if (Input::GetVkey(VK_UP) == true)
+	if(Input::GetVkey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
 	}
 
-	if (Input::GetVkey(VK_DOWN) == true)
+	if(Input::GetVkey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
 	}
 
-	if (m_x > 800.0f)
+	if(m_x > 800.0f)
 	{
 		m_x = 0.0f;//原点回帰
 	}
@@ -108,5 +108,6 @@ void CObjRisu::Draw()
 	src.m_right = 32.0f + m_x;
 	src.m_bottom = 32.0f + m_y;
 
+	//０番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(0, &src, &dst, c, 0.0f);
-}*/
+}
