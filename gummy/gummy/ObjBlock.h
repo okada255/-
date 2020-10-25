@@ -1,5 +1,6 @@
 #pragma once
 #include"GameL/SceneObjManager.h"
+#include"GameL/DrawTexture.h"
 //ネームスペース
 using namespace GameL;
 
