@@ -24,22 +24,22 @@ void CObjRisu::Action()
 	m_vy = 0.0f;
 
 	//キーの入力方向にベクトルの速度を入れる
-	if(Input::GetVkey(VK_RIGHT) == true)
+	if(Input::GetVKey(VK_RIGHT) == true)
 	{
 		m_vx += 1.0f;
 	}
 
-	if(Input::GetVkey(VK_LEFT) == true)
+	if(Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx -= 1.0f;
 	}
 
-	if(Input::GetVkey(VK_UP) == true)
+	if(Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
 	}
 
-	if(Input::GetVkey(VK_DOWN) == true)
+	if(Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
 	}
