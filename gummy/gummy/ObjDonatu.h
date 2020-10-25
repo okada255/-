@@ -1,7 +1,4 @@
-#pragma once
-#include"GameL/SceneObjManager.h"
-#include"GameL/DrawTexture.h"
-using namespace GameL;
+/*using namespace GameL;
 
 class CObjDonatu : public  CObj
 {
@@ -16,4 +13,4 @@ private:
 
 	float m_x;
 	float m_y;
-};
+};*/
