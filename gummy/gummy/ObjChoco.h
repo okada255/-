@@ -3,8 +3,8 @@
 class CObjChoco : public  CObj
 {
 public:
-	CObjChoco();
-	~CObjChoco();
+	CObjChoco(){};
+	~CObjChoco(){};
 	void Action();
 	void Init();
 	void Draw();
