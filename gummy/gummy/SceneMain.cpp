@@ -20,6 +20,8 @@ using namespace GameL;
 #include"ObjDonatu.h"
 #include"ObjGummy.h"
 #include"ObjRisu.h"
+#include"ObjTitle.h"
+#include"ObjGameClear.h"
 
 
 //コンストラクタ

@@ -22,6 +22,12 @@
     <Filter Include="ソース ファイル\MAP関連">
       <UniqueIdentifier>{30d9b069-331f-4266-bd75-c0698d7ffd8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameTitle">
+      <UniqueIdentifier>{bbeed008-97f2-4db6-9469-1fff4adfb88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameClear">
+      <UniqueIdentifier>{73f26c95-b3a6-4164-9726-9ab9d50fc972}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -87,8 +93,20 @@
     <ClCompile Include="ObjRisu.cpp">
       <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
+    <ClCompile Include="ObjTitle.cpp">
+      <Filter>ソース ファイル\GameTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>ソース ファイル\GameTitle</Filter>
+    </ClCompile>
     <ClCompile Include="GameL\Audio.cpp">
       <Filter>リソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +172,18 @@
     </ClInclude>
     <ClInclude Include="ObjRisu.h">
       <Filter>ソース ファイル\charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTitle.h">
+      <Filter>ソース ファイル\GameTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTitle.h">
+      <Filter>ソース ファイル\GameTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
