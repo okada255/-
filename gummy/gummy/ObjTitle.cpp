@@ -7,6 +7,8 @@
 
 using namespace GameL;
 
+//a
+
 void CObjTitle::Init() {
 	m_key_flag = false;
 }
@@ -14,7 +16,7 @@ void CObjTitle::Init() {
 void CObjTitle::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
-			Scene::SetScene(new CSceneGameClear());
+			Scene::SetScene(new CSceneMain());
 			m_key_flag = false;
 		}
 	}
