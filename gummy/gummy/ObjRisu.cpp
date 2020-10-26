@@ -1,9 +1,10 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"ObjRisu.h"
-#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+
+#include"ObjRisu.h"
+#include"GameHead.h"
 
 using namespace GameL;
 
