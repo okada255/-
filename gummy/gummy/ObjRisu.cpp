@@ -109,5 +109,5 @@ void CObjRisu::Draw()
 	src.m_bottom = 32.0f + m_y;
 
 	//０番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(2, &src, &dst, c, 0.0f);
 }

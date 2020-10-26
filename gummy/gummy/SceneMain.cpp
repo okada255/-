@@ -86,9 +86,9 @@ void CSceneMain::InitScene()
 	//CObjGummy* objb = new CObjGummy();
 	//Objs::InsertObj(objb, OBJ_GUMMY, 9);
 
-	////リス作成
-	//CObjRisu* objb = new CObjRisu();
-	//Objs::InsertObj(objb, OBJ_RISU, 9);
+	//リス作成
+	/*CObjRisu* objr = new CObjRisu();
+	Objs::InsertObj(objr, OBJ_RISU, 9);*/
 }
 
 //実行中メソッド
