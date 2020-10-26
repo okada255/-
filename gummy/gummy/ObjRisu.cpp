@@ -1,4 +1,4 @@
-#include"GameL/DrawTexture.h"
+/*#include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 #include"ObjRisu.h"
 #include"GameHead.h"
@@ -110,4 +110,4 @@ void CObjRisu::Draw()
 
 	//０番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(0, &src, &dst, c, 0.0f);
-}
+}*/
