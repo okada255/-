@@ -13,6 +13,8 @@ enum OBJ_NAME
 	OBJ_GUMMY,
 	OBJ_RISU,
 	OBJ_BLOCK,
+	OBJ_TITLE,
+	OBJ_GAME_CLEAR,
 
 };
 //------------------------------------------------
@@ -64,14 +66,18 @@ struct UserData
 #include"ObjCandy.h"
 #include"ObjRisu.h"
 #include"ObjBlock.h"
+#include"ObjTitle.h"
+#include"ObjGameClear.h"
 
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include"SceneMain.h"
+#include "SceneTitle.h"
+#include "SceneGameClear.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneMain
+#define SET_GAME_START CSceneTitle
 //-----------------------------------------------

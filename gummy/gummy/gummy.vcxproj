@@ -156,10 +156,14 @@
     <ClCompile Include="ObjChoco.cpp" />
     <ClCompile Include="ObjCookie.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
+    <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="ObjRisu.cpp" />
+    <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="OPning.c" />
+    <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneMain.cpp" />
+    <ClCompile Include="SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h" />
@@ -180,9 +184,13 @@
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
     <ClInclude Include="ObjDonatu.h" />
+    <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjGummy.h" />
     <ClInclude Include="ObjRisu.h" />
+    <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneMain.h" />
+    <ClInclude Include="SceneTitle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
