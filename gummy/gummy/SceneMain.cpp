@@ -59,9 +59,8 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu.bmp", 2, TEX_SIZE_128);
-	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
-	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"Donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"Risu(1).bmp", 2, TEX_SIZE_128);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
