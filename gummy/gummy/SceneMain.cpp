@@ -63,8 +63,8 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"Risu.bmp", 1, TEX_SIZE_128);
 
 	//Blockオブジェクト作成
-	CObjBlock* objb = new CObjBlock(map);
-	Objs::InsertObj(objb, OBJ_BLOCK, 9);
+	CObjBlock* obj_b = new CObjBlock(map);
+	Objs::InsertObj(obj_b, OBJ_BLOCK, 9);
 
 	////Candyオブジェクト作成
 	//CObjCandy* objb = new CObjCandy();
@@ -75,8 +75,8 @@ void CSceneMain::InitScene()
 	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
 
 	//Donatuオブジェクト作成
-	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU, 9);
+	CObjDonatu* obj_d = new CObjDonatu();
+	Objs::InsertObj(obj_d, OBJ_DONATU, 9);
 
 	////Chocoオブジェクト作成
 	//CObjChoco* objb = new CObjChoco();
