@@ -4,7 +4,6 @@
 #include"ObjCandy.h"
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"GameL/SceneManager.h"
 
 using namespace GameL;
 
