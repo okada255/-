@@ -60,7 +60,7 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
 	Draw::LoadImageW(L"Donatu.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu.bmp", 1, TEX_SIZE_128);
+	Draw::LoadImageW(L"Risu(1).bmp", 1, TEX_SIZE_128);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -86,9 +86,9 @@ void CSceneMain::InitScene()
 	//CObjGummy* objb = new CObjGummy();
 	//Objs::InsertObj(objb, OBJ_GUMMY, 9);
 
-	////リス作成
-	//CObjRisu* objb = new CObjRisu();
-	//Objs::InsertObj(objb, OBJ_RISU, 9);
+	//リス作成
+	/*CObjRisu* objb = new CObjRisu();
+	Objs::InsertObj(objb, OBJ_RISU, 9);*/
 }
 
 //実行中メソッド
