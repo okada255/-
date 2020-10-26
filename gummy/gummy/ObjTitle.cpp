@@ -7,6 +7,8 @@
 
 using namespace GameL;
 
+//a
+
 void CObjTitle::Init() {
 	m_key_flag = false;
 }
