@@ -24,6 +24,8 @@ void CObjDonatu::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+
+
 }
 
 void CObjDonatu::Draw()
@@ -37,8 +39,8 @@ void CObjDonatu::Draw()
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 0.0f;
-	src.m_bottom =0.0f;
+	src.m_right =100.0f;
+	src.m_bottom =100.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
