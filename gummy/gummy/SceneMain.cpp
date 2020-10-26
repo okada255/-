@@ -72,9 +72,9 @@ void CSceneMain::InitScene()
 	//CObjCookie* objb = new CObjCookie();
 	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
 
-	////Donatuオブジェクト作成
-	//CObjDonatu* objb = new CObjDonatu();
-	//Objs::InsertObj(objb, OBJ_DONATU, 9);
+	//Donatuオブジェクト作成
+	CObjDonatu* objd = new CObjDonatu();
+	Objs::InsertObj(objd, OBJ_DONATU, 9);
 
 	////Chocoオブジェクト作成
 	//CObjChoco* objb = new CObjChoco();
