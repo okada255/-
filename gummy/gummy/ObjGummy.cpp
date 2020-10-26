@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL/SceneManager.h"
 
 using namespace GameL;
 
