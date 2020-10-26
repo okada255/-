@@ -36,7 +36,16 @@ void CObjBlock::Draw()
   //描画カラー情報
     float c[4] = { 1.0f,1.0f,1.0f,1.0f };
     
+    RECT_F src;
     RECT_F dst;
+
+    //切り取り位置の設定
+    src.m_top = 0.0f;
+    src.m_left = 0.0f;
+    src.m_right = 32.0f;
+    src.m_bottom = 32.0f;
+
+
 
     //ブロック描画
     for (int i = 0; i < 32; i++)
@@ -46,13 +55,13 @@ void CObjBlock::Draw()
             if (m_map[i][j] > 0)
             {
                 //表示位置の設定
-                dst.m_top = i * 32.0f;
-                dst.m_left = j * 32.0f;
-                dst.m_right = dst.m_left + 32.0f;
-                dst.m_bottom = dst.m_top + 32.0f;
+                dst.m_top = i * 18.75f;
+                dst.m_left = j * 18.75f+100.0;
+                dst.m_right = dst.m_left + 18.75f;
+                dst.m_bottom = dst.m_top + 18.75f;
                 if (m_map[i][j] == 1)
                 {
-                    BlockDraw(32.0f, 0.0f, &dst, c);
+                    BlockDraw(0, 0, &dst, c);
                     
                 }
             }
