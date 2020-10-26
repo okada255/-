@@ -1,9 +1,10 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"ObjRisu.h"
-#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+
+#include"ObjRisu.h"
+#include"GameHead.h"
 
 using namespace GameL;
 
@@ -109,5 +110,5 @@ void CObjRisu::Draw()
 	src.m_bottom = 32.0f + m_y;
 
 	//‚O”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ‚à‚Æ‚Ésrc.dst.c‚Ìî•ñ‚ğ‚à‚Æ‚É•`‰æ
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(2, &src, &dst, c, 0.0f);
 }
