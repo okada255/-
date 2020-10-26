@@ -9,21 +9,24 @@
 using namespace GameL;
 
 void CObjDonatu::Init()
-{//
-	float m_x = 0;
-	float m_y = 0;
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_DONATU, 3);
+{
+	m_x = 450;
+	m_y = 200;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_DONATU, 3);
 }
 
 void CObjDonatu::Action()
-{;
+{
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
+
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+
+		Scene::SetScene(new CSceneGameClear);
 	}
 }
 
