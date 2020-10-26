@@ -87,6 +87,9 @@
     <ClCompile Include="ObjRisu.cpp">
       <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
+    <ClCompile Include="GameL\Audio.cpp">
+      <Filter>リソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
