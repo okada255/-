@@ -42,8 +42,8 @@ void CObjDonatu::Draw()
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 40.0f;
-	dst.m_left = 500.0f;
+	dst.m_top = 200.0f;
+	dst.m_left = 450.0f;
 	dst.m_right = dst.m_left+ 18.75f;
 	dst.m_bottom = dst.m_top+18.75f;
 
