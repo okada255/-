@@ -16,8 +16,15 @@ void CObjDonatu::Init()
 }
 
 void CObjDonatu::Action()
-{
-	
+{;
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);
+	//éÂêlåˆÇ∆ê⁄êGÇµÇƒÇ¢ÇÈÇ©í≤Ç◊ÇÈ
+	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 
 void CObjDonatu::Draw()
@@ -35,8 +42,8 @@ void CObjDonatu::Draw()
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f;
+	dst.m_top = 32.0f;
+	dst.m_left = 64.0f;
 	dst.m_right = 64.0f;
 	dst.m_bottom = 64.0f;
 
