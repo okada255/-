@@ -58,9 +58,9 @@ void CSceneMain::InitScene()
 		}
 	}
 
-	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_512);
-	Draw::LoadImageW(L"Donatu.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu.bmp", 1, TEX_SIZE_128);
+	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
+	Draw::LoadImageW(L"Donatu.png", 2, TEX_SIZE_64);
+	Draw::LoadImageW(L"Risu.bmp", 3, TEX_SIZE_128);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -74,9 +74,9 @@ void CSceneMain::InitScene()
 	//CObjCookie* objb = new CObjCookie();
 	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
 
-	//Donatuオブジェクト作成
-	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU, 9);
+	////Donatuオブジェクト作成
+	//CObjDonatu* objb = new CObjDonatu();
+	//Objs::InsertObj(objb, OBJ_DONATU, 9);
 
 	////Chocoオブジェクト作成
 	//CObjChoco* objb = new CObjChoco();
