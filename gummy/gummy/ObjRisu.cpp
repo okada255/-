@@ -65,8 +65,8 @@ void CObjRisu::Action()
 	}
 
 	//移動ベクトルを座標に加算
-	m_x = m_vx;
-	m_y = m_vy;
+	m_x += m_vx;
+	m_y += m_vy;
 
 	//領域外に行かない
 	if (m_x + 32.0f > 800.0f)
@@ -100,14 +100,14 @@ void CObjRisu::Draw()
 	//切り取り位置
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 32.0f;
-	src.m_bottom = 32.0f;
+	src.m_right = 108.0f;
+	src.m_bottom = 108.0f;
 
 	//表示
-	src.m_top = 0.0f + m_y;
-	src.m_left = 0.0f + m_x;
-	src.m_right = 32.0f + m_x;
-	src.m_bottom = 32.0f + m_y;
+	dst.m_top = 0.0f+ m_y;
+	dst.m_left = 0.0f+ m_x;
+	dst.m_right = 32.0f + dst.m_left;
+	dst.m_bottom = 32.0f + dst.m_top;
 
 	//０番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
