@@ -41,6 +41,9 @@ CSceneMain::~CSceneMain()
 //初期化メソッド
 void CSceneMain::InitScene()
 {
+	//FONT作成
+	FONT::SetStrTex(L"0123456789分秒");
+
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;             //ステージ情報の大きさ
@@ -95,13 +98,11 @@ void CSceneMain::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
-	//タイム初期化
-	m_time = 0;
+	
 }
 
 //実行中メソッド
 void CSceneMain::Scene()
 {
-	m_time++;
 
 }
