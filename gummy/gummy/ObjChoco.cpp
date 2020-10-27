@@ -11,6 +11,7 @@ void CObjChoco::Init()
 {//
 	float m_x= 0;
 	float m_y= 0;
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_CHOCO, 6);
 }
 
 void CObjChoco::Action()
@@ -35,16 +36,15 @@ void CObjChoco::Draw()
 
 	//êÿÇËéÊÇËà íuÇÃê›íË
 	src.m_top = 0.0f;
-	src.m_left = 320.0f;
-	src.m_right = 0.0f;
+	src.m_left = 0.0f;
+	src.m_right = 64.0f;
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f;
-	dst.m_right = 64.0f;
-	dst.m_bottom = 64.0f;
-
+	dst.m_top = 270.0f;
+	dst.m_left = 250.0f;
+	dst.m_right = dst.m_left + 18.75f;
+	dst.m_bottom = dst.m_top + 18.75f;
 	//ï`âÊ
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(6, &src, &dst, c, 0.0f);
 }

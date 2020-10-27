@@ -59,8 +59,12 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Donatu.png", 3, TEX_SIZE_64);
 	Draw::LoadImageW(L"Risu(1).bmp", 2, TEX_SIZE_128);
+	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -71,28 +75,32 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 	////Cookieオブジェクト作成
-	//CObjCookie* objb = new CObjCookie();
-	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
+	CObjCookie* objC = new CObjCookie();
+	Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
 	Objs::InsertObj(objd, OBJ_DONATU,11);
 
 	////Chocoオブジェクト作成
-	//CObjChoco* objb = new CObjChoco();
-	//Objs::InsertObj(objb, OBJ_CANDY, 9);
+	CObjChoco* obj_c = new CObjChoco();
+	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
 	////Gummyオブジェクト作成
-	//CObjGummy* objb = new CObjGummy();
-	//Objs::InsertObj(objb, OBJ_GUMMY, 9);
+	CObjGummy* objg = new CObjGummy();
+	Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
+
+	//タイム初期化
+	m_time = 0;
 }
 
 //実行中メソッド
 void CSceneMain::Scene()
 {
+	m_time++;
 
 }
