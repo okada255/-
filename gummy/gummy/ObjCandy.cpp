@@ -1,4 +1,4 @@
-/*#include"GameHead.h"
+#include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"ObjCandy.h"
@@ -11,13 +11,14 @@ void CObjCandy::Init()
 {
 	float m_x = 0;
 	float m_y = 0;
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_CANDY, 5);
 }
 
 void CObjCandy::Action()
 {
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
-
+	//主人公と接触しているか調べる
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		this->SetStatus(false);
@@ -35,17 +36,16 @@ void CObjCandy::Draw()
 
 	//切り取り位置の設定
 	src.m_top = 0.0f;
-	src.m_left = 320.0f;
-	src.m_right =  64.0f;
+	src.m_left = 0.0f;
+	src.m_right = 64.0f;
 	src.m_bottom = 64.0f;
 
 	//表示位置の設定
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f;
-	dst.m_right = 64.0f;
-	dst.m_bottom = 64.0f;
+	dst.m_top = 300.0f;
+	dst.m_left = 350.0f;
+	dst.m_right = dst.m_left + 18.75f;
+	dst.m_bottom = dst.m_top + 18.75f;
 
 	//描画
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(4, &src, &dst, c, 0.0f);
 }
-*/
