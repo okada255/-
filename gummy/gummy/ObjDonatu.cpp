@@ -16,7 +16,7 @@ void CObjDonatu::Init()
 }
 
 void CObjDonatu::Action()
-{;
+{
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
