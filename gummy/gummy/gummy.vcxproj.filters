@@ -28,6 +28,9 @@
     <Filter Include="ソース ファイル\GameClear">
       <UniqueIdentifier>{73f26c95-b3a6-4164-9726-9ab9d50fc972}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\時間関連">
+      <UniqueIdentifier>{f5c70deb-05e2-4b4f-922c-5fe042d3e1b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -108,6 +111,9 @@
     <ClCompile Include="SceneGameClear.cpp">
       <Filter>ソース ファイル\GameClear</Filter>
     </ClCompile>
+    <ClCompile Include="ObjTime.cpp">
+      <Filter>ソース ファイル\時間関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -184,6 +190,9 @@
     </ClInclude>
     <ClInclude Include="SceneGameClear.h">
       <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTime.h">
+      <Filter>ソース ファイル\時間関連</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
