@@ -159,6 +159,7 @@
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="ObjRisu.cpp" />
+    <ClCompile Include="ObjTime.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="OPning.c" />
     <ClCompile Include="SceneGameClear.cpp" />
@@ -187,6 +188,7 @@
     <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjGummy.h" />
     <ClInclude Include="ObjRisu.h" />
+    <ClInclude Include="ObjTime.h" />
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneMain.h" />
