@@ -7,7 +7,7 @@
 
 using namespace GameL;
 
-//aii
+//ai
 
 void CObjTitle::Init() {
 	m_key_flag = false;

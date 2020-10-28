@@ -7,6 +7,7 @@
 #include"GameHead.h"
 #include"GameL/UserData.h"
 #include"GameL/DrawTexture.h"
+#include"GameL/DrawFont.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -40,6 +41,9 @@ CSceneMain::~CSceneMain()
 //初期化メソッド
 void CSceneMain::InitScene()
 {
+	//FONT作成
+	Font::SetStrTex(L"0123456789分秒");
+
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;             //ステージ情報の大きさ
@@ -59,36 +63,45 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Donatu.png", 2, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu.bmp", 3, TEX_SIZE_128);
+	Draw::LoadImageW(L"Risu(1).bmp", 2, TEX_SIZE_128);
+	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
 	////Candyオブジェクト作成
-	//CObjCandy* objb = new CObjCandy();
-	//Objs::InsertObj(objb, OBJ_CANDY, 9);
+	CObjCandy* objc = new CObjCandy();
+	Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 	////Cookieオブジェクト作成
-	//CObjCookie* objb = new CObjCookie();
-	//Objs::InsertObj(objb, OBJ_COOKIE, 9);
+	CObjCookie* objC = new CObjCookie();
+	Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
 	////Donatuオブジェクト作成
-	//CObjDonatu* objb = new CObjDonatu();
-	//Objs::InsertObj(objb, OBJ_DONATU, 9);
+	CObjDonatu* objd = new CObjDonatu();
+	Objs::InsertObj(objd, OBJ_DONATU,11);
 
 	////Chocoオブジェクト作成
-	//CObjChoco* objb = new CObjChoco();
-	//Objs::InsertObj(objb, OBJ_CANDY, 9);
+	CObjChoco* obj_c = new CObjChoco();
+	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
 	////Gummyオブジェクト作成
-	//CObjGummy* objb = new CObjGummy();
-	//Objs::InsertObj(objb, OBJ_GUMMY, 9);
+	CObjGummy* objg = new CObjGummy();
+	Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 	//リス作成
-	/*CObjRisu* objr = new CObjRisu();
-	Objs::InsertObj(objr, OBJ_RISU, 9);*/
+	CObjRisu* objr = new CObjRisu();
+	Objs::InsertObj(objr, OBJ_RISU, 12);
+
+	//タイム作成
+	CObjTime* objt = new CObjTime();
+	Objs::InsertObj(objt, OBJ_TIME, 16);
+	
 }
 
 //実行中メソッド
