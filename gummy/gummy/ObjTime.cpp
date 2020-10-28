@@ -9,9 +9,20 @@
 using namespace GameL;
 
 //イニシャライズ
-void 
+void CObjTime::Init()
+{
+
+}
 
 //アクション
+void CObjTime::Action()
+{
+
+}
 
 //ドロー
+void CObjTime::Draw()
+{
+
+}
 

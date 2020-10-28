@@ -9,10 +9,11 @@ using namespace GameL;
 class CObjTime :public CObj
 {
 public:
-	CObjTime();
-	~CObjTime();
-	void InitScene();//初期化メソッド
-	void Scene();    //実行中メソッド
+	CObjTime() {};
+	~CObjTime() {};
+	void Init();
+	void Action();
+	void Draw();
 private:
 
 };
