@@ -21,23 +21,45 @@ void CObjRisu::Init()
 }
 void CObjRisu::Action()
 {
+	//主人公の位置を取得
+	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU)
+	float hx = risu->GetX();
+	float hy = risu->GetY();
+
 	m_vy = 0.0f;
 	m_posture = 1.0f;
 
 	m_ani_time = 0;
-	m_ani_frame = 1;
+	m_ani_frame = 1;//静止フレームを初期にする
+
+	m_speed_power = 0.5f;//通常速度
+	m_ani_max_time = 4;//アニメーション間隔幅
+
+	//Zキー入力で速度アップ
+	if (Input::GetVKey('Z') == true)
+	{
+		//ダッシュ時の速度
+		m_speed_power = 1.1f;
+		m_ani_max_time = 2;
+	}
+	else
+	{
+		//通常速度
+		m_speed_power = 0.5f;
+		m_ani_max_time = 4;
+	}
 
 	//キーの入力方向にベクトルの速度を入れる
 	if(Input::GetVKey(VK_RIGHT) == true)
 	{
-		m_vx += 0.1f;
+		m_vx += m_speed_power;
 		m_posture = 1.0f;
 		m_ani_time += 1;
 	}
 
 	else if (Input::GetVKey(VK_LEFT) == true)
 	{
-		m_vx += 0.1f;
+		m_vx += m_speed_power;
 		m_posture = 1.0f;
 		m_ani_time += 1;
 	}
@@ -48,7 +70,7 @@ void CObjRisu::Action()
 		m_ani_time = 0;
 	}
 
-	if (m_ani_time > 4)
+	if (m_ani_time > m_ani_max_time)
 	{
 		m_ani_frame = 1;
 		m_ani_time = 0;
@@ -140,14 +162,14 @@ void CObjRisu::Draw()
 
 	//切り取り位置
 	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 108.0f;
+	src.m_left = 0.0f + AniData[m_ani_frame] * 64;
+	src.m_right = 108.0f + AniData[m_ani_frame] * 64;
 	src.m_bottom = 108.0f;
 
 	//表示
 	dst.m_top = 0.0f+ m_py;
-	dst.m_left = 0.0f+ m_px;
-	dst.m_right = 32.0f + dst.m_left;
+	dst.m_left = (64.0f * m_posture) + m_px;
+	dst.m_right = (32 - 32.0f * m_posture) + dst.m_left;
 	dst.m_bottom = 32.0f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
