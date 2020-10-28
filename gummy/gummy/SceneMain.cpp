@@ -98,6 +98,9 @@ void CSceneMain::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
+	//É^ÉCÉÄçÏê¨
+	CObjTime* objt = new CObjTime();
+	Objs::InsertObj(objt, OBJ_TIME, 16);
 	
 }
 
