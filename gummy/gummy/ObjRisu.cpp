@@ -21,14 +21,42 @@ void CObjRisu::Init()
 }
 void CObjRisu::Action()
 {
-	m_vx = 0.0f;
 	m_vy = 0.0f;
+	m_posture = 1.0f;
+
+	m_ani_time = 0;
+	m_ani_frame = 1;
 
 	//キーの入力方向にベクトルの速度を入れる
 	if(Input::GetVKey(VK_RIGHT) == true)
 	{
 		m_vx += 0.1f;
 		m_posture = 1.0f;
+		m_ani_time += 1;
+	}
+
+	else if (Input::GetVKey(VK_LEFT) == true)
+	{
+		m_vx += 0.1f;
+		m_posture = 1.0f;
+		m_ani_time += 1;
+	}
+
+	else
+	{
+		m_ani_frame = 1; //キー入力がない場合静止フレームにする
+		m_ani_time = 0;
+	}
+
+	if (m_ani_time > 4)
+	{
+		m_ani_frame = 1;
+		m_ani_time = 0;
+	}
+
+	if (m_ani_time == 4)
+	{
+		m_ani_frame = 0;
 	}
 
 	if(Input::GetVKey(VK_LEFT) == true)
@@ -46,6 +74,9 @@ void CObjRisu::Action()
 	{
 		m_vy += 1.0f;
 	}
+
+	//摩擦
+	m_vx += -(m_vx * 0.098);
 
 	//位置の更新
 	m_px += m_vx;
@@ -99,9 +130,13 @@ void CObjRisu::Action()
 
 void CObjRisu::Draw()
 {
+	int AniData[4] =
+	{
+		1,0,2,0,
+	};
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-	RECT_F src;
-	RECT_F dst;
+	RECT_F src; //描画元切り取り位置
+	RECT_F dst; //描画先表示位置
 
 	//切り取り位置
 	src.m_top = 0.0f;

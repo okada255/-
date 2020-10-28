@@ -20,5 +20,5 @@ private:
 	float m_posture;
 
 	int m_ani_time;
-	int m_ani_flame;
+	int m_ani_frame;
 };
