@@ -42,7 +42,7 @@ CSceneMain::~CSceneMain()
 void CSceneMain::InitScene()
 {
 	//FONT作成
-	FONT::SetStrTex(L"0123456789分秒");
+	Font::SetStrTex(L"0123456789分秒");
 
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
@@ -98,6 +98,9 @@ void CSceneMain::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
+	//タイム作成
+	CObjTime* objt = new CObjTime();
+	Objs::InsertObj(objt, OBJ_TIME, 16);
 	
 }
 
