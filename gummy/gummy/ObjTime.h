@@ -14,6 +14,9 @@ public:
 	void Init();
 	void Action();
 	void Draw();
-private:
 
+	void SetTimeFlag(bool b) { m_flag_time = b; }
+private:
+	int m_time; //ŽžŠÔ
+	bool  m_flag_time; //ŽžŠÔŒv‘ªƒtƒ‰ƒO
 };
