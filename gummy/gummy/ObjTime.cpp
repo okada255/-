@@ -37,7 +37,7 @@ void CObjTime::Draw()
 	
 	
 	if (second > 0)
-		swprintf_s(str, L"%d",second);
+		swprintf_s(str, L"%d",m_time);
 
 	Font::StrDraw(str, 10, 10, 20, c);
 }
