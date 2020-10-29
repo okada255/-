@@ -4,6 +4,7 @@
 
 #include "GameHead.h"
 #include "ObjTitle.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 

@@ -16,6 +16,7 @@ enum OBJ_NAME
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
+	OBJ_SCORE,
 };
 //------------------------------------------------
 
@@ -43,7 +44,8 @@ enum HIT_ELEMENTS
 struct UserData
 {
 	int mSeveData;	//サンプルセーブデータ
-	
+	int m_point;
+	int m_ranking[16];
 };
 //------------------------------------------------
 
@@ -69,6 +71,7 @@ struct UserData
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjTime.h"
+#include"ObjScore.h"
 
 //------------------------------------------------
 
