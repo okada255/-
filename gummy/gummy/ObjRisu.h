@@ -14,9 +14,9 @@ public:
 
 	float GetX() { return m_px; }
 	float GetY() { return m_py; }
-	/*void SetX(float x) { m_px = x; }
+	void SetX(float x) { m_px = x; }
 	void SetY(float y) { m_py = y; }
-	void SetVY(float vy) { m_vy = vy; }*/
+	void SetVY(float vy) { m_vy = vy; }
 private:
 	float m_px;
 	float m_py;
