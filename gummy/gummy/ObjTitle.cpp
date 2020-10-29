@@ -8,10 +8,10 @@
 
 using namespace GameL;
 
-//ai
-
 void CObjTitle::Init() {
 	m_key_flag = false;
+
+	
 }
 
 void CObjTitle::Action() {
