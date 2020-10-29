@@ -5,3 +5,24 @@
 #include"GameHead.h"
 #include"ObjScore.h"
 #include"GameL/DrawFont.h"
+
+//使用するネームスペース
+using namespace GameL;
+
+//イニシャライズ
+void CObjScore::Init()
+{
+
+}
+
+//アクション
+void CObjScore::Action()
+{
+
+}
+
+//ドロー
+void CObjScore::Draw()
+{
+
+}
