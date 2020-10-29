@@ -12,15 +12,17 @@ using namespace GameL;
 //イニシャライズ
 void CObjTime::Init()
 {
-	m_time = 500*60*60;
+	m_time = 500*7200;
 	m_flag_time = false;
 }
 
 //アクション
 void CObjTime::Action()
 {
-	m_time--;
-	
+	for (int i = 0; i < 500; i++)
+	{
+		m_time--;
+	}
 }
 
 //ドロー
@@ -37,7 +39,7 @@ void CObjTime::Draw()
 	
 	
 	if (second > 0)
-		swprintf_s(str, L"%d",m_time);
+		swprintf_s(str, L"%d",m_time/7200);
 
 	Font::StrDraw(str, 10, 10, 20, c);
 }

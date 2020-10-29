@@ -22,9 +22,9 @@ void CObjRisu::Init()
 void CObjRisu::Action()
 {
 	//ŽålŒö‚ÌˆÊ’u‚ðŽæ“¾
-	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU)
-	float hx = risu->GetX();
-	float hy = risu->GetY();
+	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU);
+	/*float hx = risu->GetX();
+	float hy = risu->GetY();*/
 
 	m_vy = 0.0f;
 	m_posture = 1.0f;
