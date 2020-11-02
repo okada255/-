@@ -167,11 +167,11 @@ void CObjRisu::Draw()
 	src.m_right = 108.0f + AniData[m_ani_frame] * 64;
 	src.m_bottom = 108.0f;
 
-	//表示
+	//表示位置
 	dst.m_top = 0.0f + m_py;
-	dst.m_left = (32.0f * m_posture) + m_px;
-	dst.m_right = (32 - 32.0f * m_posture) + dst.m_left;
-	dst.m_bottom = 32.0f + dst.m_top;
+	dst.m_left = (18.85f * m_posture) + m_px;
+	dst.m_right = (18.85 - 18.85f * m_posture) + dst.m_left;
+	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
