@@ -63,12 +63,16 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu(1).bmp", 2, TEX_SIZE_128);
-	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
-	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
-	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
-	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
-	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"右向き.png", 2, TEX_SIZE_128);//リス右向き
+	Draw::LoadImageW(L"左向き.png", 3, TEX_SIZE_128);//リス左向き
+	Draw::LoadImageW(L"前向きリス.png", 4, TEX_SIZE_128);//リス前向き
+	Draw::LoadImageW(L"後ろ姿(1).png", 5, TEX_SIZE_128);//リス後ろ向き
+	Draw::LoadImageW(L"donatu.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 8, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 9, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 10, TEX_SIZE_64);
+
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -84,7 +88,7 @@ void CSceneMain::InitScene()
 
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU,11);
+	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 	////Chocoオブジェクト作成
 	CObjChoco* obj_c = new CObjChoco();
@@ -101,7 +105,7 @@ void CSceneMain::InitScene()
 	//タイム作成
 	CObjTime* objt = new CObjTime();
 	Objs::InsertObj(objt, OBJ_TIME, 16);
-	
+
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
