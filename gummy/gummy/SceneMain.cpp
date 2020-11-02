@@ -69,6 +69,11 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	
+
+	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+
+
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -105,6 +110,10 @@ void CSceneMain::InitScene()
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 //実行中メソッド

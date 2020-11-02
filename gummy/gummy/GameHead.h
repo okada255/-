@@ -17,6 +17,7 @@ enum OBJ_NAME
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
 	OBJ_SCORE,
+	OBJ_BACKGROUND,
 };
 //------------------------------------------------
 
@@ -72,6 +73,7 @@ struct UserData
 #include"ObjGameClear.h"
 #include"ObjTime.h"
 #include"ObjScore.h"
+#include"ObjBackGround.h"
 
 //------------------------------------------------
 

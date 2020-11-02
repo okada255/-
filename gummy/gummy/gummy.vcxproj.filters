@@ -120,6 +120,9 @@
     <ClCompile Include="ObjScoer.cpp">
       <Filter>ソース ファイル\スコア関連</Filter>
     </ClCompile>
+    <ClCompile Include="ObjBackGround.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -202,6 +205,9 @@
     </ClInclude>
     <ClInclude Include="ObjScore.h">
       <Filter>ソース ファイル\スコア関連</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBackGround.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
