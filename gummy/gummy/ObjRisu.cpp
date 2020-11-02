@@ -14,15 +14,15 @@ void CObjRisu::Init()
 	m_py = (600 / 2) - 16;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
-	m_posture = 0.0f;//右向き0.0f,左向き1.0f
+	//m_posture = 0.0f;//右向き0.0f,左向き1.0f
 
 	//当たり判定
-	Hits::SetHitBox(this, m_px, m_py, 32, 32, ELEMENT_PLAYER, OBJ_RISU, 1);
+	Hits::SetHitBox(this, m_px, m_py, 18.85, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
 }
 void CObjRisu::Action()
 {
 	//主人公の位置を取得
-	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU)
+	CObjRisu* risu = (CObjRisu*)Objs::GetObj(OBJ_RISU);
 	float hx = risu->GetX();
 	float hy = risu->GetY();
 
@@ -50,7 +50,7 @@ void CObjRisu::Action()
 	}
 
 	//キーの入力方向にベクトルの速度を入れる
-	if(Input::GetVKey(VK_RIGHT) == true)
+	if (Input::GetVKey(VK_RIGHT) == true)
 	{
 		m_vx += m_speed_power;
 		m_posture = 1.0f;
@@ -81,18 +81,18 @@ void CObjRisu::Action()
 		m_ani_frame = 0;
 	}
 
-	if(Input::GetVKey(VK_LEFT) == true)
+	if (Input::GetVKey(VK_LEFT) == true)
 	{
-		m_vx -= 0.1f;
+		m_vx -= 1.0f;
 		m_posture = 0.0f;
 	}
 
-	if(Input::GetVKey(VK_UP) == true)
+	if (Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
 	}
 
-	if(Input::GetVKey(VK_DOWN) == true)
+	if (Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
 	}
@@ -104,7 +104,7 @@ void CObjRisu::Action()
 	m_px += m_vx;
 	m_py += m_vy;
 
-	if(m_px > 800.0f)
+	if (m_px > 800.0f)
 	{
 		m_px = 0.0f;//原点回帰
 	}
@@ -147,7 +147,7 @@ void CObjRisu::Action()
 
 	//HitBoxの内容更新
 	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);
+	hit->SetPos(m_px, m_py);//
 }
 
 void CObjRisu::Draw()
@@ -167,8 +167,8 @@ void CObjRisu::Draw()
 	src.m_bottom = 108.0f;
 
 	//表示
-	dst.m_top = 0.0f+ m_py;
-	dst.m_left = (64.0f * m_posture) + m_px;
+	dst.m_top = 0.0f + m_py;
+	dst.m_left = (32.0f * m_posture) + m_px;
 	dst.m_right = (32 - 32.0f * m_posture) + dst.m_left;
 	dst.m_bottom = 32.0f + dst.m_top;
 
