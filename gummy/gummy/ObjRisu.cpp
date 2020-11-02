@@ -147,14 +147,14 @@ void CObjRisu::Action()
 
 	//HitBoxの内容更新
 	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);//
+	hit->SetPos(m_px, m_py);
 }
 
 void CObjRisu::Draw()
 {
 	int AniData[4] = 
 	{
-		1,0,2,0,
+		2,2,2,2
 	};
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 	RECT_F src; //描画元切り取り位置
@@ -173,9 +173,9 @@ void CObjRisu::Draw()
 	dst.m_bottom = 18.85f+ dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	Draw::Draw(2, &src, &dst, c, 0.0f); //右
+	//Draw::Draw(2, &src, &dst, c, 0.0f); //右
 	//Draw::Draw(3, &src, &dst, c, 0.0f); //左
-	//Draw::Draw(4, &src, &dst, c, 0.0f); //前
+	Draw::Draw(4, &src, &dst, c, 0.0f); //前
 	//Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
 
 }
