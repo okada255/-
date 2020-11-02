@@ -25,8 +25,6 @@ void CObjDonatu::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-
-		Scene::SetScene(new CSceneGameClear);
 	}
 }
 

@@ -102,6 +102,9 @@ void CSceneMain::InitScene()
 	CObjTime* objt = new CObjTime();
 	Objs::InsertObj(objt, OBJ_TIME, 16);
 	
+	//スコア作成
+	CObjScore* objs = new CObjScore();
+	Objs::InsertObj(objs, OBJ_SCORE, 17);
 }
 
 //実行中メソッド

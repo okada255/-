@@ -22,6 +22,7 @@ void CObjCandy::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+
 	}
 }
 
