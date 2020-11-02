@@ -26,6 +26,7 @@ void CObjRisu::Action()
 	float hx = risu->GetX();
 	float hy = risu->GetY();
 
+	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_posture = 1.0f;
 
