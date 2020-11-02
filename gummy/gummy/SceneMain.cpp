@@ -23,6 +23,7 @@ using namespace GameL;
 #include"ObjRisu.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
+#include"Objupstage.h"
 
 
 //コンストラクタ
@@ -69,6 +70,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64); 
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -105,6 +107,10 @@ void CSceneMain::InitScene()
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
+
+	//上り階段作成
+	CObjupstage* obju = new CObjupstage();
+	Objs::InsertObj(obju, OBJ_UPSTAGE, 18);
 }
 
 //実行中メソッド
