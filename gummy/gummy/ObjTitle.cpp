@@ -11,7 +11,7 @@ using namespace GameL;
 void CObjTitle::Init() {
 	m_key_flag = false;
 
-	//
+	///
 }
 
 void CObjTitle::Action() {
