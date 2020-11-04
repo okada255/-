@@ -88,7 +88,7 @@ void CSceneMain::InitScene()
 
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU,11);
+	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 	////Chocoオブジェクト作成
 	CObjChoco* obj_c = new CObjChoco();
@@ -105,7 +105,7 @@ void CSceneMain::InitScene()
 	//タイム作成
 	CObjTime* objt = new CObjTime();
 	Objs::InsertObj(objt, OBJ_TIME, 16);
-	
+
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);

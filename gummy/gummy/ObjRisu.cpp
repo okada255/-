@@ -152,7 +152,7 @@ void CObjRisu::Action()
 
 void CObjRisu::Draw()
 {
-	int AniData[4] = 
+	int AniData[4] =
 	{
 		1,0,2,0,
 	};
@@ -163,14 +163,14 @@ void CObjRisu::Draw()
 	//切り取り位置
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 108.0f ;
+	src.m_right = 108.0f;
 	src.m_bottom = 108.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
-	dst.m_left = 18.85f *( m_posture) + m_px;
-	dst.m_right = (18.85 - 18.85f * m_posture)+ dst.m_left;
-	dst.m_bottom = 18.85f+ dst.m_top;
+	dst.m_left = 18.85f * (m_posture)+m_px;
+	dst.m_right = (18.85 - 18.85f * m_posture) + dst.m_left;
+	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f); //右
