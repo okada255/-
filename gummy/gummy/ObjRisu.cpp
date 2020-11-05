@@ -97,9 +97,6 @@ void CObjRisu::Action()
 		m_vy += 1.0f;
 	}
 
-	//摩擦
-	/*m_vx += -(m_vx * 0.098);*/
-
 	//位置の更新
 	m_px += m_vx;
 	m_py += m_vy;
@@ -163,8 +160,8 @@ void CObjRisu::Draw()
 	//切り取り位置
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 108.0f;
-	src.m_bottom = 108.0f;
+	src.m_right = 92.5f;
+	src.m_bottom = 98.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
@@ -173,9 +170,6 @@ void CObjRisu::Draw()
 	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	Draw::Draw(2, &src, &dst, c, 0.0f); //右
-	//Draw::Draw(3, &src, &dst, c, 0.0f); //左
-	//Draw::Draw(4, &src, &dst, c, 0.0f); //前
-	//Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
+	Draw::Draw(2, &src, &dst, c, 0.0f); //リス
 
 }
