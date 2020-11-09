@@ -28,7 +28,7 @@ void CObjRisu::Action()
 
 	m_vy = 0.0f;
 	m_vx = 0.0f;
-	m_posture = 1.0f;
+	m_posture = 1.0f;//右向き0.0f,左向き1.0f
 
 	m_ani_time = 0;
 	m_ani_frame = 1;//静止フレームを初期にする
@@ -57,29 +57,29 @@ void CObjRisu::Action()
 		m_ani_time += 1;
 	}
 
-	/*else if (Input::GetVKey(VK_LEFT) == true)
+	else if (Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx += m_speed_power;
-		m_posture = 0.0f;
+		m_posture = 1.0f;
 		m_ani_time += 1;
-	}*/
+	}
 
-	//else
-	//{
-	//	m_ani_frame = 1; //キー入力がない場合静止フレームにする
-	//	m_ani_time = 0;
-	//}
+	else
+	{
+		m_ani_frame = 1; //キー入力がない場合静止フレームにする
+		m_ani_time = 0;
+	}
 
-	//if (m_ani_time > m_ani_max_time)
-	//{
-	//	m_ani_frame = 1;
-	//	m_ani_time = 0;
-	//}
+	if (m_ani_time > m_ani_max_time)
+	{
+		m_ani_frame = 1;
+		m_ani_time = 0;
+	}
 
-	//if (m_ani_time == 4)
-	//{
-	//	m_ani_frame = 0;
-	//}
+	if (m_ani_time == 4)
+	{
+		m_ani_frame = 0;
+	}
 
 	if (Input::GetVKey(VK_LEFT) == true)
 	{
@@ -178,8 +178,8 @@ void CObjRisu::Draw()
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f); //右
-	//Draw::Draw(3, &src, &dst, c, 0.0f); //左
-	//Draw::Draw(4, &src, &dst, c, 0.0f); //前
-	//Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
+	Draw::Draw(3, &src, &dst, c, 0.0f); //左
+	Draw::Draw(4, &src, &dst, c, 0.0f); //前
+	Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
 
 }
