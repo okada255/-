@@ -53,14 +53,14 @@ void CObjRisu::Action()
 	{
 		m_vx += 1.0f;
 		m_vx += m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
 	else if (Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx += m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -84,12 +84,13 @@ void CObjRisu::Action()
 	if (Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx -= 1.0f;
-		m_posture = 0.0f;
+		m_posture = 1.0f;
 	}
 
 	if (Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
+		
 	}
 
 	if (Input::GetVKey(VK_DOWN) == true)
@@ -152,19 +153,19 @@ void CObjRisu::Action()
 
 void CObjRisu::Draw()
 {
-	int AniData[4] = 
+	/*int AniData[4] = 
 	{
 		2,2,2,2
-	};
-	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	};*/
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };//描画カラー情報
 	RECT_F src; //描画元切り取り位置
 	RECT_F dst; //描画先表示位置
 
 	//切り取り位置
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 108.0f ;
-	src.m_bottom = 108.0f;
+	src.m_right = 128.0f ;
+	src.m_bottom = 128.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
@@ -173,9 +174,9 @@ void CObjRisu::Draw()
 	dst.m_bottom = 18.85f+ dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	//Draw::Draw(2, &src, &dst, c, 0.0f); //右
-	//Draw::Draw(3, &src, &dst, c, 0.0f); //左
+	Draw::Draw(2, &src, &dst, c, 0.0f); //右
+	Draw::Draw(3, &src, &dst, c, 0.0f); //左
 	Draw::Draw(4, &src, &dst, c, 0.0f); //前
-	//Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
+	Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
 
 }

@@ -18,11 +18,11 @@ public:
 	void SetY(float y) { m_py = y; }
 	void SetVY(float vy) { m_vy = vy; }
 private:
-	float m_px;
+	float m_px;//位置
 	float m_py;
-	float m_vx;
+	float m_vx;//移動
 	float m_vy;
-	float m_posture;
+	float m_posture;//主人公の向きを表現する変数
 
 	int m_ani_time;//アニメーションフレーム動作間隔
 	int m_ani_frame;//描画フレーム
