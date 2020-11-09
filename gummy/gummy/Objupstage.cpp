@@ -10,20 +10,23 @@ using namespace GameL;
 
 void CObjupstage::Init()
 {
-
+	m_x = 100;
+	m_y = 660;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE, 30);
 }
 
 void CObjupstage::Action()
 {
-	//CHitBox* hit = Hits::GetHitBox(this);
-	//
+	CHitBox* hit = Hits::GetHitBox(this);
+	
 
-	////主人公と接触しているか調べる
-	//if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
-	//{
-	//	this->SetStatus(false);
-	//	Hits::DeleteHitBox(this);
-	//}
+	//主人公と接触しているか調べる
+	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneGameClear());
+	}
 }
 
 void CObjupstage::Draw()
@@ -41,8 +44,8 @@ void CObjupstage::Draw()
 	src.m_bottom = 696.0f;
 
 	//表示位置の設定
-	dst.m_top = 200.0f;
-	dst.m_left = 600.0f;
+	dst.m_top = 100.0f;
+	dst.m_left = 660.0f;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 
