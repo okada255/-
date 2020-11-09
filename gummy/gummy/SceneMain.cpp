@@ -63,15 +63,12 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"右向き.png", 2, TEX_SIZE_128);//リス右向き
-	Draw::LoadImageW(L"左向き.png", 3, TEX_SIZE_128);//リス左向き
-	Draw::LoadImageW(L"前向きリス.png", 4, TEX_SIZE_128);//リス前向き
-	Draw::LoadImageW(L"後ろ姿(1).png", 5, TEX_SIZE_128);//リス後ろ向き
-	Draw::LoadImageW(L"donatu.png", 6, TEX_SIZE_64);
-	Draw::LoadImageW(L"candy.png", 7, TEX_SIZE_64);
-	Draw::LoadImageW(L"cookie.png", 8, TEX_SIZE_64);
-	Draw::LoadImageW(L"choco.png", 9, TEX_SIZE_64);
-	Draw::LoadImageW(L"gumy.png", 10, TEX_SIZE_64);
+	Draw::LoadImageW(L"risu.png", 2, TEX_SIZE_256);//リス
+	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 
 
 	//Blockオブジェクト作成
