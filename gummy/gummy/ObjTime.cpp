@@ -19,9 +19,13 @@ void CObjTime::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjTime::Action()
 {
-	for (int i = 0; i < 500; i++)
+	for (int i = 1; i <= 500; i++)
 	{
 		m_time--;
+		if (i == 500)
+		{
+			Scene::SetScene(new CSceneGameOver());
+		}
 	}
 }
 
