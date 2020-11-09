@@ -57,12 +57,12 @@ void CObjRisu::Action()
 		m_ani_time += 1;
 	}
 
-	//else if (Input::GetVKey(VK_LEFT) == true)
-	//{
-	//	m_vx += m_speed_power;
-	//	m_posture = 0.0f;
-	//	m_ani_time += 1;
-	//}
+	/*else if (Input::GetVKey(VK_LEFT) == true)
+	{
+		m_vx += m_speed_power;
+		m_posture = 0.0f;
+		m_ani_time += 1;
+	}*/
 
 	//else
 	//{
