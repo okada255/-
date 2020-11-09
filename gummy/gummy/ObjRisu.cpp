@@ -57,29 +57,29 @@ void CObjRisu::Action()
 		m_ani_time += 1;
 	}
 
-	else if (Input::GetVKey(VK_LEFT) == true)
-	{
-		m_vx += m_speed_power;
-		m_posture = 0.0f;
-		m_ani_time += 1;
-	}
+	//else if (Input::GetVKey(VK_LEFT) == true)
+	//{
+	//	m_vx += m_speed_power;
+	//	m_posture = 0.0f;
+	//	m_ani_time += 1;
+	//}
 
-	else
-	{
-		m_ani_frame = 1; //キー入力がない場合静止フレームにする
-		m_ani_time = 0;
-	}
+	//else
+	//{
+	//	m_ani_frame = 1; //キー入力がない場合静止フレームにする
+	//	m_ani_time = 0;
+	//}
 
-	if (m_ani_time > m_ani_max_time)
-	{
-		m_ani_frame = 1;
-		m_ani_time = 0;
-	}
+	//if (m_ani_time > m_ani_max_time)
+	//{
+	//	m_ani_frame = 1;
+	//	m_ani_time = 0;
+	//}
 
-	if (m_ani_time == 4)
-	{
-		m_ani_frame = 0;
-	}
+	//if (m_ani_time == 4)
+	//{
+	//	m_ani_frame = 0;
+	//}
 
 	if (Input::GetVKey(VK_LEFT) == true)
 	{
@@ -90,7 +90,6 @@ void CObjRisu::Action()
 	if (Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
-		
 	}
 
 	if (Input::GetVKey(VK_DOWN) == true)
@@ -110,16 +109,19 @@ void CObjRisu::Action()
 		m_px = 0.0f;//原点回帰
 	}
 
+	//ベクトルの長さを求める
 	float r = 0.0f;
 	r = m_vx * m_vx + m_vy * m_vy;
-	r = sqrt(r);
+	r = sqrt(r);//rをルートを求める
 
+	//長さが0か求める
 	if (r == 0.0f)
 	{
-		;
+		; //0なら何もしない。
 	}
 	else
 	{
+		//正規化を行う
 		m_vx = 1.0f / r * m_vx;
 		m_vy = 1.0f / r * m_vy;
 	}
@@ -151,32 +153,33 @@ void CObjRisu::Action()
 	hit->SetPos(m_px, m_py);
 }
 
+//ドロー
 void CObjRisu::Draw()
 {
-	/*int AniData[4] = 
+	int AniData[4] = 
 	{
-		2,2,2,2
-	};*/
+		1,0,2,0
+	};
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };//描画カラー情報
 	RECT_F src; //描画元切り取り位置
 	RECT_F dst; //描画先表示位置
 
 	//切り取り位置
 	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 128.0f ;
+	src.m_left = 0.0f;// +AniData[m_ani_frame] * 128;
+	src.m_right = 128.0f;// +AniData[m_ani_frame] * 128;
 	src.m_bottom = 128.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
-	dst.m_left = 18.85f *( m_posture) + m_px;
-	dst.m_right = (18.85 - 18.85f * m_posture)+ dst.m_left;
+	dst.m_left = (18.85f * m_posture)+ m_px; //*(m_posture)
+	dst.m_right = (18.85 - 18.85f * m_posture)+ dst.m_left; //*m_posture
 	dst.m_bottom = 18.85f+ dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f); //右
-	Draw::Draw(3, &src, &dst, c, 0.0f); //左
-	Draw::Draw(4, &src, &dst, c, 0.0f); //前
-	Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
+	//Draw::Draw(3, &src, &dst, c, 0.0f); //左
+	//Draw::Draw(4, &src, &dst, c, 0.0f); //前
+	//Draw::Draw(5, &src, &dst, c, 0.0f); //後ろ
 
 }
