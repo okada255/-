@@ -17,6 +17,7 @@ enum OBJ_NAME
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
 	OBJ_SCORE,
+	OBJ_GAME_OVER,
 };
 //------------------------------------------------
 
@@ -72,6 +73,7 @@ struct UserData
 #include"ObjGameClear.h"
 #include"ObjTime.h"
 #include"ObjScore.h"
+#include"ObjGameOver.h"
 
 //------------------------------------------------
 
@@ -79,6 +81,7 @@ struct UserData
 #include"SceneMain.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
+#include"SceneGameOver.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
