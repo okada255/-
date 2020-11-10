@@ -11,7 +11,10 @@ enum OBJ_NAME
 	OBJ_COOKIE,
 	OBJ_DONATU,
 	OBJ_GUMMY,
-	OBJ_RISU,
+	OBJ_RISUR,
+	OBJ_RISUL,
+	OBJ_RISUD,
+	OBJ_RISUU,
 	OBJ_BLOCK,
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
@@ -67,7 +70,10 @@ struct UserData
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
 #include"ObjCandy.h"
-#include"ObjRisu.h"
+#include"ObjRisuL.h"
+#include"ObjRisuR.h"
+#include"ObjRisuU.h"
+#include"ObjRisuD.h"
 #include"ObjBlock.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
