@@ -52,7 +52,7 @@ void CObjRisu::Action()
 	{
 		m_vx += 1.0f;
 		m_vx += m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -83,17 +83,19 @@ void CObjRisu::Action()
 	if (Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx -= 1.0f;
-		//m_posture = 0.0f;
+		m_posture = 0.0f;
 	}
 
 	if (Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
+		m_posture = 0.0f;
 	}
 
 	if (Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
+		m_posture = 0.0f;
 	}
 
 	//位置の更新
@@ -171,6 +173,6 @@ void CObjRisu::Draw()
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(3, &src, &dst, c, 0.0f); //左向きリスl
 	Draw::Draw(2, &src, &dst, c, 0.0f); //右向きリスr
-	Draw::Draw(5, &src, &dst, c, 0.0f); //上向きリスup
-	Draw::Draw(4, &src, &dst, c, 0.0f); //下向きリスdown
+	//Draw::Draw(4, &src, &dst, c, 0.0f); //上向きリスup
+	//Draw::Draw(5, &src, &dst, c, 0.0f); //下向きリスdown
 }
