@@ -37,6 +37,9 @@
     <Filter Include="ソース ファイル\GameOver">
       <UniqueIdentifier>{2643597c-a66e-4e72-ac00-c1c2d70a0657}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\BigSnuck">
+      <UniqueIdentifier>{529ec83c-4e61-4563-b7e8-f0d682f4a2c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -99,6 +102,9 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ObjRisu.cpp">
+      <Filter>ソース ファイル\charactor</Filter>
+    </ClCompile>
     <ClCompile Include="ObjTitle.cpp">
       <Filter>ソース ファイル\GameTitle</Filter>
     </ClCompile>
@@ -126,8 +132,8 @@
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="ObjRisu.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
+    <ClCompile Include="ObjBigCake.cpp">
+      <Filter>ソース ファイル\BigSnuck</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +197,9 @@
     <ClInclude Include="GameHead.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="ObjRisu.h">
+      <Filter>ソース ファイル\charactor</Filter>
+    </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\GameTitle</Filter>
     </ClInclude>
@@ -215,8 +224,8 @@
     <ClInclude Include="ObjGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClInclude>
-    <ClInclude Include="ObjRisu.h">
-      <Filter>ソース ファイル\charactor</Filter>
+    <ClInclude Include="ObjBigCake.h">
+      <Filter>ソース ファイル\BigSnuck</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

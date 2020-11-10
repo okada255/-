@@ -14,6 +14,8 @@ public:
 	void Init();
 	void Action();
 	void Draw();
-
+	void SetGramFlag(bool g) { m_flag_gram = g; }
 private:
+	int m_gram; //グラム
+	bool  m_flag_gram; //グラム計測フラグ
 };

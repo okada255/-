@@ -13,6 +13,7 @@ enum OBJ_NAME
 	OBJ_GUMMY,
 	OBJ_RISU,
 	OBJ_BLOCK,
+	OBJ_BIG_CAKE,
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
@@ -73,6 +74,7 @@ struct UserData
 #include"ObjCandy.h"
 #include"ObjRisu.h"
 #include"ObjBlock.h"
+#include"ObjBigCake.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjTime.h"

@@ -24,10 +24,6 @@ using namespace GameL;
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 
-//#include"ObjRisuR.h"
-//#include"ObjRisuL.h"
-//#include"ObjRisuU.h"
-//#include"ObjRisuD.h"
 
 //コンストラクタ
 CSceneMain::CSceneMain()
@@ -47,6 +43,7 @@ void CSceneMain::InitScene()
 {
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
+	Font::SetStrTex(L"0123456789g");
 
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
@@ -67,38 +64,35 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"右向き.png", 2, TEX_SIZE_128);//右リス
-	Draw::LoadImageW(L"左向き.png", 3, TEX_SIZE_128);//左リス
-	Draw::LoadImageW(L"前向きリス.png", 4, TEX_SIZE_128);//前向きリス
-	Draw::LoadImageW(L"後ろ向き(1).png", 5, TEX_SIZE_128);//後ろ向きリス
-	Draw::LoadImageW(L"donatu.png",6, TEX_SIZE_64);
-	Draw::LoadImageW(L"candy.png", 7, TEX_SIZE_64);
-	Draw::LoadImageW(L"cookie.png",8, TEX_SIZE_64);
-	Draw::LoadImageW(L"choco.png",9, TEX_SIZE_64);
-	Draw::LoadImageW(L"gumy.png",10, TEX_SIZE_64);
-
+	Draw::LoadImageW(L"risu.png", 2, TEX_SIZE_256);//リス
+	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	//Candyオブジェクト作成
+	////Candyオブジェクト作成
 	CObjCandy* objc = new CObjCandy();
 	Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-	//Cookieオブジェクト作成
+	////Cookieオブジェクト作成
 	CObjCookie* objC = new CObjCookie();
 	Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
-	//Donatuオブジェクト作成
+	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
 	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-	//Chocoオブジェクト作成
+	////Chocoオブジェクト作成
 	CObjChoco* obj_c = new CObjChoco();
 	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
-	//Gummyオブジェクト作成
+	////Gummyオブジェクト作成
 	CObjGummy* objg = new CObjGummy();
 	Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
@@ -106,6 +100,9 @@ void CSceneMain::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
+	////BigCakeオブジェクト作成
+	CObjBigCake* objz = new CObjBigCake();
+	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();
@@ -115,21 +112,6 @@ void CSceneMain::InitScene()
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
 }
-    //リス作成右	
-	//CObjRisuR* objR = new CObjRisuR();
-	//Objs::InsertObj(objR, OBJ_RISUR, 12);
-
-	//リス作成左
-	//CObjRisuL* objL = new CObjRisuL();
-	//Objs::InsertObj(objL, OBJ_RISUL, 12);
-
-	//リス作成上
-	//CObjRisuU* objU = new CObjRisuU();
-	//Objs::InsertObj(objU, OBJ_RISUU, 12);
-
-	//リス作成下
-	//CObjRisuD* objD = new CObjRisuD();
-	//Objs::InsertObj(objD, OBJ_RISUD, 12);
 
 //実行中メソッド
 void CSceneMain::Scene()
