@@ -26,7 +26,12 @@ CSceneGameOver::~CSceneGameOver()
 //初期化メソッド
 void CSceneGameOver::InitScene()
 {
+	Font::SetStrTex(L"GAMEOVER");
+	Font::SetStrTex(L"congratulations!");
+	Font::SetStrTex(L"THE END");
 
+	CObjGameOver* obj = new CObjGameOver();
+	Objs::InsertObj(obj, OBJ_GAME_OVER, 17);
 }
 
 //実行中メソッド
