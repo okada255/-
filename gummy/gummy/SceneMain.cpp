@@ -70,7 +70,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
-
+	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
@@ -99,6 +99,10 @@ void CSceneMain::InitScene()
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
+
+	////BigCakeオブジェクト作成
+	CObjBigCake* objz = new CObjBigCake();
+	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();

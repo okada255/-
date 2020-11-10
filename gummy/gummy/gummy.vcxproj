@@ -152,6 +152,7 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
+    <ClCompile Include="ObjBigCake.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
     <ClCompile Include="ObjChoco.cpp" />
     <ClCompile Include="ObjCookie.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjBlock.h" />
+    <ClInclude Include="ObjBigCake.h" />
     <ClInclude Include="ObjCandy.h" />
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
