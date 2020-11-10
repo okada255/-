@@ -126,18 +126,6 @@
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="ObjRisuR.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRisuD.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRisuU.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRisuL.cpp">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClCompile>
     <ClCompile Include="ObjRisu.cpp">
       <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
@@ -226,18 +214,6 @@
     </ClInclude>
     <ClInclude Include="ObjGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRisuR.h">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRisuL.h">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRisuU.h">
-      <Filter>ソース ファイル\charactor</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRisuD.h">
-      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
     <ClInclude Include="ObjRisu.h">
       <Filter>ソース ファイル\charactor</Filter>

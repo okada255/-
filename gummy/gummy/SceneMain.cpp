@@ -20,14 +20,14 @@ using namespace GameL;
 #include"ObjChoco.h"
 #include"ObjDonatu.h"
 #include"ObjGummy.h"
-//#include"ObjRisu.h"
-#include"ObjRisuR.h"
-#include"ObjRisuL.h"
-#include"ObjRisuU.h"
-#include"ObjRisuD.h"
+#include"ObjRisu.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 
+//#include"ObjRisuR.h"
+//#include"ObjRisuL.h"
+//#include"ObjRisuU.h"
+//#include"ObjRisuD.h"
 
 //コンストラクタ
 CSceneMain::CSceneMain()
@@ -82,45 +82,29 @@ void CSceneMain::InitScene()
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	////Candyオブジェクト作成
+	//Candyオブジェクト作成
 	CObjCandy* objc = new CObjCandy();
 	Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-	////Cookieオブジェクト作成
+	//Cookieオブジェクト作成
 	CObjCookie* objC = new CObjCookie();
 	Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
-	////Donatuオブジェクト作成
+	//Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
 	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-	////Chocoオブジェクト作成
+	//Chocoオブジェクト作成
 	CObjChoco* obj_c = new CObjChoco();
 	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
-	////Gummyオブジェクト作成
+	//Gummyオブジェクト作成
 	CObjGummy* objg = new CObjGummy();
 	Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-	//リス作成右	
-	CObjRisuR* objr = new CObjRisuR();
-	Objs::InsertObj(objr, OBJ_RISUR, 12);
-
-	//リス作成左
-	CObjRisuL* objr = new CObjRisuL();
-	Objs::InsertObj(objr, OBJ_RISUL, 12);
-
-	//リス作成上
-	CObjRisuU* objr = new CObjRisuU();
-	Objs::InsertObj(objr, OBJ_RISUU, 12);
-
-	//リス作成下
-	CObjRisuD* objr = new CObjRisuD();
-	Objs::InsertObj(objr, OBJ_RISUD, 12);
-
-	////リス作成
-	//CObjRisu* objr = new CObjRisu();
-	//Objs::InsertObj(objr, OBJ_RISU, 12);
+	//リス作成
+	CObjRisu* objr = new CObjRisu();
+	Objs::InsertObj(objr, OBJ_RISU, 12);
 
 
 	//タイム作成
@@ -131,6 +115,21 @@ void CSceneMain::InitScene()
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
 }
+    //リス作成右	
+	//CObjRisuR* objR = new CObjRisuR();
+	//Objs::InsertObj(objR, OBJ_RISUR, 12);
+
+	//リス作成左
+	//CObjRisuL* objL = new CObjRisuL();
+	//Objs::InsertObj(objL, OBJ_RISUL, 12);
+
+	//リス作成上
+	//CObjRisuU* objU = new CObjRisuU();
+	//Objs::InsertObj(objU, OBJ_RISUU, 12);
+
+	//リス作成下
+	//CObjRisuD* objD = new CObjRisuD();
+	//Objs::InsertObj(objD, OBJ_RISUD, 12);
 
 //実行中メソッド
 void CSceneMain::Scene()

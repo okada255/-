@@ -11,10 +11,7 @@ enum OBJ_NAME
 	OBJ_COOKIE,
 	OBJ_DONATU,
 	OBJ_GUMMY,
-	OBJ_RISUR,
-	OBJ_RISUL,
-	OBJ_RISUD,
-	OBJ_RISUU,
+	OBJ_RISU,
 	OBJ_BLOCK,
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
@@ -22,6 +19,10 @@ enum OBJ_NAME
 	OBJ_SCORE,
 	OBJ_GAME_OVER,
 };
+    //OBJ_RISUR,
+	//OBJ_RISUL,
+	//OBJ_RISUD,
+	//OBJ_RISUU,
 //------------------------------------------------
 
 //ìñÇΩÇËîªíËëÆê´----------------------------------
@@ -70,16 +71,18 @@ struct UserData
 #include"ObjCookie.h"
 #include"ObjDonatu.h"
 #include"ObjCandy.h"
-#include"ObjRisuL.h"
-#include"ObjRisuR.h"
-#include"ObjRisuU.h"
-#include"ObjRisuD.h"
+#include"ObjRisu.h"
 #include"ObjBlock.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjTime.h"
 #include"ObjScore.h"
 #include"ObjGameOver.h"
+
+//#include"ObjRisuL.h"
+//#include"ObjRisuR.h"
+//#include"ObjRisuU.h"
+//#include"ObjRisuD.h"
 
 //------------------------------------------------
 
