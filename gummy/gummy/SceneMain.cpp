@@ -43,6 +43,7 @@ void CSceneMain::InitScene()
 {
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
+	Font::SetStrTex(L"0123456789g");
 
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
