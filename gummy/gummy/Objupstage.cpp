@@ -10,21 +10,21 @@ using namespace GameL;
 
 void CObjupstage::Init()
 {
-	m_x = 100;
-	m_y = 660;
+	m_x = 660;
+	m_y = 100;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE, 30);
 }
 
 void CObjupstage::Action()
 {
 	CHitBox* hit = Hits::GetHitBox(this);
-	
+	hit->SetPos(m_x, m_y);
 
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
+		
 		Scene::SetScene(new CSceneGameClear());
 	}
 }
