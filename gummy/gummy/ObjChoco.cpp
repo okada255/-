@@ -9,9 +9,9 @@ using namespace GameL;
 
 void CObjChoco::Init()
 {//
-	float m_x = 0;
-	float m_y = 0;
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_CHOCO, 6);
+	m_x = 250;
+	m_y = 270;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CHOCO, 6);
 }
 
 void CObjChoco::Action()

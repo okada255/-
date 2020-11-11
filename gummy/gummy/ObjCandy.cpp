@@ -9,8 +9,9 @@ using namespace GameL;
 
 void CObjCandy::Init()
 {
-
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_CANDY, 5);
+	m_x = 350;
+	m_y = 300;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CANDY, 5);
 }
 
 void CObjCandy::Action()
