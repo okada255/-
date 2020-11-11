@@ -1,7 +1,7 @@
 #include "GameL\DrawFont.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
-#include"SceneMain.h"
+#include"SceneMap1.h"
 #include "GameHead.h"
 #include "ObjTitle.h"
 #include"GameL/UserData.h"
@@ -51,7 +51,7 @@ void CObjTitle::Init() {
 void CObjTitle::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
-			Scene::SetScene(new CSceneMain());
+			Scene::SetScene(new CSceneMap1());
 			m_key_flag = false;
 		}
 	}
@@ -72,7 +72,7 @@ void CObjTitle::Action() {
 		//マウスのボタンが押されたらメインに移行
 		if (m_mou_r == true | m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneMain());
+			Scene::SetScene(new CSceneMap1());
 		}
 	}
 
