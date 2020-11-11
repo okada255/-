@@ -50,7 +50,7 @@ void CSceneMain::InitScene()
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;             //ステージ情報の大きさ
 	int map[32][32];
-	p = Save::ExternalDataOpen(L"MAP1.csv", &size);//外部データ読み込み
+	p = Save::ExternalDataOpen(L"MAP3.csv", &size);//外部データ読み込み
 
 	int count = 1;
 	for (int i = 0; i < 32; i++)
