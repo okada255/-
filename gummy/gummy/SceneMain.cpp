@@ -23,6 +23,7 @@ using namespace GameL;
 #include"ObjRisu.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
+#include"ObjBackGround.h"
 
 
 //コンストラクタ
@@ -75,6 +76,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"gumy.png", 10, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 11, TEX_SIZE_64);
 
+	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
@@ -114,6 +116,10 @@ void CSceneMain::InitScene()
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 //実行中メソッド
