@@ -12,11 +12,12 @@ void CObjBigCake::Init()
 	m_x = 550;
 	m_y = 300;
 
-	Hits::SetHitBox(this, m_x, m_y, 112.5, 112.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
+	Hits::SetHitBox(this, m_x, m_y, 90.5, 90.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
 }
 
 void CObjBigCake::Action()
 {
+	CObjBigCake* bigcake = (CObjBigCake*)Objs::GetObj(OBJ_BIG_CAKE);
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
