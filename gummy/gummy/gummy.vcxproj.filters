@@ -135,6 +135,9 @@
     <ClCompile Include="ObjBigCake.cpp">
       <Filter>ソース ファイル\BigSnuck</Filter>
     </ClCompile>
+    <ClCompile Include="ObjBackGround.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -226,6 +229,9 @@
     </ClInclude>
     <ClInclude Include="ObjBigCake.h">
       <Filter>ソース ファイル\BigSnuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBackGround.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
