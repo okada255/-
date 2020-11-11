@@ -2,7 +2,6 @@
 #include"GameL/SceneObjManager.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-
 #include"ObjRisu.h"
 #include"GameHead.h"
 
@@ -53,7 +52,7 @@ void CObjRisu::Action()
 	{
 		m_vx += 1.0f;
 		m_vx += m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -90,11 +89,13 @@ void CObjRisu::Action()
 	if (Input::GetVKey(VK_UP) == true)
 	{
 		m_vy -= 1.0f;
+		m_posture = 0.0f;
 	}
 
 	if (Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
+		m_posture = 0.0f;
 	}
 
 	//位置の更新
@@ -149,10 +150,10 @@ void CObjRisu::Action()
 
 void CObjRisu::Draw()
 {
-	int AniData[4] =
+	/*int AniData[4] =
 	{
 		1,0,2,0,
-	};
+	};*/
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 	RECT_F src; //描画元切り取り位置
 	RECT_F dst; //描画先表示位置
@@ -160,8 +161,8 @@ void CObjRisu::Draw()
 	//切り取り位置
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 92.5f;
-	src.m_bottom = 98.0f;
+	src.m_right = 128.0f;
+	src.m_bottom = 128.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
@@ -170,6 +171,8 @@ void CObjRisu::Draw()
 	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	Draw::Draw(2, &src, &dst, c, 0.0f); //リス
-
+	Draw::Draw(3, &src, &dst, c, 0.0f); //左向きリスl優先度３
+	Draw::Draw(2, &src, &dst, c, 0.0f); //右向きリスr優先度２
+	Draw::Draw(4, &src, &dst, c, 0.0f); //上向きリスup
+    Draw::Draw(5, &src, &dst, c, 0.0f); //下向きリスdown優先度１
 }
