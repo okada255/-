@@ -107,7 +107,7 @@ void CSceneMain::InitScene()
 
 	////BigCakeオブジェクト作成
 	CObjBigCake* objz = new CObjBigCake();
-	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
+	Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();

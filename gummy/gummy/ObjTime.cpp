@@ -19,7 +19,7 @@ void CObjTime::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjTime::Action()
 {
-	for (int i = 1; i <= 500; i++)
+	for (int i = 1; i <= 120; i++)
 	{
 		m_time--;
 		if (m_time == 0)
