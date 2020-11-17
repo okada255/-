@@ -16,7 +16,7 @@ void CObjRisu::Init()
 	m_posture = 0.0f;//‰EŒü‚«0.0f,¶Œü‚«1.0f
 
 	//“–‚½‚è”»’è
-	Hits::SetHitBox(this, m_px, m_py, 18.85, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
+	Hits::SetHitBox(this, m_px, m_py, 18.75, 18.75, ELEMENT_PLAYER, OBJ_RISU, 1);
 }
 void CObjRisu::Action()
 {
