@@ -13,7 +13,7 @@ using namespace GameL;
 void CObjScore::Init()
 {
 	m_flag_gram = false;
-	m_gram = 1000 * 7200;
+	m_gram = 0 * 7200;
 }
 
 //ƒAƒNƒVƒ‡ƒ“

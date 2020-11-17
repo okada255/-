@@ -58,6 +58,7 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_LEFT) == true)
 	{
+		m_vx -= 1.0f;
 		m_vx -= m_speed_power;
 		m_posture = 1.0f;
 		m_ani_time += 1;
@@ -65,6 +66,7 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_UP) == true)
 	{
+		m_vy -= 1.0f;
 		m_vy -= m_speed_power;
 		m_posture = 1.0f;
 		m_ani_time += 1;
@@ -72,6 +74,7 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_DOWN) == true)
 	{
+		m_vy += 1.0f;
 		m_vy += m_speed_power;
 		m_posture = 0.0f;
 		m_ani_time += 1;
