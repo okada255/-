@@ -184,7 +184,7 @@ void CObjRisu::Draw()
 	//表示
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 18.85f * (m_posture)+m_px;
-	dst.m_right = (18.85 - 18.85f * m_posture) + dst.m_left;
+	dst.m_right = (18.85 - (18.85f * m_posture)) + dst.m_left;
 	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
