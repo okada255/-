@@ -39,7 +39,7 @@ void CObjRisu::Action()
 	if (Input::GetVKey('Z') == true)
 	{
 		//ダッシュ時の速度
-		m_speed_power = 2.1f;
+		m_speed_power = 1.5f;
 	}
 	else
 	{
@@ -60,7 +60,7 @@ void CObjRisu::Action()
 	{
 		m_vx -= 1.0f;//
 		m_vx -= m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -68,7 +68,7 @@ void CObjRisu::Action()
 	{
 		m_vy -= 1.0f;
 		m_vy -= m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -95,6 +95,16 @@ void CObjRisu::Action()
 	if (m_ani_time == 4)
 	{
 		m_ani_frame = 0;
+	}
+
+	//HitBoxの内容更新
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px, m_py);//
+
+	if (Input::GetVKey(VK_RIGHT) == true)
+	{
+		m_vx += 1.0f;
+		m_posture = 0.0f;
 	}
 
 	if (Input::GetVKey(VK_LEFT) == true)
@@ -145,11 +155,11 @@ void CObjRisu::Action()
 	//領域外に行かない
 	if (m_px + 32.0f > 800.0f)
 	{
-		m_px = 800.0f - 32.0f;
+		m_px = 600.0f - 32.0f;
 	}
 	if (m_py + 32.0f > 600.0f)
 	{
-		m_py = 600.0f - 32.0f;
+		m_py = 800.0f - 32.0f;
 	}
 	if (m_py < 0.0f)
 	{
@@ -160,9 +170,6 @@ void CObjRisu::Action()
 		m_px = 0.0f;
 	}
 
-	//HitBoxの内容更新
-	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);//
 }
 
 void CObjRisu::Draw()
@@ -184,7 +191,7 @@ void CObjRisu::Draw()
 	//表示
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 18.85f * (m_posture)+m_px;
-	dst.m_right = (18.85 - (18.85f * m_posture)) + dst.m_left;
+	dst.m_right = (18.85 - 18.85f * m_posture) + dst.m_left;
 	dst.m_bottom = 18.85f + dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
