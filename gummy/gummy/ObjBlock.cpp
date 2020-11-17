@@ -40,11 +40,11 @@ void CObjBlock::Action()
             if (m_map[i][j] > 0)
             {
                 //要素番号を座標に変更
-                float x = j * 18.85 + 100;
-                float y = i * 18.85;
+                float x = j * 18.75 + 100;
+                float y = i * 18.75;
 
                 //主人公とブロックの当たり判定
-                if ((hx + 18.85f > x) && (hx < x + 18.85f) && (hy + 18.85f > y) && (hy < y + 18.85f))
+                if ((hx + 18.75f > x) && (hx < x + 18.75f) && (hy + 18.75f > y) && (hy < y + 18.75f))
                 {
                     //上下左右判定
 
@@ -63,28 +63,43 @@ void CObjBlock::Action()
                         r = abs(r);
                     else
                         r = 360.0f - abs(r);
+                    if (len < 19.00f)
+                    {
+                        //角度で上下左右を判定
+                        if ((r < 45 && r >= 0) || r > 315)
+                        {
+                            //右
+                            risu->SetRight(true);
+                            risu->SetX(x + 18.75f);
+                            risu->SetVY(-risu->GetVX() * 0.1f);
+                        }
+                        if (r > 45 && r < 135)
+                        {
+                            //上
+                            risu->SetDown(true);
+                            risu->SetY(y - 18.75f);
+                            risu->SetVY(0.0f);
+                        }
+                        if (r > 135 && r < 225)
+                        {
+                            //左
+                            risu->SetLeft(true);
+                            risu->SetX(x - 18.75f);
+                            risu->SetVX(-risu->GetVX() * 0.1f);
+                        }
+                        if (r > 225 && r < 315)
+                        {
+                            //下
+                            risu->SetUp(true);
+                            risu->SetY(y + 18.75f);
+                            if (risu->GetVY() < 0)
+                            {
+                                risu->SetVY(0.0f);
+                            }
 
-                    //角度で上下左右を判定
-                    if ((r < 45 && r>0) || r > 315)
-                    {
-                        //右
-                        risu->SetX(x + 18.85f);
+                        }
                     }
-                    if (r > 45 && r < 135)
-                    {
-                        //上
-                        risu->SetY(y - 18.85f);
-                    }
-                    if (r > 135 && r < 225)
-                    {
-                        //左
-                        risu->SetX(x - 18.85f);
-                    }
-                    if (r > 225 && r < 315)
-                    {
-                        //下
-                        risu->SetY(y + 18.85f);
-                    }
+
 
                 }
             }
