@@ -25,6 +25,8 @@ void CObjDonatu::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+
+		Scene::SetScene(new CSceneMap2());//←シーン切り替えプログラム
 	}
 }
 
@@ -45,9 +47,9 @@ void CObjDonatu::Draw()
 	//表示位置の設定
 	dst.m_top = 200.0f;
 	dst.m_left = 450.0f;
-	dst.m_right = dst.m_left+ 18.75f;
-	dst.m_bottom = dst.m_top+18.75f;
+	dst.m_right = dst.m_left + 18.75f;
+	dst.m_bottom = dst.m_top + 18.75f;
 
 	//描画
-	Draw::Draw(3, &src, &dst, c, 0.0f);
+	Draw::Draw(6, &src, &dst, c, 0.0f);
 }

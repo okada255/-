@@ -151,12 +151,15 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjBackGround.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
+    <ClCompile Include="ObjBigCake.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
     <ClCompile Include="ObjChoco.cpp" />
     <ClCompile Include="ObjCookie.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
+    <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
     <ClCompile Include="ObjRisu.cpp" />
     <ClCompile Include="ObjScoer.cpp" />
@@ -164,7 +167,12 @@
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="OPning.c" />
     <ClCompile Include="SceneGameClear.cpp" />
-    <ClCompile Include="SceneMain.cpp" />
+    <ClCompile Include="SceneGameOver.cpp" />
+    <ClCompile Include="SceneMain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SceneMap1.cpp" />
+    <ClCompile Include="SceneMap2.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -181,19 +189,27 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="ObjBackGround.h" />
     <ClInclude Include="ObjBlock.h" />
+    <ClInclude Include="ObjBigCake.h" />
     <ClInclude Include="ObjCandy.h" />
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
     <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjGameClear.h" />
+    <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjGummy.h" />
     <ClInclude Include="ObjRisu.h" />
     <ClInclude Include="ObjScore.h" />
     <ClInclude Include="ObjTime.h" />
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="SceneGameClear.h" />
-    <ClInclude Include="SceneMain.h" />
+    <ClInclude Include="SceneGameOver.h" />
+    <ClInclude Include="SceneMain.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SceneMap1.h" />
+    <ClInclude Include="SceneMap2.h" />
     <ClInclude Include="SceneTitle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -8,15 +8,15 @@
 using namespace GameL;
 
 void CObjCookie::Init()
-{//
-	float m_x = 0;
-	float m_y = 0;
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_COOKIE, 7);
+{
+	m_x = 450;
+	m_y = 100;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_COOKIE, 7);
 }
 
 void CObjCookie::Action()
 {
-	CHitBox* hit =Hits::GetHitBox(this);
+	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
@@ -29,7 +29,7 @@ void CObjCookie::Action()
 void CObjCookie::Draw()
 {
 	// 描画カラー情報
-		float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	RECT_F src;//描画元切り取り位置
 	RECT_F dst;//描画先表示位置
@@ -47,5 +47,5 @@ void CObjCookie::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//描画
-	Draw::Draw(5, &src, &dst, c, 0.0f);
+	Draw::Draw(8, &src, &dst, c, 0.0f);
 }

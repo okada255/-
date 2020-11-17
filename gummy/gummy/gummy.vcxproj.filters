@@ -34,6 +34,12 @@
     <Filter Include="ソース ファイル\スコア関連">
       <UniqueIdentifier>{f76ea26a-91d0-4cb9-90d0-41060d75c732}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameOver">
+      <UniqueIdentifier>{2643597c-a66e-4e72-ac00-c1c2d70a0657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BigSnuck">
+      <UniqueIdentifier>{529ec83c-4e61-4563-b7e8-f0d682f4a2c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -120,6 +126,24 @@
     <ClCompile Include="ObjScoer.cpp">
       <Filter>ソース ファイル\スコア関連</Filter>
     </ClCompile>
+    <ClCompile Include="SceneGameOver.cpp">
+      <Filter>ソース ファイル\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver.cpp">
+      <Filter>ソース ファイル\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBigCake.cpp">
+      <Filter>ソース ファイル\BigSnuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBackGround.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap1.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -202,6 +226,24 @@
     </ClInclude>
     <ClInclude Include="ObjScore.h">
       <Filter>ソース ファイル\スコア関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver.h">
+      <Filter>ソース ファイル\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver.h">
+      <Filter>ソース ファイル\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBigCake.h">
+      <Filter>ソース ファイル\BigSnuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBackGround.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap1.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

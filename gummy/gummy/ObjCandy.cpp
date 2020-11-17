@@ -9,8 +9,9 @@ using namespace GameL;
 
 void CObjCandy::Init()
 {
-	
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_CANDY, 5);
+	m_x = 350;
+	m_y = 300;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CANDY, 5);
 }
 
 void CObjCandy::Action()
@@ -29,7 +30,7 @@ void CObjCandy::Action()
 void CObjCandy::Draw()
 {
 	// 描画カラー情報
-		float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	RECT_F src;//描画元切り取り位置
 	RECT_F dst;//描画先表示位置
@@ -47,5 +48,6 @@ void CObjCandy::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//描画
-	Draw::Draw(4, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);
 }
+

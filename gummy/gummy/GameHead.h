@@ -13,11 +13,18 @@ enum OBJ_NAME
 	OBJ_GUMMY,
 	OBJ_RISU,
 	OBJ_BLOCK,
+	OBJ_BIG_CAKE,
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
 	OBJ_SCORE,
+	OBJ_GAME_OVER,
+	OBJ_BACKGROUND,
 };
+    //OBJ_RISUR,
+	//OBJ_RISUL,
+	//OBJ_RISUD,
+	//OBJ_RISUU,
 //------------------------------------------------
 
 //当たり判定属性----------------------------------
@@ -68,17 +75,27 @@ struct UserData
 #include"ObjCandy.h"
 #include"ObjRisu.h"
 #include"ObjBlock.h"
+#include"ObjBigCake.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjTime.h"
 #include"ObjScore.h"
+#include"ObjGameOver.h"
+#include"ObjBackGround.h"
+
+//#include"ObjRisuL.h"
+//#include"ObjRisuR.h"
+//#include"ObjRisuU.h"
+//#include"ObjRisuD.h"
 
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
-#include"SceneMain.h"
+#include"SceneMap1.h"
+#include"SceneMap2.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
+#include"SceneGameOver.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------

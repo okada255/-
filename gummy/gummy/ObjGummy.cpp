@@ -8,9 +8,9 @@
 using namespace GameL;
 
 void CObjGummy::Init()
-{//
-	float m_x = 0 ;
-	float m_y = 0;
+{
+	m_x = 290;
+	m_y = 380;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_GUMMY, 3);
 }
 
@@ -51,5 +51,5 @@ void CObjGummy::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//•`‰æ
-	Draw::Draw(7, &src, &dst, c, 0.0f);
+	Draw::Draw(10, &src, &dst, c, 0.0f);
 }

@@ -23,6 +23,7 @@ using namespace GameL;
 #include"ObjRisu.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
+#include"ObjBackGround.h"
 
 
 //コンストラクタ
@@ -43,12 +44,13 @@ void CSceneMain::InitScene()
 {
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
+	Font::SetStrTex(L"0123456789g");
 
 	//外部データの読み込み（ステージ情報）
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;             //ステージ情報の大きさ
 	int map[32][32];
-	p = Save::ExternalDataOpen(L"MAP1.csv", &size);//外部データ読み込み
+	p = Save::ExternalDataOpen(L"MAP3.csv", &size);//外部データ読み込み
 
 	int count = 1;
 	for (int i = 0; i < 32; i++)
@@ -63,13 +65,18 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"Risu(1).bmp", 2, TEX_SIZE_128);
-	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
-	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
-	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
-	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
-	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"右向き.png", 2, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"左向き.png", 3, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"後ろ姿(1).png", 4, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"前向きリス.png", 5, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"donatu.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 8, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 9, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 10, TEX_SIZE_64);
+	Draw::LoadImageW(L"cake.png", 11, TEX_SIZE_64);
 
+	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
@@ -84,7 +91,7 @@ void CSceneMain::InitScene()
 
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU,11);
+	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 	////Chocoオブジェクト作成
 	CObjChoco* obj_c = new CObjChoco();
@@ -98,13 +105,21 @@ void CSceneMain::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
+	////BigCakeオブジェクト作成
+	CObjBigCake* objz = new CObjBigCake();
+	Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
+
 	//タイム作成
 	CObjTime* objt = new CObjTime();
 	Objs::InsertObj(objt, OBJ_TIME, 16);
-	
+
 	//スコア作成
 	CObjScore* objs = new CObjScore();
 	Objs::InsertObj(objs, OBJ_SCORE, 17);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 //実行中メソッド
