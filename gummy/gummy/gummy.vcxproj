@@ -165,6 +165,7 @@
     <ClCompile Include="ObjScoer.cpp" />
     <ClCompile Include="ObjTime.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="Objupstage.cpp" />
     <ClCompile Include="OPning.c" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
@@ -203,6 +204,7 @@
     <ClInclude Include="ObjScore.h" />
     <ClInclude Include="ObjTime.h" />
     <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="Objupstage.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h">
