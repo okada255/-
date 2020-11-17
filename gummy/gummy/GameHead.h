@@ -20,6 +20,7 @@ enum OBJ_NAME
 	OBJ_SCORE,
 	OBJ_GAME_OVER,
 	OBJ_BACKGROUND,
+	OBJ_UPSTAGE,
 };
     //OBJ_RISUR,
 	//OBJ_RISUL,
@@ -82,6 +83,8 @@ struct UserData
 #include"ObjScore.h"
 #include"ObjGameOver.h"
 #include"ObjBackGround.h"
+#include"Objupstage.h"
+
 
 //#include"ObjRisuL.h"
 //#include"ObjRisuR.h"

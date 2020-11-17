@@ -39,12 +39,21 @@ void CObjRisu::Action()
 	if (Input::GetVKey('Z') == true)
 	{
 		//ダッシュ時の速度
-		m_speed_power = 2.1f;
+		m_speed_power = 1.5f;
 	}
 	else
 	{
 		//通常速度
 		m_speed_power = 0.5f;
+	}
+
+	//HitBoxの内容更新
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px, m_py);//
+
+	if (hit->CheckObjNameHit(OBJ_BIG_CAKE) != nullptr)
+	{
+		m_speed_power =m_speed_power / 2;
 	}
 
 	//キーの入力方向にベクトルの速度を入れる
@@ -58,9 +67,9 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_LEFT) == true)
 	{
-		m_vx -= 1.0f;
+		m_vx -= 1.0f;//
 		m_vx -= m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -68,7 +77,7 @@ void CObjRisu::Action()
 	{
 		m_vy -= 1.0f;
 		m_vy -= m_speed_power;
-		m_posture = 1.0f;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 
@@ -76,7 +85,7 @@ void CObjRisu::Action()
 	{
 		m_vy += 1.0f;
 		m_vy += m_speed_power;
-		m_posture = 0.0f;
+		m_posture = 0.0f;		
 		m_ani_time += 1;
 	}
 
@@ -145,7 +154,7 @@ void CObjRisu::Action()
 	//領域外に行かない
 	if (m_px + 32.0f > 800.0f)
 	{
-		m_px = 800.0f - 32.0f;
+		m_px = 600.0f - 32.0f;
 	}
 	if (m_py + 32.0f > 600.0f)
 	{
@@ -160,9 +169,6 @@ void CObjRisu::Action()
 		m_px = 0.0f;
 	}
 
-	//HitBoxの内容更新
-	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);//
 }
 
 void CObjRisu::Draw()
