@@ -72,7 +72,6 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_DOWN) == true)
 	{
-		m_vx += 1.0f;
 		m_vy += m_speed_power;
 		m_posture = 0.0f;
 		m_ani_time += 1;
