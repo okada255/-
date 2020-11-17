@@ -76,7 +76,7 @@ void CObjRisu::Action()
 	{
 		m_vy += 1.0f;
 		m_vy += m_speed_power;
-		m_posture = 0.0f;
+		m_posture = 0.0f;		
 		m_ani_time += 1;
 	}
 
@@ -99,12 +99,12 @@ void CObjRisu::Action()
 
 	//HitBox‚Ì“à—eXV
 	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);//
+	hit->SetPos(m_px,m_py);//
 
-	if (Input::GetVKey(VK_RIGHT) == true)
+	if (hit->CheckObjNameHit(OBJ_BIG_CAKE) != nullptr)
 	{
-		m_vx += 1.0f;
-		m_posture = 0.0f;
+		m_vx /= 2;
+		m_vy /= 2;
 	}
 
 	if (Input::GetVKey(VK_LEFT) == true)
