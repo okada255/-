@@ -9,11 +9,15 @@ using namespace GameL;
 
 void CObjBigCake::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ITEM, OBJ_BIG_CAKE, 8);
+	m_x = 550;
+	m_y = 300;
+
+	Hits::SetHitBox(this, m_x, m_y, 90.5, 90.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
 }
 
 void CObjBigCake::Action()
 {
+	CObjBigCake* bigcake = (CObjBigCake*)Objs::GetObj(OBJ_BIG_CAKE);
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//ålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
@@ -41,10 +45,10 @@ void CObjBigCake::Draw()
 
 	//•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 300.0f;
-	dst.m_left = 350.0f;
-	dst.m_right = dst.m_left + 35.75f;
-	dst.m_bottom = dst.m_top + 35.75f;
+	dst.m_left = 550.0f;
+	dst.m_right = dst.m_left + 112.5f;
+	dst.m_bottom = dst.m_top +112.5f;
 
 	//•`‰æ
-	Draw::Draw(12, &src, &dst, c, 0.0f);
+	Draw::Draw(11, &src, &dst, c, 0.0f);
 }

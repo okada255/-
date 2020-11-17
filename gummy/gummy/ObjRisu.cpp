@@ -9,7 +9,7 @@ using namespace GameL;
 
 void CObjRisu::Init()
 {
-	m_px = 100;
+	m_px = 138.5;
 	m_py = (600 / 2) - 16;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
@@ -39,7 +39,7 @@ void CObjRisu::Action()
 	if (Input::GetVKey('Z') == true)
 	{
 		//ダッシュ時の速度
-		m_speed_power = 1.1f;
+		m_speed_power = 2.1f;
 	}
 	else
 	{
@@ -58,8 +58,25 @@ void CObjRisu::Action()
 
 	else if (Input::GetVKey(VK_LEFT) == true)
 	{
-		m_vx += m_speed_power;
+		m_vx -= 1.0f;
+		m_vx -= m_speed_power;
 		m_posture = 1.0f;
+		m_ani_time += 1;
+	}
+
+	else if (Input::GetVKey(VK_UP) == true)
+	{
+		m_vy -= 1.0f;
+		m_vy -= m_speed_power;
+		m_posture = 1.0f;
+		m_ani_time += 1;
+	}
+
+	else if (Input::GetVKey(VK_DOWN) == true)
+	{
+		m_vy += 1.0f;
+		m_vy += m_speed_power;
+		m_posture = 0.0f;
 		m_ani_time += 1;
 	}
 

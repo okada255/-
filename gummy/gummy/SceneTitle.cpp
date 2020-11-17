@@ -5,7 +5,7 @@
 #include "SceneTitle.h"
 using namespace GameL;
 
-#include "SceneMain.h"
+#include "SceneMap1.h"
 #include "GameHead.h"
 #include "GameL\DrawFont.h"
 #include "GameL\Audio.h"
