@@ -47,6 +47,15 @@ void CObjRisu::Action()
 		m_speed_power = 0.5f;
 	}
 
+	//HitBoxの内容更新
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px, m_py);//
+
+	if (hit->CheckObjNameHit(OBJ_BIG_CAKE) != nullptr)
+	{
+		m_speed_power =m_speed_power / 2;
+	}
+
 	//キーの入力方向にベクトルの速度を入れる
 	if (Input::GetVKey(VK_RIGHT) == true)
 	{
@@ -95,16 +104,6 @@ void CObjRisu::Action()
 	if (m_ani_time == 4)
 	{
 		m_ani_frame = 0;
-	}
-
-	//HitBoxの内容更新
-	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px,m_py);//
-
-	if (hit->CheckObjNameHit(OBJ_BIG_CAKE) != nullptr)
-	{
-		m_vx /= 2;
-		m_vy /= 2;
 	}
 
 	if (Input::GetVKey(VK_LEFT) == true)
@@ -159,7 +158,7 @@ void CObjRisu::Action()
 	}
 	if (m_py + 32.0f > 600.0f)
 	{
-		m_py = 800.0f - 32.0f;
+		m_py = 600.0f - 32.0f;
 	}
 	if (m_py < 0.0f)
 	{
