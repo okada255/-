@@ -7,11 +7,17 @@
 
 using namespace GameL;
 
+CObjCandy::CObjCandy(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
+
 void CObjCandy::Init()
 {
-	m_x = 350;
-	m_y = 300;
-	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CANDY, 5);
+	m_x = x;
+	m_y = y;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CANDY, 1);
 }
 
 void CObjCandy::Action()
@@ -42,8 +48,8 @@ void CObjCandy::Draw()
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 300.0f;
-	dst.m_left = 350.0f;
+	dst.m_top = 500.0f;
+	dst.m_left = 200.0f;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 

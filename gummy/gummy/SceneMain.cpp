@@ -125,5 +125,15 @@ void CSceneMain::InitScene()
 //実行中メソッド
 void CSceneMain::Scene()
 {
+	m_time = 500 * 7200;
+	for (int i = 1; i <= 120; i++)
+	{
+		m_time--;
+	}
+	if (m_time == 500)
+	{
+		CObjCandy* objc = new CObjCandy(500.0f,200);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
+	}
 
 }
