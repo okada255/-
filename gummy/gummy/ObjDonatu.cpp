@@ -26,7 +26,7 @@ void CObjDonatu::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		Scene::SetScene(new CSceneMap2());//←シーン切り替えプログラム
+		
 	}
 }
 
