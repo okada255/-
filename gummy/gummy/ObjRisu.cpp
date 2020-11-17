@@ -190,6 +190,6 @@ void CObjRisu::Draw()
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(3, &src, &dst, c, 0.0f); //左向きリスl優先度３
 	Draw::Draw(2, &src, &dst, c, 0.0f); //右向きリスr優先度２
-	Draw::Draw(4, &src, &dst, c, 0.0f); //上向きリスup
-	Draw::Draw(5, &src, &dst, c, 0.0f); //下向きリスdown優先度１
+	//Draw::Draw(4, &src, &dst, c, 0.0f); //上向きリスup
+	//Draw::Draw(5, &src, &dst, c, 0.0f); //下向きリスdown優先度１
 }
