@@ -5,13 +5,17 @@
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 
-
 using namespace GameL;
+
+CObjDonatu::CObjDonatu(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
+
 
 void CObjDonatu::Init()
 {
-	m_x = 450;
-	m_y = 200;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_DONATU, 3);
 }
 
@@ -26,7 +30,6 @@ void CObjDonatu::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		Scene::SetScene(new CSceneMap2());//←シーン切り替えプログラム
 	}
 }
 

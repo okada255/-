@@ -3,11 +3,11 @@
 
 using namespace GameL;
 
-class CObjDonatu : public  CObj
+class CObjupstage2 : public  CObj
 {
 public:
-	CObjDonatu(float x,float y) ;
-	~CObjDonatu() {};
+	CObjupstage2() {};
+	~CObjupstage2() {};
 	void Action();
 	void Init();
 	void Draw();
@@ -15,6 +15,4 @@ public:
 private:
 	float m_x;
 	float m_y;
-	float x;
-	float y;
 };
