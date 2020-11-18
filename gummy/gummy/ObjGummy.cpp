@@ -45,8 +45,8 @@ void CObjGummy::Draw()
 	//表示位置の設定
 
 	//表示位置の設定
-	dst.m_top = 380.0f;
-	dst.m_left = 290.0f;
+	dst.m_top = m_y;
+	dst.m_left = m_x;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 

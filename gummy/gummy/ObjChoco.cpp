@@ -8,7 +8,7 @@
 using namespace GameL;
 
 void CObjChoco::Init()
-{//
+{
 	m_x = 250;
 	m_y = 270;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CHOCO, 6);
@@ -41,8 +41,8 @@ void CObjChoco::Draw()
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 270.0f;
-	dst.m_left = 250.0f;
+	dst.m_top = m_y;
+	dst.m_left = m_x;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 	//ï`âÊ

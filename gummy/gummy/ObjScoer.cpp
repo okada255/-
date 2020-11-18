@@ -12,13 +12,14 @@ using namespace GameL;
 //イニシャライズ
 void CObjScore::Init()
 {
+	m_gram = 0;
 	m_flag_gram = false;
-	m_gram = 0 * 7200;
 }
 
 //アクション
 void CObjScore::Action()
 {
+	m_gram = 0;
 	if (ELEMENT_ITEM == false)
 	{
 		;
@@ -38,7 +39,7 @@ void CObjScore::Draw()
 
 
 	if (second > 0)
-		swprintf_s(str, L"%d", m_gram / 7200);
+		swprintf_s(str, L"%d", m_gram);
 
 	Font::StrDraw(str, 740, 10, 20, c);
 }
