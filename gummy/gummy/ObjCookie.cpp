@@ -7,10 +7,14 @@
 
 using namespace GameL;
 
+CObjCookie::CObjCookie(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
+
 void CObjCookie::Init()
 {
-	m_x = 450;
-	m_y = 100;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_COOKIE, 7);
 }
 

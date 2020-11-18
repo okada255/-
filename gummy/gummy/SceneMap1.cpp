@@ -82,13 +82,11 @@ void CSceneMap1::InitScene()
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 
+	//タイム初期化
+	m_time = 0;
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
-
-	////Cookieオブジェクト作成
-	CObjCookie* objC = new CObjCookie();
-	Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
@@ -129,10 +127,27 @@ void CSceneMap1::InitScene()
 	//キャンディ
 	CObjCandy* objc = new CObjCandy(300, 500);
 	Objs::InsertObj(objc, OBJ_CANDY, 10);
+	
 }
 
 //実行中メソッド
 void CSceneMap1::Scene()
 {
+	m_time++;
+	if (m_time == 1)
+	{
+		//キャンディ
+		CObjCandy* objc = new CObjCandy(200, 500);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
+		//Cookieオブジェクト作成
+		CObjCookie* objC = new CObjCookie(200,450);
+		Objs::InsertObj(objC, OBJ_COOKIE, 15);
+
+	}
+	else if (m_time == 2)
+	{
+		CObjCandy* objc = new CObjCandy(150, 500);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
+	}
 }

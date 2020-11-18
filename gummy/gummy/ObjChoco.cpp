@@ -8,7 +8,7 @@
 using namespace GameL;
 
 void CObjChoco::Init()
-{//
+{
 	m_x = 250;
 	m_y = 270;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CHOCO, 6);
