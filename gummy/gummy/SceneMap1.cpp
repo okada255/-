@@ -92,9 +92,6 @@ void CSceneMap1::InitScene()
 	CObjDonatu* objd = new CObjDonatu();
 	Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-	////Chocoオブジェクト作成
-	CObjChoco* obj_c = new CObjChoco();
-	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
 	////Gummyオブジェクト作成
 	CObjGummy* objg = new CObjGummy();
@@ -137,17 +134,13 @@ void CSceneMap1::Scene()
 	if (m_time == 1)
 	{
 		//キャンディ
-		CObjCandy* objc = new CObjCandy(200, 500);
+		CObjCandy* objc;
+		objc = new CObjCandy(200, 500);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		//Cookieオブジェクト作成
-		CObjCookie* objC = new CObjCookie(200,450);
-		Objs::InsertObj(objC, OBJ_COOKIE, 15);
+		CObjCookie* objC = new CObjCookie(200, 450);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-	}
-	else if (m_time == 2)
-	{
-		CObjCandy* objc = new CObjCandy(150, 500);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);
 	}
 }
