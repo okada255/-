@@ -72,6 +72,8 @@ void CObjRisu::Action()
 		m_ani_time += 1;
 	}
 
+	
+
 	else if (Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vy += 1.0f;
