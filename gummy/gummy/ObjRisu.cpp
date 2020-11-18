@@ -16,7 +16,7 @@ void CObjRisu::Init()
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_posture = 0.0f;//右向き0.0f,左向き1.0f
-	float move = 1.0f;
+	//float move = 1.0f;
 
 	//当たり判定
 	Hits::SetHitBox(this, m_px, m_py, 18.85, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
@@ -92,6 +92,7 @@ void CObjRisu::Action()
 		m_vx += 1.0f;
 		m_vy += 1.0f;
 		m_vy += m_speed_power;
+		m_vx += m_speed_power;
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
@@ -100,7 +101,8 @@ void CObjRisu::Action()
 	{
 		m_vx += 1.0f;
 		m_vy -= 1.0f;
-		m_vy += m_speed_power;
+		m_vy -= m_speed_power;
+		m_vx += m_speed_power;
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
@@ -110,7 +112,8 @@ void CObjRisu::Action()
 		m_vx -= 1.0f;
 		m_vy += 1.0f;
 		m_vy += m_speed_power;
-		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_vx -= m_speed_power;
+		m_posture = 1.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
 
@@ -118,8 +121,9 @@ void CObjRisu::Action()
 	{
 		m_vx -= 1.0f;
 		m_vy -= 1.0f;
-		m_vy += m_speed_power;
-		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_vy -= m_speed_power;
+		m_vx -= m_speed_power;
+		m_posture = 1.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
 
