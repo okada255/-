@@ -97,10 +97,10 @@ void CObjRisu::Action()
 		m_ani_frame = 0;
 	}
 
-	/*if (Input::GetVKey(VK_LEFT) == true)
+	if (Input::GetVKey(VK_LEFT) == true)
 	{
 		m_vx -= 1.0f;
-		m_posture = 0.0f;
+		m_posture = 1.0f;
 	}
 
 	if (Input::GetVKey(VK_UP) == true)
@@ -113,7 +113,7 @@ void CObjRisu::Action()
 	{
 		m_vy += 1.0f;
 		m_posture = 0.0f;
-	}*/
+	}
 
 	//à íuÇÃçXêV
 	m_px += m_vx;

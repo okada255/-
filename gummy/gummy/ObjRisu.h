@@ -1,5 +1,5 @@
 #pragma once
-#include "GameL\SceneManager.h"
+#include"GameL\SceneManager.h"
 #include"GameL/DrawTexture.h"
 using namespace GameL;
 
@@ -17,6 +17,7 @@ public:
 	void SetX(float x) { m_px = x; }
 	void SetY(float y) { m_py = y; }
 	void SetVY(float vy) { m_vy = vy; }
+
 private:
 	float m_px;//ˆÊ’u
 	float m_py;
