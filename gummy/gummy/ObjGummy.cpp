@@ -7,10 +7,15 @@
 
 using namespace GameL;
 
+CObjGummy::CObjGummy(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
+
+
 void CObjGummy::Init()
 {
-	m_x = 290;
-	m_y = 380;
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_GUMMY, 3);
 }
 
