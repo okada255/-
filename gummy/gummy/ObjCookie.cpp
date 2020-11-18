@@ -53,5 +53,5 @@ void CObjCookie::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//•`‰æ
-	Draw::Draw(8, &src, &dst, c, 0.0f);
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 }
