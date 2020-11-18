@@ -41,8 +41,8 @@ void CObjChoco::Draw()
 	src.m_bottom = 64.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 270.0f;
-	dst.m_left = 250.0f;
+	dst.m_top = m_y;
+	dst.m_left = m_x;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 	//ï`âÊ

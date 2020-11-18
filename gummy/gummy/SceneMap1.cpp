@@ -125,15 +125,14 @@ void CSceneMap1::InitScene()
 	//上り階段作成
 	CObjupstage* obju = new CObjupstage();
 	Objs::InsertObj(obju, OBJ_UPSTAGE, 18);
+
+	//キャンディ
+	CObjCandy* objc = new CObjCandy(300, 500);
+	Objs::InsertObj(objc, OBJ_CANDY, 10);
 }
 
 //実行中メソッド
 void CSceneMap1::Scene()
 {
-	m_time = 500;
-	if (m_time == 500)
-	{
-		CObjCandy* objc = new CObjCandy(500.0f, 200);
-		Objs::InsertObj(objc, OBJ_CANDY,10);
-	}
+
 }
