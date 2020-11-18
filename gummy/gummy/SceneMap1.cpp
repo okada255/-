@@ -172,21 +172,21 @@ void CSceneMap1::Scene()
 		//Chocoオブジェクト作成
 		CObjChoco* obj_c;
 		obj_c = new CObjChoco(140, 50);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(580, 170);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(350, 180);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(470, 350);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(470, 480);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(630, 540);
-		Objs::InsertObj(obj_c, OBJ_GUMMY, 14);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 	}
 }
