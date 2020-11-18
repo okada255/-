@@ -5,6 +5,7 @@
 #include"GameHead.h"
 #include"ObjScore.h"
 #include"GameL/DrawFont.h"
+#include"GameL/UserData.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -29,17 +30,10 @@ void CObjScore::Action()
 //ドロー
 void CObjScore::Draw()
 {
-	int minute; //分
-	int second = 500; //秒
 
 
-	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-
+	float cc[4] = { 1.0f,1.0f,1.0f,1.0f };
 	wchar_t str[128];
-
-
-	if (second > 0)
-		swprintf_s(str, L"%d", m_gram);
-
-	Font::StrDraw(str, 740, 10, 20, c);
+	swprintf_s(str, L"得点：%d点", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 700, 10, 20, cc);
 }
