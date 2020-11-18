@@ -51,5 +51,5 @@ void CObjDonatu::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//•`‰æ
-	Draw::Draw(6, &src, &dst, c, 0.0f);
+	Draw::Draw(3, &src, &dst, c, 0.0f);
 }
