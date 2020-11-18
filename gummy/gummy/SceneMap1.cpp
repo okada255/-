@@ -130,10 +130,6 @@ void CSceneMap1::InitScene()
 //実行中メソッド
 void CSceneMap1::Scene()
 {
-	m_time = 500;
-	if (m_time == 500)
-	{
 		CObjCandy* objc = new CObjCandy(500.0f, 200);
 		Objs::InsertObj(objc, OBJ_CANDY,10);
-	}
 }
