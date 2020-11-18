@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
@@ -30,6 +31,7 @@ void CObjGummy::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		((UserData*)Save::GetData())->m_point += 5;
 	}
 }
 
