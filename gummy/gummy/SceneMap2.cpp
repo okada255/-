@@ -24,6 +24,7 @@ using namespace GameL;
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjBackGround.h"
+#include"Objupstage2.h"
 
 
 //コンストラクタ
@@ -69,6 +70,7 @@ void CSceneMap2::InitScene()
 	Draw::LoadImageW(L"左向き.png", 3, TEX_SIZE_128);//リス
 	Draw::LoadImageW(L"後ろ姿(1).png", 4, TEX_SIZE_128);//リス
 	Draw::LoadImageW(L"前向きリス.png", 5, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 	
 
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
@@ -91,6 +93,10 @@ void CSceneMap2::InitScene()
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
+
+	//上り階段作成
+	CObjupstage2* obju2 = new CObjupstage2();
+	Objs::InsertObj(obju2, OBJ_UPSTAGE2, 18);
 }
 
 //実行中メソッド

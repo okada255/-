@@ -51,5 +51,5 @@ void CObjChoco::Draw()
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 	//•`‰æ
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	Draw::Draw(6, &src, &dst, c, 0.0f);
 }

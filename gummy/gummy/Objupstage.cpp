@@ -25,7 +25,7 @@ void CObjupstage::Action()
 	{
 		this->SetStatus(false);
 
-		Scene::SetScene(new CSceneGameClear());
+		Scene::SetScene(new CSceneMap2());
 	}
 }
 

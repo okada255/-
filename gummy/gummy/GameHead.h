@@ -21,6 +21,7 @@ enum OBJ_NAME
 	OBJ_GAME_OVER,
 	OBJ_BACKGROUND,
 	OBJ_UPSTAGE,
+	OBJ_UPSTAGE2,
 };
     //OBJ_RISUR,
 	//OBJ_RISUL,
@@ -84,6 +85,7 @@ struct UserData
 #include"ObjGameOver.h"
 #include"ObjBackGround.h"
 #include"Objupstage.h"
+#include"Objupstage2.h"
 
 
 //#include"ObjRisuL.h"
@@ -96,6 +98,7 @@ struct UserData
 //ゲームシーンクラスヘッダ------------------------
 #include"SceneMap1.h"
 #include"SceneMap2.h"
+#include"SceneMap3.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
 #include"SceneGameOver.h"
