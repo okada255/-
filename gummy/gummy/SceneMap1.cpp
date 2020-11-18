@@ -44,7 +44,6 @@ CSceneMap1::~CSceneMap1()
 //初期化メソッド
 void CSceneMap1::InitScene()
 {
-	 m_time = 0;
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
 	Font::SetStrTex(L"0123456789g");
@@ -83,17 +82,19 @@ void CSceneMap1::InitScene()
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 
+	//タイム初期化
+	m_time = 0;
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	////Cookieオブジェクト作成
-	CObjCookie* objC = new CObjCookie();
-	Objs::InsertObj(objC, OBJ_COOKIE, 15);
-
 	////Donatuオブジェクト作成
 	CObjDonatu* objd = new CObjDonatu();
 	Objs::InsertObj(objd, OBJ_DONATU, 11);
+
+	////Chocoオブジェクト作成
+	CObjChoco* obj_c = new CObjChoco();
+	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
 	////Gummyオブジェクト作成
 	CObjGummy* objg = new CObjGummy();
@@ -123,6 +124,9 @@ void CSceneMap1::InitScene()
 	CObjupstage* obju = new CObjupstage();
 	Objs::InsertObj(obju, OBJ_UPSTAGE, 18);
 
+	//キャンディ
+	CObjCandy* objc = new CObjCandy(300, 500);
+	Objs::InsertObj(objc, OBJ_CANDY, 10);
 	
 }
 
@@ -130,26 +134,20 @@ void CSceneMap1::InitScene()
 void CSceneMap1::Scene()
 {
 	m_time++;
-
 	if (m_time == 1)
 	{
-		//キャンディーオブジェクト作成
-		CObjCandy* objc;
-		 objc = new CObjCandy(200,500);
+		//キャンディ
+		CObjCandy* objc = new CObjCandy(200, 500);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		objc = new CObjCandy(300, 400);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);
+		//Cookieオブジェクト作成
+		CObjCookie* objC = new CObjCookie(200,450);
+		Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
-		objc = new CObjCandy(100, 400);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);
-
-		//チョコオブジェクト作成
-		CObjChoco* obj_c;
-		obj_c = new CObjChoco(400,400);
-		Objs::InsertObj(obj_c, OBJ_CANDY, 11);
-		obj_c = new CObjChoco(420, 100);
-		Objs::InsertObj(obj_c, OBJ_CANDY, 11);
 	}
-	
+	else if (m_time == 2)
+	{
+		CObjCandy* objc = new CObjCandy(150, 500);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
+	}
 }

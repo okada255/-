@@ -15,11 +15,14 @@ CObjCandy::CObjCandy(float x, float y)
 
 void CObjCandy::Init()
 {
+	
+	//HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_CANDY, 1);
 }
 
 void CObjCandy::Action()
 {
+	//HitBox更新
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//主人公と接触しているか調べる
@@ -47,7 +50,7 @@ void CObjCandy::Draw()
 
 	//表示位置の設定
 	dst.m_top = m_y;
-	dst.m_left =m_x;
+	dst.m_left = m_x;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 
