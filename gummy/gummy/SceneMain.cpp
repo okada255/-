@@ -65,10 +65,7 @@ void CSceneMain::InitScene()
 	}
 
 	Draw::LoadImageW(L"Block.png", 1, TEX_SIZE_64);
-	Draw::LoadImageW(L"risu(1).png", 2, TEX_SIZE_128);//リス右
-	//Draw::LoadImageW(L"左向き1.png", 3, TEX_SIZE_128);//リス左
-	//Draw::LoadImageW(L"後ろ姿1.png", 4, TEX_SIZE_128);//リス上
-	//Draw::LoadImageW(L"前向き1.png", 5, TEX_SIZE_128);//リス下
+	Draw::LoadImageW(L"risu(2).png", 2, TEX_SIZE_128);//リス
 	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
 	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
 	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
