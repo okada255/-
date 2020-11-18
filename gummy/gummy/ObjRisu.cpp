@@ -16,6 +16,7 @@ void CObjRisu::Init()
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_posture = 0.0f;//右向き0.0f,左向き1.0f
+	float move = 1.0f;
 
 	//当たり判定
 	Hits::SetHitBox(this, m_px, m_py, 18.85, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
@@ -49,6 +50,8 @@ void CObjRisu::Action()
 		m_speed_power = 0.5f;
 	}
 
+
+
 	//キーの入力方向にベクトルの速度を入れる
 	if (Input::GetVKey(VK_RIGHT) == true)
 	{
@@ -81,6 +84,43 @@ void CObjRisu::Action()
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
+
+	if (Input::GetVKey(VK_RIGHT)==true && Input::GetVKey(VK_DOWN) == true)
+	{
+		m_vx += 1.0f;
+		m_vy += 1.0f;
+		m_vy += m_speed_power;
+		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_ani_time += 1;
+	}
+
+	if (Input::GetVKey(VK_RIGHT)==true && Input::GetVKey(VK_UP) == true)
+	{
+		m_vx += 1.0f;
+		m_vy -= 1.0f;
+		m_vy += m_speed_power;
+		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_ani_time += 1;
+	}
+
+	if (Input::GetVKey(VK_LEFT)==true && Input::GetVKey(VK_DOWN) == true)
+	{
+		m_vx -= 1.0f;
+		m_vy += 1.0f;
+		m_vy += m_speed_power;
+		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_ani_time += 1;
+	}
+
+	if (Input::GetVKey(VK_LEFT)==true && Input::GetVKey(VK_UP) == true)
+	{
+		m_vx -= 1.0f;
+		m_vy -= 1.0f;
+		m_vy += m_speed_power;
+		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
+		m_ani_time += 1;
+	}
+
 
 	else
 	{
