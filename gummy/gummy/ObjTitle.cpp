@@ -51,7 +51,7 @@ void CObjTitle::Init() {
 void CObjTitle::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
-			Scene::SetScene(new CSceneMap2());
+			Scene::SetScene(new CSceneMap1());
 			m_key_flag = false;
 		}
 	}
