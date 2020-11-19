@@ -85,9 +85,9 @@ void CSceneMap3::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
-	////BigCakeオブジェクト作成
-	//CObjBigCake* objz = new CObjBigCake();
-	//Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
+	//BigCakeオブジェクト作成
+	CObjBigCake* objz = new CObjBigCake(560,240);
+	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();
