@@ -42,7 +42,7 @@ void CObjRisu::Action()
 	if (Input::GetVKey('Z') == true)
 	{
 		//ダッシュ時の速度
-		m_speed_power = 2.1f;
+		m_speed_power = 1.0f;
 	}
 	else
 	{
