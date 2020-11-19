@@ -157,6 +157,7 @@
     <ClCompile Include="ObjCandy.cpp" />
     <ClCompile Include="ObjChoco.cpp" />
     <ClCompile Include="ObjCookie.cpp" />
+    <ClCompile Include="ObjDescription.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
@@ -166,8 +167,10 @@
     <ClCompile Include="ObjTime.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="Objupstage.cpp" />
+    <ClCompile Include="Objupstage0.cpp" />
     <ClCompile Include="Objupstage2.cpp" />
     <ClCompile Include="OPning.c" />
+    <ClCompile Include="SceneDescription.cpp" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp">
@@ -198,6 +201,7 @@
     <ClInclude Include="ObjCandy.h" />
     <ClInclude Include="ObjChoco.h" />
     <ClInclude Include="ObjCookie.h" />
+    <ClInclude Include="ObjDescription.h" />
     <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjGameOver.h" />
@@ -207,7 +211,9 @@
     <ClInclude Include="ObjTime.h" />
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="Objupstage.h" />
+    <ClInclude Include="Objupstage0.h" />
     <ClInclude Include="Objupstage2.h" />
+    <ClInclude Include="SceneDescription.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h">

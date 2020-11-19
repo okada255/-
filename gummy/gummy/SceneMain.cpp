@@ -78,33 +78,33 @@ void CSceneMain::InitScene()
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-	////Candyオブジェクト作成
-	CObjCandy* objc = new CObjCandy();
-	Objs::InsertObj(objc, OBJ_CANDY, 10);
+	//////Candyオブジェクト作成
+	//CObjCandy* objc = new CObjCandy();
+	//Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-	////Cookieオブジェクト作成
-	CObjCookie* objC = new CObjCookie();
-	Objs::InsertObj(objC, OBJ_COOKIE, 15);
+	//////Cookieオブジェクト作成
+	//CObjCookie* objC = new CObjCookie();
+	//Objs::InsertObj(objC, OBJ_COOKIE, 15);
 
-	////Donatuオブジェクト作成
-	CObjDonatu* objd = new CObjDonatu();
-	Objs::InsertObj(objd, OBJ_DONATU, 11);
+	//////Donatuオブジェクト作成
+	//CObjDonatu* objd = new CObjDonatu();
+	//Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-	////Chocoオブジェクト作成
-	CObjChoco* obj_c = new CObjChoco();
-	Objs::InsertObj(obj_c, OBJ_CANDY, 14);
+	//////Chocoオブジェクト作成
+	//CObjChoco* obj_c = new CObjChoco();
+	//Objs::InsertObj(obj_c, OBJ_CANDY, 14);
 
-	////Gummyオブジェクト作成
-	CObjGummy* objg = new CObjGummy();
-	Objs::InsertObj(objg, OBJ_GUMMY, 13);
+	//////Gummyオブジェクト作成
+	//CObjGummy* objg = new CObjGummy();
+	//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
-	////BigCakeオブジェクト作成
-	CObjBigCake* objz = new CObjBigCake();
-	Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
+	//////BigCakeオブジェクト作成
+	//CObjBigCake* objz = new CObjBigCake();
+	//Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();

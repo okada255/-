@@ -40,6 +40,9 @@
     <Filter Include="ソース ファイル\BigSnuck">
       <UniqueIdentifier>{529ec83c-4e61-4563-b7e8-f0d682f4a2c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\操作説明関連">
+      <UniqueIdentifier>{eff81d12-e22a-414c-85a0-47fd5a11d3c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -153,6 +156,15 @@
     <ClCompile Include="SceneMap3.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
+    <ClCompile Include="SceneDescription.cpp">
+      <Filter>ソース ファイル\操作説明関連</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDescription.cpp">
+      <Filter>ソース ファイル\操作説明関連</Filter>
+    </ClCompile>
+    <ClCompile Include="Objupstage0.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -261,6 +273,15 @@
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap3.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDescription.h">
+      <Filter>ソース ファイル\操作説明関連</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDescription.h">
+      <Filter>ソース ファイル\操作説明関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage0.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
