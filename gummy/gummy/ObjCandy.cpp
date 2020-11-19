@@ -4,6 +4,7 @@
 #include"ObjCandy.h"
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
@@ -30,7 +31,7 @@ void CObjCandy::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-
+		((UserData*)Save::GetData())->m_point += 10;
 	}
 }
 
@@ -55,6 +56,6 @@ void CObjCandy::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//•`‰æ
-	Draw::Draw(4, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);
 }
 

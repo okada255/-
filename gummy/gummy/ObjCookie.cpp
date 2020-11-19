@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
@@ -27,6 +28,7 @@ void CObjCookie::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		((UserData*)Save::GetData())->m_point += 20;
 	}
 }
 
@@ -51,5 +53,5 @@ void CObjCookie::Draw()
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//•`‰æ
-	Draw::Draw(5, &src, &dst, c, 0.0f);
+	Draw::Draw(8, &src, &dst, c, 0.0f);
 }

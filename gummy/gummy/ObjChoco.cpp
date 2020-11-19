@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
@@ -28,6 +29,7 @@ void CObjChoco::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		((UserData*)Save::GetData())->m_point += 15;
 	}
 }
 
@@ -51,5 +53,5 @@ void CObjChoco::Draw()
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 	//•`‰æ
-	Draw::Draw(6, &src, &dst, c, 0.0f);
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 }
