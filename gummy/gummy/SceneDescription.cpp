@@ -42,7 +42,7 @@ void CSceneDescription::InitScene()
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
 	//BigCakeオブジェクト作成
-	CObjBigCake* objz = new CObjBigCake();
+	CObjBigCake* objz = new CObjBigCake(570,300);
 	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//キャンディ
