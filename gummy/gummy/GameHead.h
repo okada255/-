@@ -22,6 +22,8 @@ enum OBJ_NAME
 	OBJ_BACKGROUND,
 	OBJ_UPSTAGE,
 	OBJ_UPSTAGE2,
+	OBJ_UPSTAGE0,
+	OBJ_DESCRIPTION,
 };
     //OBJ_RISUR,
 	//OBJ_RISUL,
@@ -86,6 +88,7 @@ struct UserData
 #include"ObjBackGround.h"
 #include"Objupstage.h"
 #include"Objupstage2.h"
+#include"Objupstage0.h"
 
 
 //#include"ObjRisuL.h"
@@ -102,6 +105,7 @@ struct UserData
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
 #include"SceneGameOver.h"
+#include"SceneDescription.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
