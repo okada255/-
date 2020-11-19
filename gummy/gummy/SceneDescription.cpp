@@ -23,15 +23,13 @@ void CSceneDescription::InitScene()
 {
 	
 
-	Draw::LoadImageW(L"右向き1.png", 2, TEX_SIZE_128);//リス右
-	Draw::LoadImageW(L"左向き1.png", 3, TEX_SIZE_128);//リス左
-
-	Draw::LoadImageW(L"donatu.png", 6, TEX_SIZE_64);//お菓子
-	Draw::LoadImageW(L"candy.png", 7, TEX_SIZE_64);//お菓子
-	Draw::LoadImageW(L"cookie.png", 8, TEX_SIZE_64);//お菓子
-	Draw::LoadImageW(L"choco.png", 9, TEX_SIZE_64);//お菓子
-	Draw::LoadImageW(L"gumy.png", 10, TEX_SIZE_64);//お菓子
-	Draw::LoadImageW(L"cake.png", 11, TEX_SIZE_64);//お菓子
+	Draw::LoadImageW(L"risu(2).png", 2, TEX_SIZE_128);//リス
+	Draw::LoadImageW(L"donatu.png", 3, TEX_SIZE_64);
+	Draw::LoadImageW(L"candy.png", 4, TEX_SIZE_64);
+	Draw::LoadImageW(L"cookie.png", 5, TEX_SIZE_64);
+	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
+	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
+	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);//階段
 	
@@ -42,7 +40,7 @@ void CSceneDescription::InitScene()
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
 	//BigCakeオブジェクト作成
-	CObjBigCake* objz = new CObjBigCake(570,300);
+	CObjBigCake* objz = new CObjBigCake(560,240);
 	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//キャンディ
