@@ -118,7 +118,45 @@ void CSceneMap3::Scene()
 	{
 		
 
-		//Gummyオブジェクト作成
-	
+
+	//Gummyオブジェクト作成
+		CObjGummy* objg;
+		objg = new CObjGummy(140, 50);//C-3
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(145, 175);//D-10
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(165, 350);//E-20
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(510, 50);//W-3
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(200, 75);//
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(290, 50);//
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(80, 80);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+
+		objg = new CObjGummy(290, 70);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+
+		objg = new CObjGummy(140, 480);//C-25
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+
+		objg = new CObjGummy(140, 550);//C-30
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+
+		objg = new CObjGummy(20, 50);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
 	}
 }
