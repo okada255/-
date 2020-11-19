@@ -7,6 +7,7 @@
 #include"GameL/UserData.h"
 #include"ObjDescription.h"
 
+//このコメントアウトはテスト用です
 using namespace GameL;
 
 void CObjDescription::Init() {
