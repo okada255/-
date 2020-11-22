@@ -165,6 +165,9 @@
     <ClCompile Include="Objupstage0.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
+    <ClCompile Include="Objupstage3.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -282,6 +285,9 @@
       <Filter>ソース ファイル\操作説明関連</Filter>
     </ClInclude>
     <ClInclude Include="Objupstage0.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage3.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
