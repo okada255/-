@@ -53,7 +53,7 @@ void CObjDescription::Draw() {
 	Font::StrDraw(L"↓", 600, 250, 30, c);
 	Font::StrDraw(L"階段↓", 590, 50, 30, c);
 	Font::StrDraw(L"主人公の「リス」君",80, 350, 20, c);
-	Font::StrDraw(L"↑,↓,←,→キーで動かせるよ", 80, 390, 20, c);
+	Font::StrDraw(L"↑,↓,←,→キーで動かせるよ　　Zで足がはやくなる！", 80, 390, 20, c);
 	Font::StrDraw(L"↑", 140, 310, 20, c);
 	
 

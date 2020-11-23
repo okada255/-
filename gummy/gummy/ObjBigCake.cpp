@@ -31,6 +31,7 @@ void CObjBigCake::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
+		Scene::SetScene(new CSceneGameClear());
 	}
 }
 
