@@ -48,9 +48,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OPning.c">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjDonatu.cpp">
       <Filter>ソース ファイル\Snuck</Filter>
     </ClCompile>
@@ -184,6 +181,9 @@
       <Filter>ソース ファイル\偽Snuck</Filter>
     </ClCompile>
     <ClCompile Include="ObjGummyuso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBigCakeuso.cpp">
       <Filter>ソース ファイル\偽Snuck</Filter>
     </ClCompile>
   </ItemGroup>
@@ -321,6 +321,9 @@
       <Filter>ソース ファイル\偽Snuck</Filter>
     </ClInclude>
     <ClInclude Include="ObjGummyuso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBigCakeuso.h">
       <Filter>ソース ファイル\偽Snuck</Filter>
     </ClInclude>
   </ItemGroup>

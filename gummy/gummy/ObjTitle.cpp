@@ -46,6 +46,8 @@ void CObjTitle::Init() {
 	{
 		Save::Seve();//UserDateの情報を同フォルダーに「UserDate」を作成する
 	}
+	//点数を0にする
+	((UserData*)Save::GetData())->m_point = 0;
 }
 
 void CObjTitle::Action() {

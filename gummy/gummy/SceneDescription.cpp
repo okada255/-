@@ -40,8 +40,8 @@ void CSceneDescription::InitScene()
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
 	//BigCakeオブジェクト作成
-	CObjBigCake* objz = new CObjBigCake(560,240);
-	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
+	CObjBigCakeuso* objz = new CObjBigCakeuso(560,240);
+	Objs::InsertObj(objz, OBJ_BIG_CAKEUSO, 20);
 
 	//キャンディ嘘
 	CObjCandyuso* objc;

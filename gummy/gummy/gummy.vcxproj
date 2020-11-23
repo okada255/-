@@ -152,6 +152,7 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjBackGround.cpp" />
+    <ClCompile Include="ObjBigCakeuso.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBigCake.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
@@ -175,7 +176,6 @@
     <ClCompile Include="Objupstage0.cpp" />
     <ClCompile Include="Objupstage2.cpp" />
     <ClCompile Include="Objupstage3.cpp" />
-    <ClCompile Include="OPning.c" />
     <ClCompile Include="SceneDescription.cpp" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
@@ -202,6 +202,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjBackGround.h" />
+    <ClInclude Include="ObjBigCakeuso.h" />
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBigCake.h" />
     <ClInclude Include="ObjCandy.h" />
