@@ -7,10 +7,15 @@ enum OBJ_NAME
 	//ゲームで使うオブジェクトの名前
 	//OBJ_○○と表記
 	OBJ_CANDY,
+	OBJ_CANDYUSO,
 	OBJ_CHOCO,
+	OBJ_CHOCOUSO,
 	OBJ_COOKIE,
+	OBJ_COOKIEUSO,
 	OBJ_DONATU,
+	OBJ_DONATUUSO,
 	OBJ_GUMMY,
+	OBJ_GUMMYUSO,
 	OBJ_RISU,
 	OBJ_BLOCK,
 	OBJ_BIG_CAKE,
@@ -74,10 +79,15 @@ struct UserData
 
 //ゲームシーンオブジェクトヘッダ------------------
 #include"ObjGummy.h"
+#include"ObjGummyuso.h"
 #include"ObjChoco.h"
+#include"ObjChocouso.h"
 #include"ObjCookie.h"
+#include"ObjCookieuso.h"
 #include"ObjDonatu.h"
+#include"ObjDonatuuso.h"
 #include"ObjCandy.h"
+#include"ObjCandyuso.h"
 #include"ObjRisu.h"
 #include"ObjBlock.h"
 #include"ObjBigCake.h"

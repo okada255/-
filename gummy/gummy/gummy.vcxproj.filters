@@ -43,6 +43,9 @@
     <Filter Include="ソース ファイル\操作説明関連">
       <UniqueIdentifier>{eff81d12-e22a-414c-85a0-47fd5a11d3c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\偽Snuck">
+      <UniqueIdentifier>{53ed0d2d-6df3-41f1-b697-6837009f48b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OPning.c">
@@ -168,6 +171,21 @@
     <ClCompile Include="Objupstage3.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
+    <ClCompile Include="ObjCandyuso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjChocouso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjCookieuso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDonatuuso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGummyuso.cpp">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -289,6 +307,21 @@
     </ClInclude>
     <ClInclude Include="Objupstage3.h">
       <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjCandyuso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjChocouso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjCookieuso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDonatuuso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGummyuso.h">
+      <Filter>ソース ファイル\偽Snuck</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -43,30 +43,30 @@ void CSceneDescription::InitScene()
 	CObjBigCake* objz = new CObjBigCake(560,240);
 	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
-	//キャンディ
-	CObjCandy* objc;
-	objc = new CObjCandy(180, 80);
-	Objs::InsertObj(objc, OBJ_CANDY, 10);
+	//キャンディ嘘
+	CObjCandyuso* objc;
+	objc = new CObjCandyuso(180, 80);
+	Objs::InsertObj(objc, OBJ_CANDYUSO, 10);
 
-	//Cookieオブジェクト作成
-	CObjCookie* objC;
-	objC = new CObjCookie(180, 130);
-	Objs::InsertObj(objC, OBJ_COOKIE, 10);
+	//嘘Cookieオブジェクト作成
+	CObjCookieuso* objC;
+	objC = new CObjCookieuso(180, 130);
+	Objs::InsertObj(objC, OBJ_COOKIEUSO, 10);
 
 	//Donatuオブジェクト作成
-	CObjDonatu* objd;
-	objd = new CObjDonatu(180, 180);
-	Objs::InsertObj(objd, OBJ_DONATU, 11);
+	CObjDonatuuso* objd;
+	objd = new CObjDonatuuso(180, 180);
+	Objs::InsertObj(objd, OBJ_DONATUUSO, 11);
 
 	//Gummyオブジェクト作成
-	CObjGummy* objg;
-	objg = new CObjGummy(180, 230);
-	Objs::InsertObj(objg, OBJ_GUMMY, 13);
+	CObjGummyuso* objg;
+	objg = new CObjGummyuso(180, 230);
+	Objs::InsertObj(objg, OBJ_GUMMYUSO, 13);
 
 	//Chocoオブジェクト作成
-	CObjChoco* obj_c;
-	obj_c = new CObjChoco(180, 280);
-	Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+	CObjChocouso* obj_c;
+	obj_c = new CObjChocouso(180, 280);
+	Objs::InsertObj(obj_c, OBJ_CHOCOUSO, 14);
 
 	//上り階段作成
 	CObjupstage0* obju = new CObjupstage0();
