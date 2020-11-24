@@ -82,6 +82,7 @@ void CSceneMap1::InitScene()
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
 
+	Audio::Start(0);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
 
 	//タイム初期化
@@ -117,7 +118,6 @@ void CSceneMap1::Scene()
 	m_time++;
 	if (m_time == 1)
 	{
-		Audio::Start(0);
 		//キャンディ
 		CObjCandy* objc;
 		objc = new CObjCandy(540, 50);
