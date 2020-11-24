@@ -75,6 +75,7 @@ void CSceneMap3::InitScene()
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::Start(0);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
 
 	//タイム初期化
@@ -111,7 +112,6 @@ void CSceneMap3::Scene()
 	m_time++;
 	if (m_time == 1)
 	{
-		Audio::Start(0);
 
 
 	//Gummyオブジェクト作成
