@@ -7,13 +7,19 @@ enum OBJ_NAME
 	//ゲームで使うオブジェクトの名前
 	//OBJ_○○と表記
 	OBJ_CANDY,
+	OBJ_CANDYUSO,
 	OBJ_CHOCO,
+	OBJ_CHOCOUSO,
 	OBJ_COOKIE,
+	OBJ_COOKIEUSO,
 	OBJ_DONATU,
+	OBJ_DONATUUSO,
 	OBJ_GUMMY,
+	OBJ_GUMMYUSO,
 	OBJ_RISU,
 	OBJ_BLOCK,
 	OBJ_BIG_CAKE,
+	OBJ_BIG_CAKEUSO,
 	OBJ_TITLE,
 	OBJ_GAME_CLEAR,
 	OBJ_TIME,
@@ -21,7 +27,10 @@ enum OBJ_NAME
 	OBJ_GAME_OVER,
 	OBJ_BACKGROUND,
 	OBJ_UPSTAGE,
+	OBJ_UPSTAGE3,
 	OBJ_UPSTAGE2,
+	OBJ_UPSTAGE0,
+	OBJ_DESCRIPTION,
 };
     //OBJ_RISUR,
 	//OBJ_RISUL,
@@ -71,13 +80,19 @@ struct UserData
 
 //ゲームシーンオブジェクトヘッダ------------------
 #include"ObjGummy.h"
+#include"ObjGummyuso.h"
 #include"ObjChoco.h"
+#include"ObjChocouso.h"
 #include"ObjCookie.h"
+#include"ObjCookieuso.h"
 #include"ObjDonatu.h"
+#include"ObjDonatuuso.h"
 #include"ObjCandy.h"
+#include"ObjCandyuso.h"
 #include"ObjRisu.h"
 #include"ObjBlock.h"
 #include"ObjBigCake.h"
+#include"ObjBigCakeuso.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjTime.h"
@@ -85,7 +100,9 @@ struct UserData
 #include"ObjGameOver.h"
 #include"ObjBackGround.h"
 #include"Objupstage.h"
+#include"Objupstage3.h"
 #include"Objupstage2.h"
+#include"Objupstage0.h"
 
 
 //#include"ObjRisuL.h"
@@ -102,6 +119,7 @@ struct UserData
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
 #include"SceneGameOver.h"
+#include"SceneDescription.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------

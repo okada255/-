@@ -42,7 +42,7 @@ void CObjRisu::Action()
 	if (Input::GetVKey('Z') == true)
 	{
 		//ダッシュ時の速度
-		m_speed_power = 2.1f;
+		m_speed_power = 1.0f;
 	}
 	else
 	{
@@ -89,8 +89,8 @@ void CObjRisu::Action()
 	//
 	if (Input::GetVKey(VK_RIGHT)==true && Input::GetVKey(VK_DOWN) == true)
 	{
-		m_vx += 1.0f;
-		m_vy += 1.0f;
+		m_vx += 0.5f;
+		m_vy += 0.5f;
 		m_vy += m_speed_power;
 		m_vx += m_speed_power;
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
@@ -99,8 +99,8 @@ void CObjRisu::Action()
 
 	if (Input::GetVKey(VK_RIGHT)==true && Input::GetVKey(VK_UP) == true)
 	{
-		m_vx += 1.0f;
-		m_vy -= 1.0f;
+		m_vx += 0.5f;
+		m_vy -= 0.5f;
 		m_vy -= m_speed_power;
 		m_vx += m_speed_power;
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
@@ -109,8 +109,8 @@ void CObjRisu::Action()
 
 	if (Input::GetVKey(VK_LEFT)==true && Input::GetVKey(VK_DOWN) == true)
 	{
-		m_vx -= 1.0f;
-		m_vy += 1.0f;
+		m_vx -= 0.5f;
+		m_vy += 0.5f;
 		m_vy += m_speed_power;
 		m_vx -= m_speed_power;
 		m_posture = 1.0f;//下ボタンを押したときの表示されるイラスト
@@ -119,8 +119,8 @@ void CObjRisu::Action()
 
 	if (Input::GetVKey(VK_LEFT)==true && Input::GetVKey(VK_UP) == true)
 	{
-		m_vx -= 1.0f;
-		m_vy -= 1.0f;
+		m_vx -= 0.5f;
+		m_vy -= 0.5f;
 		m_vy -= m_speed_power;
 		m_vx -= m_speed_power;
 		m_posture = 1.0f;//下ボタンを押したときの表示されるイラスト

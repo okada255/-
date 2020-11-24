@@ -46,12 +46,14 @@ void CObjTitle::Init() {
 	{
 		Save::Seve();//UserDateの情報を同フォルダーに「UserDate」を作成する
 	}
+	//点数を0にする
+	((UserData*)Save::GetData())->m_point = 0;
 }
 
 void CObjTitle::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
-			Scene::SetScene(new CSceneMap1());
+			Scene::SetScene(new CSceneDescription());
 			m_key_flag = false;
 		}
 	}
@@ -72,7 +74,7 @@ void CObjTitle::Action() {
 		//マウスのボタンが押されたらメインに移行
 		if (m_mou_r == true | m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneMap1());
+			Scene::SetScene(new CSceneDescription());
 		}
 	}
 
