@@ -84,6 +84,7 @@ void CSceneMap1::InitScene()
 
 	Audio::Start(0);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
+	Audio::LoadAudio(2, L"Upstage.wav", SOUND_TYPE::EFFECT);
 
 	//ƒ^ƒCƒ€‰Šú‰»
 	m_time = 0;
