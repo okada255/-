@@ -25,8 +25,8 @@ void CObjupstage2::Action()
 	{
 		this->SetStatus(false);
 
+		Audio::Start(2);
 		Audio::Stop(0);
-
 		Scene::SetScene(new CSceneMap3());
 	}
 }
