@@ -4,7 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-
+#include"GameL/Audio.h"
 
 using namespace GameL;
 
@@ -25,6 +25,8 @@ void CObjupstage2::Action()
 	{
 		this->SetStatus(false);
 
+		Audio::Stop(0);
+
 		Scene::SetScene(new CSceneMap3());
 	}
 }
@@ -40,8 +42,8 @@ void CObjupstage2::Draw()
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 696.0f;
-	src.m_bottom = 696.0f;
+	src.m_right = 499.0f;
+	src.m_bottom = 499.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 530.0f;

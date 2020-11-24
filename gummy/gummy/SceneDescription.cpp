@@ -20,6 +20,9 @@ CSceneDescription::~CSceneDescription() {
 }
 //‰Šú‰»ƒƒ\ƒbƒh
 void CSceneDescription::InitScene()
+
+
+
 {
 	
 

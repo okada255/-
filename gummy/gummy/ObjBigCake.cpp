@@ -4,6 +4,8 @@
 #include"ObjBigCake.h"
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
+#include "GameL\Audio.h"
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
@@ -17,7 +19,7 @@ void CObjBigCake::Init()
 	/*m_x = 550;
 	m_y = 300;*/
 
-	Hits::SetHitBox(this, m_x, m_y, 90.5, 90.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
+	Hits::SetHitBox(this, m_x, m_y, 112.5, 112.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
 }
 
 void CObjBigCake::Action()
@@ -28,9 +30,12 @@ void CObjBigCake::Action()
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
+		Audio::Start(1);
+
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
+		((UserData*)Save::GetData())->m_point += 300;
 		Scene::SetScene(new CSceneGameClear());
 	}
 }

@@ -12,7 +12,7 @@ using namespace GameL;
 //イニシャライズ
 void CObjTime::Init()
 {
-	m_time = 500*7200;
+	m_time = 120*7200;
 	m_flag_time = false;
 }
 
@@ -22,6 +22,7 @@ void CObjTime::Action()
 	for (int i = 1; i <= 120; i++)
 	{
 		m_time--;
+
 		if (m_time == 0)
 		{
 			Scene::SetScene(new CSceneGameOver());
