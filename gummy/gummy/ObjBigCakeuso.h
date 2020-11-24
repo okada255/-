@@ -1,16 +1,17 @@
 #pragma once
 #include"GameL/SceneObjManager.h"
+#include"GameL/DrawTexture.h"
 using namespace GameL;
 
-class CObjGummy : public  CObj
+class CObjBigCakeuso : public  CObj
 {
 public:
-	CObjGummy(float x,float y);
-	~CObjGummy(){};
+	CObjBigCakeuso(float x, float y);//{}
+	~CObjBigCakeuso() {};
 	void Action();
-	void Init();//
+	void Init();
 	void Draw();
-
+	//
 private:
 	float x;
 	float y;

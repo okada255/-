@@ -40,8 +40,8 @@ void CObjupstage2::Draw()
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 696.0f;
-	src.m_bottom = 696.0f;
+	src.m_right = 499.0f;
+	src.m_bottom = 499.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 530.0f;

@@ -8,14 +8,14 @@
 
 using namespace GameL;
 
-void CObjupstage::Init()
+void CObjupstage3::Init()
 {
 	m_x = 660;
-	m_y = 100;
-	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE, 30);
+	m_y = 530;
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE3, 30);
 }
 
-void CObjupstage::Action()
+void CObjupstage3::Action()
 {
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
@@ -25,11 +25,11 @@ void CObjupstage::Action()
 	{
 		this->SetStatus(false);
 
-		Scene::SetScene(new CSceneMap2());
+		Scene::SetScene(new CSceneGameClear());
 	}
 }
 
-void CObjupstage::Draw()
+void CObjupstage3::Draw()
 {
 	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
@@ -44,7 +44,7 @@ void CObjupstage::Draw()
 	src.m_bottom = 499.0f;
 
 	//表示位置の設定
-	dst.m_top = 100.0f;
+	dst.m_top = 530.0f;
 	dst.m_left = 660.0f;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;

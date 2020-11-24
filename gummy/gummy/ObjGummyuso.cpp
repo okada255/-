@@ -1,22 +1,28 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"Objupstage.h"
+#include"ObjGummyuso.h"
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-
+#include"GameL/UserData.h"
 
 using namespace GameL;
 
-void CObjupstage::Init()
+CObjGummyuso::CObjGummyuso(float x, float y)
 {
-	m_x = 660;
-	m_y = 100;
-	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE, 30);
+	m_x = x;
+	m_y = y;
 }
 
-void CObjupstage::Action()
+
+void CObjGummyuso::Init()
 {
+	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_GUMMYUSO, 3);
+}
+
+void CObjGummyuso::Action()
+{
+
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 
@@ -24,12 +30,11 @@ void CObjupstage::Action()
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		this->SetStatus(false);
-
-		Scene::SetScene(new CSceneMap2());
+		Hits::DeleteHitBox(this);
 	}
 }
 
-void CObjupstage::Draw()
+void CObjGummyuso::Draw()
 {
 	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
@@ -40,15 +45,17 @@ void CObjupstage::Draw()
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 499.0f;
-	src.m_bottom = 499.0f;
+	src.m_right = 64.0f;
+	src.m_bottom = 64.0f;
 
 	//表示位置の設定
-	dst.m_top = 100.0f;
-	dst.m_left = 660.0f;
+
+	//表示位置の設定
+	dst.m_top = m_y;
+	dst.m_left = m_x;
 	dst.m_right = dst.m_left + 18.75f;
 	dst.m_bottom = dst.m_top + 18.75f;
 
 	//描画
-	Draw::Draw(30, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);
 }

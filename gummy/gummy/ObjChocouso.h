@@ -2,13 +2,13 @@
 #include"GameL/SceneObjManager.h"
 using namespace GameL;
 
-class CObjGummy : public  CObj
+class CObjChocouso : public  CObj
 {
 public:
-	CObjGummy(float x,float y);
-	~CObjGummy(){};
+	CObjChocouso(float x, float y);
+	~CObjChocouso() {};
 	void Action();
-	void Init();//
+	void Init();
 	void Draw();
 
 private:

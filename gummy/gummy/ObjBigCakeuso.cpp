@@ -1,28 +1,28 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-#include"ObjBigCake.h"
+#include"ObjBigCakeuso.h"
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
 
 using namespace GameL;
 
-CObjBigCake::CObjBigCake(float x, float y)
+CObjBigCakeuso::CObjBigCakeuso(float x, float y)
 {
 	m_x = x;
 	m_y = y;
 }
-void CObjBigCake::Init()
+void CObjBigCakeuso::Init()
 {
 	/*m_x = 550;
 	m_y = 300;*/
 
-	Hits::SetHitBox(this, m_x, m_y, 90.5, 90.5, ELEMENT_ITEM, OBJ_BIG_CAKE, 50);
+	Hits::SetHitBox(this, m_x, m_y, 90.5, 90.5, ELEMENT_ITEM, OBJ_BIG_CAKEUSO, 50);
 }
 
-void CObjBigCake::Action()
+void CObjBigCakeuso::Action()
 {
-	CObjBigCake* bigcake = (CObjBigCake*)Objs::GetObj(OBJ_BIG_CAKE);
+	CObjBigCake* bigcake = (CObjBigCake*)Objs::GetObj(OBJ_BIG_CAKEUSO);
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//ålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
@@ -30,12 +30,10 @@ void CObjBigCake::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-
-		Scene::SetScene(new CSceneGameClear());
 	}
 }
 
-void CObjBigCake::Draw()
+void CObjBigCakeuso::Draw()
 {
 	// •`‰æƒJƒ‰[î•ñ
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
@@ -53,7 +51,7 @@ void CObjBigCake::Draw()
 	dst.m_top = m_y;/*300.0f;*/
 	dst.m_left = m_x;//550.0f;
 	dst.m_right = dst.m_left + 112.5f;
-	dst.m_bottom = dst.m_top +112.5f;
+	dst.m_bottom = dst.m_top + 112.5f;
 
 	//•`‰æ
 	Draw::Draw(8, &src, &dst, c, 0.0f);

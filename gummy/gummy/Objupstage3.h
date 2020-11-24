@@ -1,19 +1,18 @@
 #pragma once
 #include"GameL/SceneObjManager.h"
+
 using namespace GameL;
 
-class CObjGummy : public  CObj
+class CObjupstage3 : public  CObj
 {
 public:
-	CObjGummy(float x,float y);
-	~CObjGummy(){};
+	CObjupstage3() {};
+	~CObjupstage3() {};
 	void Action();
-	void Init();//
+	void Init();
 	void Draw();
 
 private:
-	float x;
-	float y;
 	float m_x;
 	float m_y;
 };
