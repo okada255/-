@@ -12,7 +12,7 @@ using namespace GameL;
 //イニシャライズ
 void CObjTime::Init()
 {
-	m_time = 500*7200;
+	m_time = 120*7200;
 	m_flag_time = false;
 }
 
