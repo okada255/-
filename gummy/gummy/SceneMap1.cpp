@@ -25,6 +25,7 @@ using namespace GameL;
 #include"ObjGameClear.h"
 #include"ObjBackGround.h"
 #include"Objupstage.h"
+#include"GameL/Audio.h"
 
 
 
@@ -79,6 +80,11 @@ void CSceneMap1::InitScene()
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 
+	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
+
+	Audio::Start(0);
+	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
+
 	//タイム初期化
 	m_time = 0;
 	//Blockオブジェクト作成
@@ -88,10 +94,6 @@ void CSceneMap1::InitScene()
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
-
-	////BigCakeオブジェクト作成
-	//CObjBigCake* objz = new CObjBigCake();
-	//Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();

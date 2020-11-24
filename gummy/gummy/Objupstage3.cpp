@@ -4,7 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-
+#include"GameL/Audio.h"
 
 using namespace GameL;
 
@@ -24,6 +24,8 @@ void CObjupstage3::Action()
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		this->SetStatus(false);
+
+		Audio::Stop(0);
 
 		Scene::SetScene(new CSceneGameClear());
 	}

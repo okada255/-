@@ -32,10 +32,10 @@ void CSceneGameOver::InitScene()
 	Font::SetStrTex(L"congratulations!");
 	Font::SetStrTex(L"THE END");
 
-	Audio::LoadAudio(1, L"GameOver.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"GameOver.wav", SOUND_TYPE::BACK_MUSIC);
 	float v = Audio::VolumeMaster(0);
 	v = Audio::VolumeMaster((1.0-v));
-	Audio::Start(1);
+	Audio::Start(0);
 
 	CObjGameOver* obj = new CObjGameOver();
 	Objs::InsertObj(obj, OBJ_GAME_OVER, 17);

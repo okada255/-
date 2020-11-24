@@ -26,7 +26,7 @@ using namespace GameL;
 #include"ObjBackGround.h"
 #include"Objupstage2.h"
 #include"ObjTime.h"
-
+#include"GameL/Audio.h"
 
 //コンストラクタ
 CSceneMap2::CSceneMap2()
@@ -77,6 +77,10 @@ void CSceneMap2::InitScene()
 	
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+
+	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::Start(0);
+	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
 
 	//タイム初期化
 	m_time = 0;

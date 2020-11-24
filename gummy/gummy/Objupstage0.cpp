@@ -4,7 +4,7 @@
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
-
+#include"GameL/Audio.h"
 
 using namespace GameL;
 
