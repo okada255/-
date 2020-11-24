@@ -35,11 +35,11 @@ void CObjTitle::Init() {
 		init_point = true;
 	}
 
-	//得点情報をランキング最下位(描画圏外)に登録
-	((UserData*)Save::GetData())->m_ranking[15] = ((UserData*)Save::GetData())->m_point;
+	////得点情報をランキング最下位(描画圏外)に登録
+	//((UserData*)Save::GetData())->m_ranking[15] = ((UserData*)Save::GetData())->m_point;
 
-	//得点が高い順に並び変えをする
-	RankingSort(((UserData*)Save::GetData())->m_ranking);
+	////得点が高い順に並び変えをする
+	//RankingSort(((UserData*)Save::GetData())->m_ranking);
 
 	//ゲームを実行して一回目のみ以外、ランキングをセーブする
 	if (init_point==true)
@@ -78,16 +78,16 @@ void CObjTitle::Action() {
 		}
 	}
 
-	//ランキングリセットの部分との当たり判定
-	if (m_mou_x > CLICK_RESET_POS_X && m_mou_x < CLICK_RESET_POS_X + 100 &&
-		m_mou_y>CLICK_RESET_POS_Y && m_mou_y < CLICK_RESET_POS_Y + 32)
-	{
-		//ランキング初期化
-		for (int i = 0; i < 16; i++)
-		{
-			((UserData*)Save::GetData())->m_ranking[i] = 0;
-		}	
-	}
+	////ランキングリセットの部分との当たり判定
+	//if (m_mou_x > CLICK_RESET_POS_X && m_mou_x < CLICK_RESET_POS_X + 100 &&
+	//	m_mou_y>CLICK_RESET_POS_Y && m_mou_y < CLICK_RESET_POS_Y + 32)
+	//{
+	//	//ランキング初期化
+	//	for (int i = 0; i < 16; i++)
+	//	{
+	//		((UserData*)Save::GetData())->m_ranking[i] = 0;
+	//	}	
+	//}
 	m_mou_r = false;
 	m_mou_l = false;
 }
@@ -98,20 +98,20 @@ void CObjTitle::Draw() {
 	Font::StrDraw(L"GUMMY", 220, 200, 150, c);
 
 
-	//ランキング
-	Font::StrDraw(L"ランキング",RANKING_POS_X, RANKING_POS_Y, RANKING_FONT_SIZE,c );
-	
-	for(int i = 0;i<RANKING_SCORE_MAX;i++)
-	{
-		wchar_t str[STR_MAX];
-		swprintf_s(str,L"%2d位%12d位点",i+SCORE_INIT,(i+SCORE_INIT)*SCORE_POINT_MAX);
-		Font::StrDraw(str,SCORE_POS_X,SCORE_POS_Y+SCORE_INTERVAL*i,SCORE_FONT_SIZE,c);
-	}
+	////ランキング
+	//Font::StrDraw(L"ランキング",RANKING_POS_X, RANKING_POS_Y, RANKING_FONT_SIZE,c );
+	//
+	//for(int i = 0;i<RANKING_SCORE_MAX;i++)
+	//{
+	//	wchar_t str[STR_MAX];
+	//	swprintf_s(str,L"%2d位%12d位点",i+SCORE_INIT,(i+SCORE_INIT)*SCORE_POINT_MAX);
+	//	Font::StrDraw(str,SCORE_POS_X,SCORE_POS_Y+SCORE_INTERVAL*i,SCORE_FONT_SIZE,c);
+	//}
 
 	Font::StrDraw(L"Game Start ", 320, 380, 32, c);
 	Font::StrDraw(L" Push [Enter]Key ", 260, 430, 32, c);
 
-	Font::StrDraw(L"★ClickReset", 600, 380, 16, c);
+	//Font::StrDraw(L"★ClickReset", 600, 380, 16, c);
 }
 
 void CObjTitle::RankingSort(int rank[16])

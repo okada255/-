@@ -23,9 +23,10 @@ void CObjupstage3::Action()
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
+		Audio::Start(2);
+
 		this->SetStatus(false);
 
-		Audio::Start(2);
 		Audio::Stop(0);
 
 		Scene::SetScene(new CSceneGameClear());
