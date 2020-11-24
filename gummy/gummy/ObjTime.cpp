@@ -22,6 +22,7 @@ void CObjTime::Action()
 	for (int i = 1; i <= 120; i++)
 	{
 		m_time--;
+
 		if (m_time == 0)
 		{
 			Scene::SetScene(new CSceneGameOver());
