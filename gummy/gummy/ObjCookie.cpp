@@ -5,6 +5,7 @@
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"GameL/UserData.h"
+#include"GameL/Audio.h"
 
 using namespace GameL;
 
@@ -26,8 +27,11 @@ void CObjCookie::Action()
 
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
+		Audio::Start(1);
+
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		
 		((UserData*)Save::GetData())->m_point += 20;
 	}
 }
