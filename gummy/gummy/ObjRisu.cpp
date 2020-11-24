@@ -86,7 +86,7 @@ void CObjRisu::Action()
 		m_posture = 0.0f;//下ボタンを押したときの表示されるイラスト
 		m_ani_time += 1;
 	}
-
+	//
 	if (Input::GetVKey(VK_RIGHT)==true && Input::GetVKey(VK_DOWN) == true)
 	{
 		m_vx += 1.0f;
