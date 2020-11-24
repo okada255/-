@@ -21,9 +21,8 @@ CSceneTitle::~CSceneTitle() {
 void CSceneTitle::InitScene() {
 
 	Audio::LoadAudio(0, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
-	float v = Audio::VolumeMaster(-0.5f);
+	float v = Audio::VolumeMaster(-0.1f);
 	Audio::Start(0);
-
 	Font::SetStrTex(L"シューティングゲーム");
 	/*Audio::Start(0);*/
 	CObjTitle* obj = new CObjTitle();

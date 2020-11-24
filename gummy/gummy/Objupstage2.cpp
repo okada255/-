@@ -23,11 +23,11 @@ void CObjupstage2::Action()
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
-		this->SetStatus(false);
-
 		Audio::Start(2);
-		Audio::Stop(0);
+		this->SetStatus(false);
 		Scene::SetScene(new CSceneMap3());
+
+		Audio::Stop(0);
 	}
 }
 
