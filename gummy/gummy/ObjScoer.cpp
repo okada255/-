@@ -15,6 +15,7 @@ void CObjScore::Init()
 {
 	m_gram = 0;
 	m_flag_gram = false;
+
 }
 
 //アクション
@@ -25,6 +26,7 @@ void CObjScore::Action()
 	{
 		;
 	}
+
 }
 
 //ドロー
