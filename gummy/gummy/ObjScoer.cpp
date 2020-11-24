@@ -26,6 +26,11 @@ void CObjScore::Action()
 	{
 		;
 	}
+	m_gram = 0;
+	if (OBJ_TIME == false)
+	{
+		;
+	}
 
 }
 
@@ -36,6 +41,6 @@ void CObjScore::Draw()
 
 	float cc[4] = { 1.0f,1.0f,1.0f,1.0f };
 	wchar_t str[128];
-	swprintf_s(str, L"得点：%d点", ((UserData*)Save::GetData())->m_point);
+	swprintf_s(str, L"得点：%dg", ((UserData*)Save::GetData())->m_point);
 	Font::StrDraw(str, 697, 10, 18.2, cc);
 }
