@@ -19,7 +19,7 @@ void CObjRisu::Init()
 	//float move = 1.0f;
 
 	//当たり判定
-	Hits::SetHitBox(this, m_px, m_py, 18.85, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
+	Hits::SetHitBox(this, m_px, m_py, 23.00, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
 }
 void CObjRisu::Action()
 {
@@ -202,16 +202,16 @@ void CObjRisu::Draw()
 	RECT_F dst; //描画先表示位置
 
 	//切り取り位置
-	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 128.0f;
-	src.m_bottom = 128.0f;
+	src.m_top = 0.0f;// 25.0f;
+	src.m_left = 0.0f;// 17.0f;
+	src.m_right = 128.0f;// 95.0f;
+	src.m_bottom = 128.0f;// 70.0f;
 
 	//表示
 	dst.m_top = 0.0f + m_py;
-	dst.m_left = (18.85f *m_posture) + m_px;
-	dst.m_right = (18.85 -18.85f * m_posture) + m_px;// dst.m_left;
-	dst.m_bottom = 18.85f + m_py;// dst.m_top;
+	dst.m_left = (30.0f *m_posture) + m_px;
+	dst.m_right = (30.0 -30.0f * m_posture) + m_px;// dst.m_left;
+	dst.m_bottom = 30.0f + m_py;// dst.m_top;
 
 	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
 	Draw::Draw(2, &src, &dst, c, 0.0f); //左向きリスl優先度３→リス
