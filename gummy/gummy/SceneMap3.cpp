@@ -88,9 +88,9 @@ void CSceneMap3::InitScene()
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
 
-	//BigCakeオブジェクト作成
-	CObjBigCake* objz = new CObjBigCake(560,240);
-	Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
+	////BigCakeオブジェクト作成
+	//CObjBigCake* objz = new CObjBigCake(560,240);
+	//Objs::InsertObj(objz, OBJ_BIG_CAKE, 20);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();
@@ -117,72 +117,72 @@ void CSceneMap3::Scene()
 
 	//Gummyオブジェクト作成
 		CObjGummy* objg;
-		objg = new CObjGummy(140, 50);//C-3
+		objg = new CObjGummy(40, 50);//C-3
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(140, 440);//C-25
+		objg = new CObjGummy(40, 440);//C-25
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(140, 520);//C-30
+		objg = new CObjGummy(40, 520);//C-30
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(160, 165);//D-10
+		objg = new CObjGummy(60, 165);//D-10
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(195, 330);//E-20
-		Objs::InsertObj(objg, OBJ_GUMMY, 13);
-
-
-		objg = new CObjGummy(235, 165);//H-10
-		Objs::InsertObj(objg, OBJ_GUMMY, 13);
-
-		objg = new CObjGummy(245, 270);//I-16
-		Objs::InsertObj(objg, OBJ_GUMMY, 13);
-
-		objg = new CObjGummy(245, 415);//I-24
-		Objs::InsertObj(objg, OBJ_GUMMY, 13);
-
-		objg = new CObjGummy(315, 65);//L-4
-		Objs::InsertObj(objg, OBJ_GUMMY, 13);
-
-		objg = new CObjGummy(330, 285);//M-17
+		objg = new CObjGummy(95, 330);//E-20
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 
-		objg = new CObjGummy(340, 435);//N-25
+		objg = new CObjGummy(135, 165);//H-10
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(385, 225);//P-13
+		objg = new CObjGummy(145, 270);//I-16
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(385, 520);//P-29
+		objg = new CObjGummy(145, 415);//I-24
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(425, 20);//R-2
+		objg = new CObjGummy(215, 65);//L-4
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(425, 180);//R-11
+		objg = new CObjGummy(230, 285);//M-17
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 
-		objg = new CObjGummy(485, 255);//U-15
+		objg = new CObjGummy(240, 435);//N-25
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(485, 415);//U-24
+		objg = new CObjGummy(285, 225);//P-13
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(510, 535);//V-30
+		objg = new CObjGummy(285, 520);//P-29
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(490, 90);//V-5
+		objg = new CObjGummy(325, 20);//R-2
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		objg = new CObjGummy(505, 50);//W-3
+		objg = new CObjGummy(325, 180);//R-11
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+
+		objg = new CObjGummy(385, 255);//U-15
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(385, 415);//U-24
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(410, 535);//V-30
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(390, 90);//V-5
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		objg = new CObjGummy(405, 50);//W-3
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 
 		CObjBigCake* objz;
-		objz = new CObjBigCake(560, 240);//AB-15
+		objz = new CObjBigCake(460, 230);//AB-15
 		Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
 		//////BigCakeオブジェクト作成
 		//CObjBigCake* objz = new CObjBigCake();

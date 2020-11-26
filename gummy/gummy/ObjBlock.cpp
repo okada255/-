@@ -40,7 +40,7 @@ void CObjBlock::Action()
             if (m_map[i][j] > 0)
             {
                 //要素番号を座標に変更
-                float x = j * 18.75 + 100;
+                float x = j * 18.75;
                 float y = i * 18.75;
 
                 //主人公とブロックの当たり判定
@@ -133,7 +133,7 @@ void CObjBlock::Draw()
             {
                 //表示位置の設定
                 dst.m_top = i * 18.75f;
-                dst.m_left = j * 18.75f + 100.0;
+                dst.m_left = j * 18.75f + 0.0;
                 dst.m_right = dst.m_left + 18.75f;
                 dst.m_bottom = dst.m_top + 18.75f;
                 if (m_map[i][j] == 1)

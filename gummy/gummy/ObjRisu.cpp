@@ -10,7 +10,7 @@ using namespace GameL;
 void CObjRisu::Init()
 {
 	//‰Šú”z’u
-	m_px = 138.5;
+	m_px = 38.5;
 	m_py = (600 / 2) - 16;
 
 	m_vx = 0.0f;

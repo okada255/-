@@ -172,10 +172,11 @@
     <ClCompile Include="ObjScoer.cpp" />
     <ClCompile Include="ObjTime.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
-    <ClCompile Include="Objupstage.cpp" />
+    <ClCompile Include="Objupstage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Objupstage0.cpp" />
     <ClCompile Include="Objupstage2.cpp" />
-    <ClCompile Include="Objupstage3.cpp" />
     <ClCompile Include="SceneDescription.cpp" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
@@ -222,10 +223,11 @@
     <ClInclude Include="ObjScore.h" />
     <ClInclude Include="ObjTime.h" />
     <ClInclude Include="ObjTitle.h" />
-    <ClInclude Include="Objupstage.h" />
+    <ClInclude Include="Objupstage.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Objupstage0.h" />
     <ClInclude Include="Objupstage2.h" />
-    <ClInclude Include="Objupstage3.h" />
     <ClInclude Include="SceneDescription.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneGameOver.h" />
