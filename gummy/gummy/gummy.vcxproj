@@ -152,9 +152,7 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjBackGround.cpp" />
-    <ClCompile Include="ObjBigCakeuso.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="ObjBigCakeuso.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBigCake.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
@@ -179,9 +177,6 @@
     </ClCompile>
     <ClCompile Include="Objupstage0.cpp" />
     <ClCompile Include="Objupstage2.cpp" />
-    <ClCompile Include="Objupstage3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="SceneDescription.cpp" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
@@ -208,9 +203,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjBackGround.h" />
-    <ClInclude Include="ObjBigCakeuso.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClInclude>
+    <ClInclude Include="ObjBigCakeuso.h" />
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBigCake.h" />
     <ClInclude Include="ObjCandy.h" />
@@ -235,9 +228,6 @@
     </ClInclude>
     <ClInclude Include="Objupstage0.h" />
     <ClInclude Include="Objupstage2.h" />
-    <ClInclude Include="Objupstage3.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="SceneDescription.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneGameOver.h" />

@@ -27,7 +27,6 @@ enum OBJ_NAME
 	OBJ_GAME_OVER,
 	OBJ_BACKGROUND,
 	OBJ_UPSTAGE,
-	OBJ_UPSTAGE3,
 	OBJ_UPSTAGE2,
 	OBJ_UPSTAGE0,
 	OBJ_DESCRIPTION,
@@ -100,7 +99,7 @@ struct UserData
 #include"ObjGameOver.h"
 #include"ObjBackGround.h"
 #include"Objupstage.h"
-#include"Objupstage3.h"
+
 #include"Objupstage2.h"
 #include"Objupstage0.h"
 
