@@ -6,7 +6,7 @@ using namespace GameL;
 class CObjupstage : public  CObj
 {
 public:
-	CObjupstage() {};
+	CObjupstage(float x,float y);
 	~CObjupstage() {};
 	void Action();
 	void Init();
@@ -15,4 +15,6 @@ public:
 private:
 	float m_x;
 	float m_y;
+	float x;
+	float y;
 };

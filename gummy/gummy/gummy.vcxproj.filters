@@ -165,9 +165,6 @@
     <ClCompile Include="Objupstage0.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
-    <ClCompile Include="Objupstage3.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
     <ClCompile Include="ObjCandyuso.cpp">
       <Filter>ソース ファイル\偽Snuck</Filter>
     </ClCompile>
@@ -303,9 +300,6 @@
       <Filter>ソース ファイル\操作説明関連</Filter>
     </ClInclude>
     <ClInclude Include="Objupstage0.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClInclude>
-    <ClInclude Include="Objupstage3.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
     <ClInclude Include="ObjCandyuso.h">

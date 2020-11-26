@@ -44,8 +44,9 @@ void CObjTime::Draw()
 	
 	
 	if (second > 0)
-		swprintf_s(str, L"%d",m_time/7200);
+		Font::StrDraw(L"êßå¿éûä‘", 630, 10, 30, c);
+	swprintf_s(str, L"%d", m_time / 7200);
 
-	Font::StrDraw(str, 10, 10, 20, c);
+	Font::StrDraw(str, 670, 40, 50, c);
 }
 
