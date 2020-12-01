@@ -113,10 +113,12 @@ struct UserData
 
 //ゲームシーンクラスヘッダ------------------------
 #include"SceneMap1.h"
-#include"SceneMap2.h"
-#include"SceneMap3.h"
 #include"SceneMap1B.h"
 #include"SceneMap1C.h"
+#include"SceneMap2.h"
+#include"SceneMap2B.h"
+#include"SceneMap2C.h"
+#include"SceneMap3.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
 #include"SceneGameOver.h"

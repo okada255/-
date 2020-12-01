@@ -8,7 +8,7 @@ using namespace GameL;
 #include "SceneMap1.h"
 #include "GameHead.h"
 #include "GameL\DrawFont.h"
-#include "GameL\Audio.h"
+#include "GameL/Audio.h"
 #include"ObjDescription.h"
 
 CSceneDescription::CSceneDescription() {
@@ -35,9 +35,7 @@ void CSceneDescription::InitScene()
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);//äKíi
-	
-	
-
+	Audio::LoadAudio(2, L"upstage.wav", SOUND_TYPE::BACK_MUSIC);
 	//ÉäÉXçÏê¨
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);

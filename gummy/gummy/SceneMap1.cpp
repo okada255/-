@@ -82,10 +82,8 @@ void CSceneMap1::InitScene()
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
 
-	Audio::Start(0);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
 	Audio::LoadAudio(2, L"upstage.wav", SOUND_TYPE::EFFECT);
-
 	//タイム初期化
 	m_time = 0;
 	//Blockオブジェクト作成
@@ -188,5 +186,9 @@ void CSceneMap1::Scene()
 
 		obj_c = new CObjChoco(530, 540);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+	}
+	if (m_time == 10)
+	{
+		Audio::Start(0);
 	}
 }

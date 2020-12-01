@@ -46,9 +46,6 @@
     <Filter Include="ソース ファイル\偽Snuck">
       <UniqueIdentifier>{53ed0d2d-6df3-41f1-b697-6837009f48b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MAP関連\チュートリアル">
-      <UniqueIdentifier>{219f1441-5f3a-479b-ad5e-8865b9c7aa45}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\MAP関連\1ステージ">
       <UniqueIdentifier>{e6ac7f4e-4088-4943-99cc-3670d8f8a161}</UniqueIdentifier>
     </Filter>
@@ -183,9 +180,6 @@
     <ClCompile Include="Objupstage.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
-    <ClCompile Include="Objupstage0.cpp">
-      <Filter>ソース ファイル\MAP関連\チュートリアル</Filter>
-    </ClCompile>
     <ClCompile Include="Objupstage2.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
@@ -197,6 +191,15 @@
     </ClCompile>
     <ClCompile Include="SceneMap1C.cpp">
       <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="Objupstage0.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2B.cpp">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMsp2C.cpp">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -326,9 +329,6 @@
     <ClInclude Include="Objupstage.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
-    <ClInclude Include="Objupstage0.h">
-      <Filter>ソース ファイル\MAP関連\チュートリアル</Filter>
-    </ClInclude>
     <ClInclude Include="Objupstage2.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
@@ -340,6 +340,15 @@
     </ClInclude>
     <ClInclude Include="SceneMap1C.h">
       <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage0.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2B.h">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2C.h">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

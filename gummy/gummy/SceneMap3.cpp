@@ -13,7 +13,7 @@
 using namespace GameL;
 
 //使用ヘッダー
-#include"SceneMap1.h"
+#include"SceneMap3.h"
 #include"ObjBlock.h"
 #include"ObjCookie.h"
 #include"ObjCandy.h"
@@ -112,7 +112,6 @@ void CSceneMap3::Scene()
 	m_time++;
 	if (m_time == 1)
 	{
-		Audio::Stop(2);
 		Audio::Start(0);
 
 	//Gummyオブジェクト作成

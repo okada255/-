@@ -12,7 +12,7 @@ void CObjupstage0::Init()
 {
 	m_x = 660;
 	m_y = 100;
-	Hits::SetHitBox(this, m_x, m_y, 26.25, 26.25, ELEMENT_ITEM, OBJ_UPSTAGE2, 30);
+	Hits::SetHitBox(this, m_x, m_y, 26.25, 26.25, ELEMENT_ITEM, OBJ_UPSTAGE0, 30);
 }
 
 void CObjupstage0::Action()
@@ -23,9 +23,9 @@ void CObjupstage0::Action()
 	//ŽålŒö‚ÆÚG‚µ‚Ä‚¢‚é‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
+		Audio::Start(2);
 		this->SetStatus(false);
-
-		Scene::SetScene(new CSceneMap1B());
+		Scene::SetScene(new CSceneMap1());
 	}
 }
 
