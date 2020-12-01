@@ -35,7 +35,7 @@ void CObjBigCake::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		((UserData*)Save::GetData())->m_point += 150;
+		((UserData*)Save::GetData())->m_point += 300;
 		Scene::SetScene(new CSceneGameClear());
 	}
 }
