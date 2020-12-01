@@ -115,6 +115,8 @@ struct UserData
 #include"SceneMap1.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
+#include"SceneMap1B.h"
+#include"SceneMap1C.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"
 #include"SceneGameOver.h"

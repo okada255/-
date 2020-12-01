@@ -1,6 +1,6 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"Objupstage2.h"
+#include"Objupstage.h"
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
@@ -28,10 +28,10 @@ void CObjupstage::Action()
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		Audio::Start(2);
+		Audio::Stop(0);
+
 		this->SetStatus(false);
 		Scene::SetScene(new CSceneMap2());
-
-		Audio::Stop(0);
 	}
 }
 

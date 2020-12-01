@@ -183,7 +183,9 @@
     <ClCompile Include="SceneMain.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SceneMap1B.cpp" />
     <ClCompile Include="SceneMap1.cpp" />
+    <ClCompile Include="SceneMap1C.cpp" />
     <ClCompile Include="SceneMap2.cpp" />
     <ClCompile Include="SceneMap3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
@@ -235,6 +237,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="SceneMap1.h" />
+    <ClInclude Include="SceneMap1B.h" />
+    <ClInclude Include="SceneMap1C.h" />
     <ClInclude Include="SceneMap2.h" />
     <ClInclude Include="SceneMap3.h" />
     <ClInclude Include="SceneTitle.h" />

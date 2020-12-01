@@ -46,6 +46,15 @@
     <Filter Include="ソース ファイル\偽Snuck">
       <UniqueIdentifier>{53ed0d2d-6df3-41f1-b697-6837009f48b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\MAP関連\チュートリアル">
+      <UniqueIdentifier>{219f1441-5f3a-479b-ad5e-8865b9c7aa45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MAP関連\1ステージ">
+      <UniqueIdentifier>{e6ac7f4e-4088-4943-99cc-3670d8f8a161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MAP関連\2ステージ">
+      <UniqueIdentifier>{1d7bd6a2-b38b-4d93-9be3-ebf597308738}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ObjDonatu.cpp">
@@ -141,18 +150,6 @@
     <ClCompile Include="ObjBackGround.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMap1.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMap2.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
-    <ClCompile Include="Objupstage.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
-    <ClCompile Include="Objupstage2.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClCompile>
     <ClCompile Include="SceneMap3.cpp">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
@@ -161,9 +158,6 @@
     </ClCompile>
     <ClCompile Include="ObjDescription.cpp">
       <Filter>ソース ファイル\操作説明関連</Filter>
-    </ClCompile>
-    <ClCompile Include="Objupstage0.cpp">
-      <Filter>ソース ファイル\MAP関連</Filter>
     </ClCompile>
     <ClCompile Include="ObjCandyuso.cpp">
       <Filter>ソース ファイル\偽Snuck</Filter>
@@ -182,6 +176,27 @@
     </ClCompile>
     <ClCompile Include="ObjBigCakeuso.cpp">
       <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap1.cpp">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="Objupstage.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
+    <ClCompile Include="Objupstage0.cpp">
+      <Filter>ソース ファイル\MAP関連\チュートリアル</Filter>
+    </ClCompile>
+    <ClCompile Include="Objupstage2.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2.cpp">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap1B.cpp">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap1C.cpp">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -278,18 +293,6 @@
     <ClInclude Include="ObjBackGround.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMap1.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMap2.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClInclude>
-    <ClInclude Include="Objupstage.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClInclude>
-    <ClInclude Include="Objupstage2.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
-    </ClInclude>
     <ClInclude Include="SceneMap3.h">
       <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
@@ -298,9 +301,6 @@
     </ClInclude>
     <ClInclude Include="ObjDescription.h">
       <Filter>ソース ファイル\操作説明関連</Filter>
-    </ClInclude>
-    <ClInclude Include="Objupstage0.h">
-      <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
     <ClInclude Include="ObjCandyuso.h">
       <Filter>ソース ファイル\偽Snuck</Filter>
@@ -319,6 +319,27 @@
     </ClInclude>
     <ClInclude Include="ObjBigCakeuso.h">
       <Filter>ソース ファイル\偽Snuck</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap1.h">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage0.h">
+      <Filter>ソース ファイル\MAP関連\チュートリアル</Filter>
+    </ClInclude>
+    <ClInclude Include="Objupstage2.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2.h">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap1B.h">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap1C.h">
+      <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

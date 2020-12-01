@@ -80,7 +80,7 @@ void CSceneMap2::InitScene()
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
-	Audio::LoadAudio(2, L"Upstage.wav", SOUND_TYPE::EFFECT);
+	Audio::LoadAudio(2, L"upstage.wav", SOUND_TYPE::EFFECT);
 	//タイム初期化
 	m_time = 0;
 	//Blockオブジェクト作成
@@ -114,7 +114,6 @@ void CSceneMap2::Scene()
 	m_time++;
 	if (m_time == 1)
 	{
-		Audio::Stop(2);
 		Audio::Start(0);
 
 		//キャンディ
