@@ -6,6 +6,9 @@
 #include "ObjTitle.h"
 #include"GameL/UserData.h"
 #include"ObjDescription.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<time.h>
 
 using namespace GameL;
 
@@ -20,7 +23,20 @@ void CObjDescription::Init() {
 void CObjDescription::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
-			Scene::SetScene(new CSceneMap1());
+			srand(time(NULL));
+			ai = rand() % 3;
+			if (ai == 0)
+			{
+				Scene::SetScene(new CSceneMap1());
+			}
+			else if (ai == 1)
+			{
+				Scene::SetScene(new CSceneMap1B());
+			}
+			else if(ai==2)
+			{
+				Scene::SetScene(new CSceneMap1C());
+			}
 			m_key_flag = false;
 		}
 	}
