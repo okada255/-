@@ -13,7 +13,7 @@
 using namespace GameL;
 
 //使用ヘッダー
-#include"SceneMap2.h"
+#include"SceneMap2B.h"
 #include"ObjBlock.h"
 #include"ObjCookie.h"
 #include"ObjCandy.h"
@@ -29,20 +29,20 @@ using namespace GameL;
 #include"GameL/Audio.h"
 
 //コンストラクタ
-CSceneMap2::CSceneMap2()
+CSceneMap2B::CSceneMap2B()
 {
 
 }
 
 //デストラクタ
-CSceneMap2::~CSceneMap2()
+CSceneMap2B::~CSceneMap2B()
 {
 
 
 }
 
 //初期化メソッド
-void CSceneMap2::InitScene()
+void CSceneMap2B::InitScene()
 {
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
@@ -74,7 +74,7 @@ void CSceneMap2::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	
+
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 
@@ -109,17 +109,17 @@ void CSceneMap2::InitScene()
 }
 
 //実行中メソッド
-void CSceneMap2::Scene()
+void CSceneMap2B::Scene()
 {
 	m_time++;
 	if (m_time == 1)
 	{
 		Audio::Start(0);
 
-		//キャンディ
-		CObjCandy* objc;
-		objc = new CObjCandy(250,50);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);
+		////キャンディ
+		//CObjCandy* objc;
+		//objc = new CObjCandy(250, 50);
+		//Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		//objc = new CObjCandy(520, 300);
 		//Objs::InsertObj(objc, OBJ_CANDY, 10);
@@ -141,23 +141,23 @@ void CSceneMap2::Scene()
 		//objC = new CObjCookie(200, 285);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(50,540);
+		//objC = new CObjCookie(50, 540);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(400,500);
+		//objC = new CObjCookie(400, 500);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		////Donatuオブジェクト作成
-		//CObjDonatu* objd;
-		//objd = new CObjDonatu(340, 100);
-		//Objs::InsertObj(objd, OBJ_DONATU, 11);
+		//Donatuオブジェクト作成
+		CObjDonatu* objd;
+		objd = new CObjDonatu(340, 100);
+		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-		////Gummyオブジェクト作成
-		//CObjGummy* objg;
-		//objg = new CObjGummy(440, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		//Gummyオブジェクト作成
+		CObjGummy* objg;
+		objg = new CObjGummy(440, 50);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(210,175);
+		//objg = new CObjGummy(210, 175);
 		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 		//objg = new CObjGummy(300, 200);
@@ -168,7 +168,7 @@ void CSceneMap2::Scene()
 
 		////Chocoオブジェクト作成
 		//CObjChoco* obj_c;
-		//obj_c = new CObjChoco(120,150);
+		//obj_c = new CObjChoco(120, 150);
 		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		//obj_c = new CObjChoco(510, 150);

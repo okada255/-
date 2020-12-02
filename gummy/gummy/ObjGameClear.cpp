@@ -33,6 +33,6 @@ void CObjGameClear::Draw() {
 
 	float cc[4] = { 1.0f,1.0f,1.0f,1.0f };
 	wchar_t str[128];
-	swprintf_s(str, L"得点：%d点", ((UserData*)Save::GetData())->m_point);
+	swprintf_s(str, L"得点：%d点", ((UserData*)Save::GetData())->m_point*30);
 	Font::StrDraw(str, 260, 50, 60, cc);
 }

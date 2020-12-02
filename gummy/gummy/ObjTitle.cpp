@@ -5,6 +5,7 @@
 #include "GameHead.h"
 #include "ObjTitle.h"
 #include"GameL/UserData.h"
+#include"GameL/Audio.h"
 
 using namespace GameL;
 

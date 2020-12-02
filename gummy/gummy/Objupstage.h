@@ -17,4 +17,5 @@ private:
 	float m_y;
 	float x;
 	float y;
+	int ai = 0;
 };

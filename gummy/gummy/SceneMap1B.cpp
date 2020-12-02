@@ -13,7 +13,7 @@
 using namespace GameL;
 
 //使用ヘッダー
-#include"SceneMap2.h"
+#include"SceneMap1B.h"
 #include"ObjBlock.h"
 #include"ObjCookie.h"
 #include"ObjCandy.h"
@@ -24,25 +24,26 @@ using namespace GameL;
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjBackGround.h"
-#include"Objupstage2.h"
-#include"ObjTime.h"
+#include"Objupstage.h"
 #include"GameL/Audio.h"
 
+
+
 //コンストラクタ
-CSceneMap2::CSceneMap2()
+CSceneMap1B::CSceneMap1B()
 {
 
 }
 
 //デストラクタ
-CSceneMap2::~CSceneMap2()
+CSceneMap1B::~CSceneMap1B()
 {
 
 
 }
 
 //初期化メソッド
-void CSceneMap2::InitScene()
+void CSceneMap1B::InitScene()
 {
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
@@ -52,7 +53,7 @@ void CSceneMap2::InitScene()
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;             //ステージ情報の大きさ
 	int map[32][32];
-	p = Save::ExternalDataOpen(L"MAP2.csv", &size);//外部データ読み込み
+	p = Save::ExternalDataOpen(L"MAP1.csv", &size);//外部データ読み込み
 
 	int count = 1;
 	for (int i = 0; i < 32; i++)
@@ -74,18 +75,26 @@ void CSceneMap2::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	
-	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
+
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 
+	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
+
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
+
+	Audio::Start(0);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
-	Audio::LoadAudio(2, L"upstage.wav", SOUND_TYPE::EFFECT);
+	Audio::LoadAudio(2, L"Upstage.wav", SOUND_TYPE::EFFECT);
+
 	//タイム初期化
 	m_time = 0;
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
+
+	//リス作成
+	CObjRisu* objr = new CObjRisu();
+	Objs::InsertObj(objr, OBJ_RISU, 12);
 
 	//タイム作成
 	CObjTime* objt = new CObjTime();
@@ -99,91 +108,86 @@ void CSceneMap2::InitScene()
 	CObjBackGround* back = new CObjBackGround();
 	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 
-	//リス作成
-	CObjRisu* objr = new CObjRisu();
-	Objs::InsertObj(objr, OBJ_RISU, 12);
-
 	//上り階段作成
-	CObjupstage2* objU = new CObjupstage2(555, 460);
-	Objs::InsertObj(objU, OBJ_UPSTAGE, 18);
+	CObjupstage* obju = new CObjupstage(555, 130);
+	Objs::InsertObj(obju, OBJ_UPSTAGE, 18);
 }
 
 //実行中メソッド
-void CSceneMap2::Scene()
+void CSceneMap1B::Scene()
 {
 	m_time++;
 	if (m_time == 1)
 	{
-		Audio::Start(0);
-
 		//キャンディ
 		CObjCandy* objc;
-		objc = new CObjCandy(250,50);
+		objc = new CObjCandy(440, 50);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		//objc = new CObjCandy(520, 300);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
-
-		//objc = new CObjCandy(150, 550);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
-
-		//objc = new CObjCandy(450, 550);
+		//objc = new CObjCandy(390, 220);
 		//Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		////Cookieオブジェクト作成
 		//CObjCookie* objC;
-		//objC = new CObjCookie(50, 50);
+		//objC = new CObjCookie(350, 150);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(540, 50);
+		//objC = new CObjCookie(130, 180);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(200, 285);
+		//objC = new CObjCookie(65, 430);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(50,540);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
-
-		//objC = new CObjCookie(400,500);
+		//objC = new CObjCookie(220, 550);
 		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
 		////Donatuオブジェクト作成
 		//CObjDonatu* objd;
-		//objd = new CObjDonatu(340, 100);
+		//objd = new CObjDonatu(300, 250);
+		//Objs::InsertObj(objd, OBJ_DONATU, 11);
+
+		//objd = new CObjDonatu(300, 250);
 		//Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 		////Gummyオブジェクト作成
 		//CObjGummy* objg;
-		//objg = new CObjGummy(440, 50);
+		//objg = new CObjGummy(310, 540);
 		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(210,175);
+		//objg = new CObjGummy(290, 400);
 		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(300, 200);
+		//objg = new CObjGummy(170, 270);
 		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(40, 400);
+		//objg = new CObjGummy(190, 50);
 		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		////Chocoオブジェクト作成
-		//CObjChoco* obj_c;
-		//obj_c = new CObjChoco(120,150);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		//objg = new CObjGummy(190, 50);
+		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//obj_c = new CObjChoco(510, 150);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		//objg = new CObjGummy(190, 50);
+		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//obj_c = new CObjChoco(400, 200);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		//objg = new CObjGummy(190, 50);
+		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//obj_c = new CObjChoco(420, 340);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		//objg = new CObjGummy(190, 50);
+		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//obj_c = new CObjChoco(75, 480);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		//Chocoオブジェクト作成
+		CObjChoco* obj_c;
+		obj_c = new CObjChoco(40, 50);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
-		//obj_c = new CObjChoco(150, 450);
-		//Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+		obj_c = new CObjChoco(480, 170);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+
+		obj_c = new CObjChoco(250, 180);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+
+		obj_c = new CObjChoco(370, 350);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+
 	}
 }

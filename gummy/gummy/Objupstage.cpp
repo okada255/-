@@ -1,10 +1,13 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"Objupstage2.h"
+#include"Objupstage.h"
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"GameL/Audio.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<time.h>
 
 using namespace GameL;
 
@@ -28,10 +31,23 @@ void CObjupstage::Action()
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		Audio::Start(2);
-		this->SetStatus(false);
-		Scene::SetScene(new CSceneMap2());
-
 		Audio::Stop(0);
+
+		srand(time(NULL));
+		ai = rand() % 3;
+		if (ai == 0)
+		{
+			Scene::SetScene(new CSceneMap2());
+		}
+		else if (ai == 1)
+		{
+			Scene::SetScene(new CSceneMap2B());
+		}
+		else if (ai == 2)
+		{
+			Scene::SetScene(new CSceneMap2C());
+		}
+		this->SetStatus(false);
 	}
 }
 
