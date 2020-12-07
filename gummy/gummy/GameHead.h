@@ -31,10 +31,6 @@ enum OBJ_NAME
 	OBJ_UPSTAGE0,
 	OBJ_DESCRIPTION,
 };
-    //OBJ_RISUR,
-	//OBJ_RISUL,
-	//OBJ_RISUD,
-	//OBJ_RISUU,
 //------------------------------------------------
 
 //ìñÇΩÇËîªíËëÆê´----------------------------------
