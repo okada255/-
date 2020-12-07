@@ -72,11 +72,11 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	Draw::LoadImageW(L"グミらしい.png", 51, TEX_SIZE_256);          //ステージ1
-	Draw::LoadImageW(L"狂ったキャンディー.png", 54, TEX_SIZE_256);  //ステージ2
-	Draw::LoadImageW(L"ラスボス.png", 53, TEX_SIZE_256);            //ステージ3
-	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_256);//タイトル
-	Draw::LoadImageW(L"エンド.png", 55, TEX_SIZE_256);              //ゲームオーバー
+	//Draw::LoadImageW(L"グミらしい.png", 51, TEX_SIZE_256);          //ステージ1
+	//Draw::LoadImageW(L"狂ったキャンディー.png", 54, TEX_SIZE_256);  //ステージ2
+	//Draw::LoadImageW(L"ラスボス.png", 53, TEX_SIZE_256);            //ステージ3
+	//Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_256);//タイトル
+	//Draw::LoadImageW(L"エンド.png", 55, TEX_SIZE_256);              //ゲームオーバー
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
