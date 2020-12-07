@@ -5,50 +5,53 @@
 #include"GameHead.h"
 #include"ObjTime.h"
 #include"GameL/DrawFont.h"
+#include"GameL/UserData.h"
 
 //使用するネームスペース
 using namespace GameL;
 
+int Gtime=864000;
+int m_time = 0;
 //イニシャライズ
 void CObjTime::Init()
 {
-	m_time = 120*7200;//時間調整
-	m_flag_time = false;//時間計測
+
+	m_flag_time = false;
 }
 
 //アクション
 void CObjTime::Action()
 {
-	//制限時間の120秒とそれが減っていく仕組み
-	for (int i = 1; i <= 120; i++)
-	{
-		m_time--;
-
-		//制限時間終了時に反映される画面
-		if (m_time == 0)
+		for (int i = 1; i <= 120; i++)
 		{
-			Scene::SetScene(new CSceneGameOver());
+			m_time++;
+			Gtime--;
+
+			if (Gtime == 0)
+			{
+				Scene::SetScene(new CSceneGameOver());
+			}
 		}
-	}
-}
+		
+}	
 
 //ドロー
 void CObjTime::Draw()
 {
 	//m_timeから秒分を求める
-	//int minute; //分
+	int minute; //分
 	int second =500; //秒
 	
 	
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
-	wchar_t str[128];//128文字分の文字列のスペース
+	wchar_t str[128];
 	
 	
 	if (second > 0)
-		Font::StrDraw(L"制限時間", 630, 10, 30, c);//表示内容
-	swprintf_s(str, L"%d", m_time / 7200);//整数の文字列化
+		Font::StrDraw(L"制限時間", 630, 10, 30, c);
+	swprintf_s(str, L"%d", Gtime / 7200);
 
-	Font::StrDraw(str, 670, 40, 50, c);//表示位置
+	Font::StrDraw(str, 670, 40, 50, c);
 }
 
