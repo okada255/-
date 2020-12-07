@@ -10,6 +10,7 @@ public:
 	~CSceneTitle();
 	void InitScene();
 	void Scene();
+	void Draw();  //ƒhƒ[
 private:
 
 };

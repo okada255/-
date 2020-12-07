@@ -67,4 +67,19 @@ void CObjupstage0::Draw()
 
 	//描画
 	Draw::Draw(30, &src, &dst, c, 0.0f);
+
+	////切り取り位置設定
+	//src.m_top = 0.0f;
+	//src.m_left = 0.0f;
+	//src.m_right = 1200.0f;
+	//src.m_bottom = 800.0f;
+
+	////表示位置の設定
+	//dst.m_top = 0.0f;
+	//dst.m_left = 0.0f;
+	//dst.m_right = 800.0f;
+	//dst.m_bottom = 600.0f;
+
+	////登録したグラフィックを↑の情報をもとに表示
+	//Draw::Draw(52, &src, &dst, c, 0.0f);
 }

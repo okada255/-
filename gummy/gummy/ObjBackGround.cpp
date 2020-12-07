@@ -39,8 +39,8 @@ void CObjBackGround::Draw()
 	//表示位置の設定
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 416.0f;
-	dst.m_bottom = 416.0f;
+	dst.m_right = 600.0f;
+	dst.m_bottom = 600.0f;
 
 	//登録したグラフィックを↑の情報をもとに表示
 	Draw::Draw(53, &src, &dst, c, 0.0f);
