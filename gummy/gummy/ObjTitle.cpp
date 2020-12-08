@@ -22,6 +22,7 @@ void CObjTitle::Init() {
 	{
 		//“_”‚ğ0‚É‚·‚é
 		((UserData*)Save::GetData())->m_point=0;
+		((UserData*)Save::GetData())->Gtime = 0;
 		//ƒ‰ƒ“ƒLƒ“ƒO‰Šú‰»
 		for (int i = 0; i < 16; i++)
 		{

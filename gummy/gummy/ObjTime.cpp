@@ -10,8 +10,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-int Gtime=864000;
-int m_time = 0;
+int m_time = 871200;
 //イニシャライズ
 void CObjTime::Init()
 {
@@ -22,17 +21,18 @@ void CObjTime::Init()
 //アクション
 void CObjTime::Action()
 {
-		for (int i = 1; i <= 120; i++)
+		for (int i = 1; i <= 118; i++)
 		{
-			m_time++;
-			Gtime--;
+			m_time--;
+			
 
-			if (Gtime == 0)
+			if (m_time == 0)
 			{
 				Scene::SetScene(new CSceneGameOver());
+				m_time = 871200;
 			}
 		}
-		
+		((UserData*)Save::GetData())->Gtime = m_time/7200;
 }	
 
 //ドロー
@@ -50,7 +50,7 @@ void CObjTime::Draw()
 	
 	if (second > 0)
 		Font::StrDraw(L"制限時間", 630, 10, 30, c);
-	swprintf_s(str, L"%d", Gtime / 7200);
+	swprintf_s(str, L"%d", m_time / 7200);
 
 	Font::StrDraw(str, 670, 40, 50, c);
 }
