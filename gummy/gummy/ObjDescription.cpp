@@ -21,45 +21,45 @@ void CObjDescription::Init() {
 }
 
 void CObjDescription::Action() {
-	if (Input::GetVKey(VK_RETURN) == true) {
-		if (m_key_flag == true) {
-			srand(time(NULL));
-			ai = rand() % 3;
-			if (ai == 0)
-			{
-				Scene::SetScene(new CSceneMap1());
-			}
-			else if (ai == 1)
-			{
-				Scene::SetScene(new CSceneMap1B());
-			}
-			else if(ai==2)
-			{
-				Scene::SetScene(new CSceneMap1C());
-			}
-			m_key_flag = false;
-		}
-	}
-	else {
-		m_key_flag = true;
-	}
+	//if (Input::GetVKey(VK_RETURN) == true) {
+	//	if (m_key_flag == true) {
+	//		srand(time(NULL));
+	//		ai = rand() % 3;
+	//		if (ai == 0)
+	//		{
+	//			Scene::SetScene(new CSceneMap1());
+	//		}
+	//		else if (ai == 1)
+	//		{
+	//			Scene::SetScene(new CSceneMap1B());
+	//		}
+	//		else if(ai==2)
+	//		{
+	//			Scene::SetScene(new CSceneMap1C());
+	//		}
+	//		m_key_flag = false;
+	//	}
+	//}
+	//else {
+	//	m_key_flag = true;
+	//}
 
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
+	//m_mou_x = (float)Input::GetPosX();
+	//m_mou_y = (float)Input::GetPosY();
 
-	//マウスのボタン情報
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
+	////マウスのボタン情報
+	//m_mou_r = Input::GetMouButtonR();
+	//m_mou_l = Input::GetMouButtonL();
 
-	//マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 230 && m_mou_x < 450 && m_mou_y>400 && m_mou_x < 430)
-	{
-		//マウスのボタンが押されたらメインに移行
-		if (m_mou_r == true | m_mou_l == true)
-		{
-			Scene::SetScene(new CSceneMap1());
-		}
-	}
+	////マウスの位置とクリックする場所で当たり判定
+	//if (m_mou_x > 230 && m_mou_x < 450 && m_mou_y>400 && m_mou_x < 430)
+	//{
+	//	//マウスのボタンが押されたらメインに移行
+	//	if (m_mou_r == true | m_mou_l == true)
+	//	{
+	//		Scene::SetScene(new CSceneMap1());
+	//	}
+	//}
 }
 
 void CObjDescription::Draw() {
