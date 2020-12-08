@@ -33,8 +33,8 @@ void CObjBackGround::Draw()
 	//Ø‚èæ‚èˆÊ’uİ’è
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 416.0f;
-	src.m_bottom = 416.0f;
+	src.m_right = 256.0f;
+	src.m_bottom = 256.0f;
 
 	//•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
