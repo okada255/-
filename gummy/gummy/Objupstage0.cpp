@@ -5,6 +5,9 @@
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"GameL/Audio.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<time.h>
 
 using namespace GameL;
 
@@ -25,7 +28,20 @@ void CObjupstage0::Action()
 	{
 		Audio::Start(2);
 		this->SetStatus(false);
-		Scene::SetScene(new CSceneMap1());
+		srand(time(NULL));
+		ai = rand() % 3;
+		if (ai == 0)
+		{
+			Scene::SetScene(new CSceneMap1());
+		}
+		else if (ai == 1)
+		{
+			Scene::SetScene(new CSceneMap1B());
+		}
+		else if (ai == 2)
+		{
+			Scene::SetScene(new CSceneMap1C());
+		}
 	}
 }
 

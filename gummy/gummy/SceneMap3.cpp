@@ -72,7 +72,8 @@ void CSceneMap3::InitScene()
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
-	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+	Draw::LoadImageW(L"ラスボス.png", 53, TEX_SIZE_256);            //ステージ3
+	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
