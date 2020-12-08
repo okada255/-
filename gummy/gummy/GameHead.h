@@ -59,6 +59,7 @@ struct UserData
 	int mSeveData;	//サンプルセーブデータ
 	int m_point;
 	int m_ranking[16];
+	int Gtime;
 };
 //------------------------------------------------
 
