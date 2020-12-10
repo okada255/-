@@ -2,7 +2,7 @@
 //#include"GameL/DrawTexture.h"
 //#include"GameHead.h"
 //
-//#include"ObjBackGround.h"
+//#include"ObjBackGround1.h"
 //
 ////使用するネームスペース
 //using namespace GameL;
@@ -10,19 +10,19 @@
 //
 //
 ////イニシャライズ
-//void CObjBackGround::Init()
+//void CObjBackGround1::Init()
 //{
 //
 //}
 //
 ////アクション
-//void CObjBackGround::Action()
+//void CObjBackGround1::Action()
 //{
 //
 //}
 //
 ////ドロー
-//void CObjBackGround::Draw()
+//void CObjBackGround1::Draw()
 //{
 //	//描画カラー情報 R G B A
 //	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
