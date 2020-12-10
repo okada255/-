@@ -23,7 +23,7 @@ using namespace GameL;
 #include"ObjRisu.h"
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
-#include"ObjBackGround.h"
+#include"ObjBackGround1.h"
 #include"Objupstage.h"
 #include"GameL/Audio.h"
 
