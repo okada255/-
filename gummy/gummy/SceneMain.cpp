@@ -74,7 +74,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	Draw::LoadImageW(L"ボスいるんじゃね.png", 53, TEX_SIZE_256);          //ステージ1
+	Draw::LoadImageW(L"廊下1.png", 53, TEX_SIZE_256);          //ステージ1
 	Draw::LoadImageW(L"狂ったキャンディー.png", 54, TEX_SIZE_256);  //ステージ2
 	Draw::LoadImageW(L"グミらしい.png", 51, TEX_SIZE_256);      //ステージ3
 	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
@@ -126,13 +126,15 @@ void CSceneMain::InitScene()
 	CObjBackGround* back = new CObjBackGround();
 	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 
-	////背景オブジェクト生成
-	//CObjBackGround1* back1 = new CObjBackGround1();
-	//Objs::InsertObj(back1, OBJ_BACKGROUND1, 2);
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 2);
 
 	////背景オブジェクト生成
 	//CObjBackGround2* back2 = new CObjBackGround2();
 	//Objs::InsertObj(back2, OBJ_BACKGROUND2, 3);
+
+	
 }
 
 //実行中メソッド

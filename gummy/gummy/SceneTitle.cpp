@@ -32,6 +32,10 @@ void CSceneTitle::InitScene() {
 	/*Audio::Start(0);*/
 	CObjTitle* obj = new CObjTitle();
 	Objs::InsertObj(obj, OBJ_TITLE, 10);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 void CSceneTitle::Scene() {
