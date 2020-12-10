@@ -67,4 +67,6 @@ void CObjupstage0::Draw()
 
 	//•`‰æ
 	Draw::Draw(30, &src, &dst, c, 0.0f);
+
+	
 }

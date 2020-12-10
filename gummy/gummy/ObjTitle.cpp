@@ -96,6 +96,7 @@ void CObjTitle::Action() {
 }
 
 void CObjTitle::Draw() {
+	//描画カラー情報 R G B A
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	Font::StrDraw(L"GUMMY", 220, 200, 150, c);
@@ -115,6 +116,12 @@ void CObjTitle::Draw() {
 	Font::StrDraw(L" Push [Enter]Key ", 260, 430, 32, c);
 
 	//Font::StrDraw(L"★ClickReset", 600, 380, 16, c);
+
+	
+
+	//RECT_F src;//描画元切り取り位置
+	//RECT_F dst;//描画先表示位置
+
 }
 
 void CObjTitle::RankingSort(int rank[16])
