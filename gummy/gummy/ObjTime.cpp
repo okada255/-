@@ -10,7 +10,8 @@
 //使用するネームスペース
 using namespace GameL;
 
-int m_time = 871200;
+int m_time=871200;
+
 //イニシャライズ
 void CObjTime::Init()
 {

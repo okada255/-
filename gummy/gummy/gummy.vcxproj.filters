@@ -198,14 +198,14 @@
     <ClCompile Include="SceneMap2B.cpp">
       <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMsp2C.cpp">
-      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
-    </ClCompile>
     <ClCompile Include="ObjBackGround2.cpp">
       <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClCompile>
     <ClCompile Include="ObjBackGround1.cpp">
       <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2C.cpp">
+      <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

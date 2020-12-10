@@ -22,7 +22,7 @@ void CSceneTitle::InitScene() {
 
 	
 
-	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_256);//タイトル
+	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
 
 	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
 	float v = Audio::VolumeMaster(-0.1f);
@@ -31,6 +31,10 @@ void CSceneTitle::InitScene() {
 	/*Audio::Start(0);*/
 	CObjTitle* obj = new CObjTitle();
 	Objs::InsertObj(obj, OBJ_TITLE, 10);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 void CSceneTitle::Scene() {
