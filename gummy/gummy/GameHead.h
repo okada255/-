@@ -106,10 +106,6 @@ struct UserData
 #include"Objupstage0.h"
 
 
-//#include"ObjRisuL.h"
-//#include"ObjRisuR.h"
-//#include"ObjRisuU.h"
-//#include"ObjRisuD.h"
 
 //------------------------------------------------
 
