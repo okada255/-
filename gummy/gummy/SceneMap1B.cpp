@@ -120,71 +120,71 @@ void CSceneMap1B::Scene()
 	m_time++;
 	if (m_time == 1)
 	{
-		//キャンディ
+		////キャンディ
 		CObjCandy* objc;
 		objc = new CObjCandy(440, 50);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		//objc = new CObjCandy(390, 220);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
+		objc = new CObjCandy(390, 220);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		////Cookieオブジェクト作成
-		//CObjCookie* objC;
-		//objC = new CObjCookie(350, 150);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		CObjCookie* objC;
+		objC = new CObjCookie(118, 160);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(130, 180);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(240, 168);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(65, 430);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(50, 540);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(220, 550);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(495, 350);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
 		////Donatuオブジェクト作成
-		//CObjDonatu* objd;
-		//objd = new CObjDonatu(300, 250);
-		//Objs::InsertObj(objd, OBJ_DONATU, 11);
+		CObjDonatu* objd;
+		objd = new CObjDonatu(200, 40);
+		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
-		//objd = new CObjDonatu(300, 250);
-		//Objs::InsertObj(objd, OBJ_DONATU, 11);
+		objd = new CObjDonatu(380, 460);
+		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 		////Gummyオブジェクト作成
-		//CObjGummy* objg;
-		//objg = new CObjGummy(310, 540);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		CObjGummy* objg;
+		objg = new CObjGummy(85, 430);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(290, 400);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(240, 420);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(170, 270);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(295, 538);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(190, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(540, 532);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(190, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(560, 240);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(190, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(490, 470);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(190, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(445, 25);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		//objg = new CObjGummy(190, 50);
-		//Objs::InsertObj(objg, OBJ_GUMMY, 13);
+		objg = new CObjGummy(300, 299);
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 		//Chocoオブジェクト作成
 		CObjChoco* obj_c;
-		obj_c = new CObjChoco(40, 50);
+		obj_c = new CObjChoco(50, 40);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
-		obj_c = new CObjChoco(480, 170);
+		obj_c = new CObjChoco(475, 165);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
-		obj_c = new CObjChoco(250, 180);
+		obj_c = new CObjChoco(190, 480);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(370, 350);
