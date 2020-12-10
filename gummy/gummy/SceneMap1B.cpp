@@ -189,5 +189,21 @@ void CSceneMap1B::Scene()
 		obj_c = new CObjChoco(370, 350);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
+		//óÃàÊäOÇ®âŸéqÅEè¡Ç≥Ç»Ç¢Ç≈
+		obj_c = new CObjChoco(610, 360);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 10);
+
+		objg = new CObjGummy(610, 300);
+		Objs::InsertObj(objg, OBJ_GUMMY, 10);
+
+		objd = new CObjDonatu(610, 420);
+		Objs::InsertObj(objd, OBJ_DONATU, 10);
+
+		objC = new CObjCookie(610, 390);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
+
+		objc = new CObjCandy(610, 330);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
+
 	}
 }
