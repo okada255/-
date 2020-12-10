@@ -99,7 +99,7 @@ void CObjTitle::Draw() {
 	//描画カラー情報 R G B A
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
-	/*Font::StrDraw(L"GUMMY", 220, 200, 150, c);*/
+	Font::StrDraw(L"GUMMY", 220, 200, 150, c);
 
 
 	////ランキング
