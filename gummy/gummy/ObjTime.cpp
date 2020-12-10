@@ -10,7 +10,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-int m_time;
+int m_time=871200;
 
 //イニシャライズ
 void CObjTime::Init()
@@ -22,7 +22,6 @@ void CObjTime::Init()
 //アクション
 void CObjTime::Action()
 {
-	 m_time = 871200;
 		for (int i = 1; i <= 118; i++)
 		{
 			m_time--;
@@ -31,7 +30,7 @@ void CObjTime::Action()
 			if (m_time == 0)
 			{
 				Scene::SetScene(new CSceneGameOver());
-			Detele:m_time;
+				m_time = 871200;
 			}
 		}
 		((UserData*)Save::GetData())->Gtime = m_time/7200;
