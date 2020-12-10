@@ -22,7 +22,7 @@ void CSceneTitle::InitScene() {
 
 	
 
-	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
+	Draw::LoadImageW(L"タイトルにもなるグミ.png", 57, TEX_SIZE_64);//タイトル
 
 	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
 	float v = Audio::VolumeMaster(-0.1f);

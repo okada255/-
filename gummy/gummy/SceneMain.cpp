@@ -128,7 +128,7 @@ void CSceneMain::InitScene()
 
 	//背景オブジェクト生成
 	CObjBackGround* back = new CObjBackGround();
-	Objs::InsertObj(back, OBJ_BACKGROUND, 2);
+	Objs::InsertObj(back, OBJ_BACKGROUND2, 2);
 
 	////背景オブジェクト生成
 	//CObjBackGround2* back2 = new CObjBackGround2();
