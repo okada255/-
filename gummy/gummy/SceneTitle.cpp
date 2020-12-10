@@ -21,7 +21,6 @@ CSceneTitle::~CSceneTitle() {
 void CSceneTitle::InitScene() {
 
 	
-	
 
 	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
 
