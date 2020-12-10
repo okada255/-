@@ -120,7 +120,7 @@ void CSceneMap1C::Scene()
 	if (m_time == 1)
 	{
 		////キャンディ
-		/*CObjCandy* objc;
+		CObjCandy* objc;
 		objc = new CObjCandy(520, 260);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
@@ -128,18 +128,18 @@ void CSceneMap1C::Scene()
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		objc = new CObjCandy(250, 529);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);*/
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		////Cookieオブジェクト作成
-		/*CObjCookie* objC;
+		CObjCookie* objC;
 		objC = new CObjCookie(250, 180);
 		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
 		objC = new CObjCookie(375, 470);
-		Objs::InsertObj(objC, OBJ_COOKIE, 10);*/
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
 		//Donatuオブジェクト作成
-	/*	CObjDonatu* objd;
+		CObjDonatu* objd;
 		objd = new CObjDonatu(65, 550);
 		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
@@ -147,7 +147,7 @@ void CSceneMap1C::Scene()
 		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 		objd = new CObjDonatu(48, 40);
-		Objs::InsertObj(objd, OBJ_DONATU, 11);*/
+		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 		////Gummyオブジェクト作成
 		CObjGummy* objg;
@@ -182,12 +182,29 @@ void CSceneMap1C::Scene()
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 		////Chocoオブジェクト作成
-		/*CObjChoco* obj_c;
+		CObjChoco* obj_c;
 		obj_c = new CObjChoco(200,430);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
 
 		obj_c = new CObjChoco(480, 170);
-		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);*/
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+
+		//領域外お菓子・消さないで
+		obj_c = new CObjChoco(610, 360);
+		Objs::InsertObj(obj_c, OBJ_CHOCO, 10);
+
+		objg = new CObjGummy(610, 300);
+		Objs::InsertObj(objg, OBJ_GUMMY, 10);
+
+		objd = new CObjDonatu(610, 420);
+		Objs::InsertObj(objd, OBJ_DONATU, 10);
+
+		objC = new CObjCookie(610, 390);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
+
+		objc = new CObjCandy(610, 330);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
+
 
 	}
 }

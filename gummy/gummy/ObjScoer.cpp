@@ -43,4 +43,18 @@ void CObjScore::Draw()
 	wchar_t str[128];
 	swprintf_s(str, L"得点：%dg", ((UserData*)Save::GetData())->m_point);
 	Font::StrDraw(str, 600, 80, 35, cc);
+
+	//領域外お菓子
+	swprintf_s(str, L"：5g", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 630, 300, 20, cc);
+	swprintf_s(str, L"：10g", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 630, 330, 20, cc);
+	swprintf_s(str, L"：15g", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 630, 360, 20, cc);
+	swprintf_s(str, L"：20g", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 630, 390, 20, cc);
+	swprintf_s(str, L"：50g", ((UserData*)Save::GetData())->m_point);
+	Font::StrDraw(str, 630, 420, 20, cc);
+
+
 }
