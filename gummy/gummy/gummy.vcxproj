@@ -151,8 +151,12 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
-    <ClCompile Include="ObjBackGround.cpp" />
-    <ClCompile Include="ObjBackGround1.cpp" />
+    <ClCompile Include="ObjBackGround.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ObjBackGround1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ObjBackGround2.cpp" />
     <ClCompile Include="ObjBigCakeuso.cpp" />
     <ClCompile Include="ObjBlock.cpp" />

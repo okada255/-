@@ -17,6 +17,7 @@ void CObjRisu::Init()
 	m_vy = 0.0f;
 	m_posture = 0.0f;//右向き0.0f,左向き1.0f
 	//float move = 1.0f;
+	m_dash = 200;
 
 	//当たり判定
 	Hits::SetHitBox(this, m_px, m_py, 23.00, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
@@ -41,8 +42,17 @@ void CObjRisu::Action()
 	//Zキー入力で速度アップ
 	if (Input::GetVKey('Z') == true)
 	{
-		//ダッシュ時の速度
-		m_speed_power = 1.0f;
+		m_dash--;
+		if (m_dash >0)
+		{
+			//ダッシュ時の速度
+			m_speed_power = 1.5f;
+		}
+		else
+		{
+			m_dash = 0;
+		}
+
 	}
 	else
 	{
