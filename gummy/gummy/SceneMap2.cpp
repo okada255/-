@@ -74,7 +74,7 @@ void CSceneMap2::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	
+
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	Draw::LoadImageW(L"ñ⁄åÃè·ÇµÇ».png", 57, TEX_SIZE_64);
@@ -119,7 +119,7 @@ void CSceneMap2::Scene()
 
 		//ÉLÉÉÉìÉfÉB
 		CObjCandy* objc;
-		objc = new CObjCandy(250,50);
+		objc = new CObjCandy(250, 50);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		//objc = new CObjCandy(520, 300);

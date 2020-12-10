@@ -76,7 +76,7 @@ void CSceneMap2B::InitScene()
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
-	//Draw::LoadImageW(L"Back irasuto.png", 57, TEX_SIZE_64);
+	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
@@ -98,7 +98,7 @@ void CSceneMap2B::InitScene()
 
 	//背景オブジェクト生成
 	CObjBackGround* back = new CObjBackGround();
-	Objs::InsertObj(back, OBJ_BACKGROUND2, 1);
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 
 	//リス作成
 	CObjRisu* objr = new CObjRisu();

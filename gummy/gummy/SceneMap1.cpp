@@ -77,8 +77,7 @@ void CSceneMap1::InitScene()
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
-	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
-	//Draw::LoadImageW(L"ボスいるんじゃね.png", 57, TEX_SIZE_64);
+	Draw::LoadImageW(L"廊下1.png", 57, TEX_SIZE_64);
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
@@ -108,7 +107,7 @@ void CSceneMap1::InitScene()
 	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 
 	//上り階段作成
-	CObjupstage* obju = new CObjupstage(555,130);
+	CObjupstage* obju = new CObjupstage(555, 130);
 	Objs::InsertObj(obju, OBJ_UPSTAGE, 18);
 }
 
@@ -151,12 +150,12 @@ void CSceneMap1::Scene()
 
 		//Donatuオブジェクト作成
 		CObjDonatu* objd;
-		objd = new CObjDonatu(300,250);
+		objd = new CObjDonatu(300, 250);
 		Objs::InsertObj(objd, OBJ_DONATU, 11);
 
 		//Gummyオブジェクト作成
 		CObjGummy* objg;
-		objg = new CObjGummy(310,540);
+		objg = new CObjGummy(310, 540);
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
 		objg = new CObjGummy(290, 400);

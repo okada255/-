@@ -115,7 +115,7 @@ void CSceneMap3::Scene()
 	{
 		Audio::Start(0);
 
-	//Gummyオブジェクト作成
+		//Gummyオブジェクト作成
 		CObjGummy* objg;
 		objg = new CObjGummy(40, 50);//C-3
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
