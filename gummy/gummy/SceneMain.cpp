@@ -82,6 +82,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"ボスいるんじゃね.png", 56, TEX_SIZE_64);              
 	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+	//Draw::LoadImageW(L"拝啓.png", 58, TEX_SIZE_64);
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);

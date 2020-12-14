@@ -40,7 +40,7 @@ void CObjTime::Action()
 void CObjTime::Draw()
 {
 	//m_time‚©‚ç•b•ª‚ğ‹‚ß‚é
-	int minute; //•ª
+	//int minute; //•ª
 	int second =500; //•b
 	
 	
