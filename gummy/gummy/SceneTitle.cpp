@@ -22,7 +22,7 @@ void CSceneTitle::InitScene() {
 
 	
 
-	//Draw::LoadImageW(L"拝啓.png", 57, TEX_SIZE_64);//タイトル
+	Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);  //ステージ2
 
 	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
 	float v = Audio::VolumeMaster(-0.1f);
@@ -32,9 +32,9 @@ void CSceneTitle::InitScene() {
 	CObjTitle* obj = new CObjTitle();
 	Objs::InsertObj(obj, OBJ_TITLE, 10);
 
-	////背景オブジェクト生成
-	//CObjBackGround* back = new CObjBackGround();
-	//Objs::InsertObj(back, OBJ_BACKGROUND, 1);
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 void CSceneTitle::Scene() {

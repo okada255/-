@@ -74,12 +74,11 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-	Draw::LoadImageW(L"廊下1.png", 53, TEX_SIZE_256);          //ステージ1
-	Draw::LoadImageW(L"狂ったキャンディー.png", 54, TEX_SIZE_256);  //ステージ2
+	Draw::LoadImageW(L"狂ったキャンディー.png", 53, TEX_SIZE_256);  //ステージ2
 	Draw::LoadImageW(L"グミらしい.png", 51, TEX_SIZE_256);      //ステージ3
 	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
-    Draw::LoadImageW(L"エンド.png", 55, TEX_SIZE_256);              //ゲームオーバー
-	Draw::LoadImageW(L"ボスいるんじゃね.png", 56, TEX_SIZE_64);              
+    Draw::LoadImageW(L"エンド.png", 54, TEX_SIZE_256);              //ゲームオーバー
+	Draw::LoadImageW(L"ボスいるんじゃね.png", 55, TEX_SIZE_64);              
 	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	//Draw::LoadImageW(L"拝啓.png", 58, TEX_SIZE_64);
