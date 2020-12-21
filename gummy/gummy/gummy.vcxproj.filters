@@ -207,6 +207,9 @@
     <ClCompile Include="SceneMap2C.cpp">
       <Filter>ソース ファイル\MAP関連\2ステージ</Filter>
     </ClCompile>
+    <ClCompile Include="ObjGage.cpp">
+      <Filter>ソース ファイル\charactor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -361,6 +364,9 @@
     </ClInclude>
     <ClInclude Include="ObjBackGround1.h">
       <Filter>ソース ファイル\MAP関連\1ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGage.h">
+      <Filter>ソース ファイル\charactor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

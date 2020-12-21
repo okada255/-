@@ -184,9 +184,14 @@ void CSceneMap3::Scene()
 		CObjBigCake* objz;
 		objz = new CObjBigCake(460, 230);//AB-15
 		Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
-		//////BigCakeオブジェクト作成
-		//CObjBigCake* objz = new CObjBigCake();
-		//Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
+
+
+		objg = new CObjGummy(610, 300);//
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
+		////BigCakeオブジェクト作成
+		CObjBigCake* objZ = new CObjBigCake(610,330);
+		Objs::InsertObj(objZ, OBJ_BIG_CAKE, 50);
 
 	}
 }

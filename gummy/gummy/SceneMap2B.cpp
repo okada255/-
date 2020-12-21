@@ -125,11 +125,11 @@ void CSceneMap2B::Scene()
 		objc = new CObjCandy(80, 480);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		/*objc = new CObjCandy(150, 550);
+		objc = new CObjCandy(150, 550);
 		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		objc = new CObjCandy(450, 550);
-		Objs::InsertObj(objc, OBJ_CANDY, 10);*/
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		//Cookieオブジェクト作成
 		CObjCookie* objC;

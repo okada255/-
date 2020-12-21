@@ -170,6 +170,7 @@
     <ClCompile Include="ObjDescription.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjDonatuuso.cpp" />
+    <ClCompile Include="ObjGage.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
@@ -227,6 +228,7 @@
     <ClInclude Include="ObjDescription.h" />
     <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjDonatuuso.h" />
+    <ClInclude Include="ObjGage.h" />
     <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjGummy.h" />
