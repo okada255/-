@@ -25,7 +25,7 @@ void CSceneTitle::InitScene() {
 	Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);  //ステージ2
 
 	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
-	float v = Audio::VolumeMaster(-0.1f);
+	float v = Audio::VolumeMaster(-0.85f);
 	Audio::Start(4);
 	Font::SetStrTex(L"シューティングゲーム");
 	/*Audio::Start(0);*/
