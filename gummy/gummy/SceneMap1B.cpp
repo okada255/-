@@ -77,6 +77,7 @@ void CSceneMap1B::InitScene()
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+	//Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);
 	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 
