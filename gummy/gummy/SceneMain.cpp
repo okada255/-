@@ -24,6 +24,8 @@ using namespace GameL;
 #include"ObjTitle.h"
 #include"ObjGameClear.h"
 #include"ObjBackGround.h"
+#include"ObjBackGround1.h"
+#include"ObjBackGround2.h"
 
 
 //コンストラクタ
@@ -72,8 +74,14 @@ void CSceneMain::InitScene()
 	Draw::LoadImageW(L"choco.png", 6, TEX_SIZE_64);
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
-
+	Draw::LoadImageW(L"狂ったキャンディー.png", 53, TEX_SIZE_256);  //ステージ2
+	Draw::LoadImageW(L"グミらしい.png", 51, TEX_SIZE_256);      //ステージ3
+	Draw::LoadImageW(L"タイトルにもなるグミ.png", 52, TEX_SIZE_64);//タイトル
+    Draw::LoadImageW(L"エンド.png", 54, TEX_SIZE_256);              //ゲームオーバー
+	Draw::LoadImageW(L"ボスいるんじゃね.png", 55, TEX_SIZE_64);              
+	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
 	Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
+	//Draw::LoadImageW(L"拝啓.png", 58, TEX_SIZE_64);
 	//Blockオブジェクト作成
 	CObjBlock* objb = new CObjBlock(map);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
@@ -117,6 +125,13 @@ void CSceneMain::InitScene()
 	//背景オブジェクト生成
 	CObjBackGround* back = new CObjBackGround();
 	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
+
+
+	////背景オブジェクト生成
+	//CObjBackGround2* back2 = new CObjBackGround2();
+	//Objs::InsertObj(back2, OBJ_BACKGROUND2, 3);
+
+	
 }
 
 //実行中メソッド

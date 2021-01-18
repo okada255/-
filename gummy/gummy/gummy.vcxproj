@@ -151,10 +151,14 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
-    <ClCompile Include="ObjBackGround.cpp" />
-    <ClCompile Include="ObjBigCakeuso.cpp">
+    <ClCompile Include="ObjBackGround.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ObjBackGround1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ObjBackGround2.cpp" />
+    <ClCompile Include="ObjBigCakeuso.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBigCake.cpp" />
     <ClCompile Include="ObjCandy.cpp" />
@@ -166,6 +170,7 @@
     <ClCompile Include="ObjDescription.cpp" />
     <ClCompile Include="ObjDonatu.cpp" />
     <ClCompile Include="ObjDonatuuso.cpp" />
+    <ClCompile Include="ObjGage.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjGummy.cpp" />
@@ -179,18 +184,19 @@
     </ClCompile>
     <ClCompile Include="Objupstage0.cpp" />
     <ClCompile Include="Objupstage2.cpp" />
-    <ClCompile Include="Objupstage3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="SceneDescription.cpp" />
     <ClCompile Include="SceneGameClear.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SceneMap1B.cpp" />
     <ClCompile Include="SceneMap1.cpp" />
+    <ClCompile Include="SceneMap1C.cpp" />
     <ClCompile Include="SceneMap2.cpp" />
+    <ClCompile Include="SceneMap2B.cpp" />
     <ClCompile Include="SceneMap3.cpp" />
+    <ClCompile Include="SceneMap2C.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -208,9 +214,9 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjBackGround.h" />
-    <ClInclude Include="ObjBigCakeuso.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClInclude>
+    <ClInclude Include="ObjBackGround1.h" />
+    <ClInclude Include="ObjBackGround2.h" />
+    <ClInclude Include="ObjBigCakeuso.h" />
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBigCake.h" />
     <ClInclude Include="ObjCandy.h" />
@@ -222,6 +228,7 @@
     <ClInclude Include="ObjDescription.h" />
     <ClInclude Include="ObjDonatu.h" />
     <ClInclude Include="ObjDonatuuso.h" />
+    <ClInclude Include="ObjGage.h" />
     <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjGummy.h" />
@@ -235,9 +242,6 @@
     </ClInclude>
     <ClInclude Include="Objupstage0.h" />
     <ClInclude Include="Objupstage2.h" />
-    <ClInclude Include="Objupstage3.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="SceneDescription.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneGameOver.h" />
@@ -245,7 +249,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="SceneMap1.h" />
+    <ClInclude Include="SceneMap1B.h" />
+    <ClInclude Include="SceneMap1C.h" />
     <ClInclude Include="SceneMap2.h" />
+    <ClInclude Include="SceneMap2B.h" />
+    <ClInclude Include="SceneMap2C.h" />
     <ClInclude Include="SceneMap3.h" />
     <ClInclude Include="SceneTitle.h" />
   </ItemGroup>

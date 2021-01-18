@@ -26,16 +26,14 @@ enum OBJ_NAME
 	OBJ_SCORE,
 	OBJ_GAME_OVER,
 	OBJ_BACKGROUND,
+	OBJ_BACKGROUND1,
+	OBJ_BACKGROUND2,
 	OBJ_UPSTAGE,
-	OBJ_UPSTAGE3,
 	OBJ_UPSTAGE2,
 	OBJ_UPSTAGE0,
 	OBJ_DESCRIPTION,
+	OBJ_GAGE,
 };
-    //OBJ_RISUR,
-	//OBJ_RISUL,
-	//OBJ_RISUD,
-	//OBJ_RISUU,
 //------------------------------------------------
 
 //当たり判定属性----------------------------------
@@ -64,6 +62,7 @@ struct UserData
 	int mSeveData;	//サンプルセーブデータ
 	int m_point;
 	int m_ranking[16];
+	int Gtime;
 };
 //------------------------------------------------
 
@@ -99,22 +98,26 @@ struct UserData
 #include"ObjScore.h"
 #include"ObjGameOver.h"
 #include"ObjBackGround.h"
+#include"ObjBackGround1.h"
+#include"ObjBackGround2.h"
+
 #include"Objupstage.h"
-#include"Objupstage3.h"
+
 #include"Objupstage2.h"
 #include"Objupstage0.h"
+#include"ObjGage.h"
 
 
-//#include"ObjRisuL.h"
-//#include"ObjRisuR.h"
-//#include"ObjRisuU.h"
-//#include"ObjRisuD.h"
 
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include"SceneMap1.h"
+#include"SceneMap1B.h"
+#include"SceneMap1C.h"
 #include"SceneMap2.h"
+#include"SceneMap2B.h"
+#include"SceneMap2C.h"
 #include"SceneMap3.h"
 #include "SceneTitle.h"
 #include "SceneGameClear.h"

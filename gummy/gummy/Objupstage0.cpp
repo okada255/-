@@ -5,6 +5,9 @@
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
 #include"GameL/Audio.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<time.h>
 
 using namespace GameL;
 
@@ -12,7 +15,7 @@ void CObjupstage0::Init()
 {
 	m_x = 660;
 	m_y = 100;
-	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE2, 30);
+	Hits::SetHitBox(this, m_x, m_y, 26.25, 26.25, ELEMENT_ITEM, OBJ_UPSTAGE0, 30);
 }
 
 void CObjupstage0::Action()
@@ -23,9 +26,22 @@ void CObjupstage0::Action()
 	//éÂêlåˆÇ∆ê⁄êGÇµÇƒÇ¢ÇÈÇ©í≤Ç◊ÇÈ
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
+		Audio::Start(2);
 		this->SetStatus(false);
-
-		Scene::SetScene(new CSceneMap1());
+		srand(time(NULL));
+		ai = rand() % 3;
+		if (ai == 0)
+		{
+			Scene::SetScene(new CSceneMap1());
+		}
+		else if (ai == 1)
+		{
+			Scene::SetScene(new CSceneMap1B());
+		}
+		else if (ai == 2)
+		{
+			Scene::SetScene(new CSceneMap1C());
+		}
 	}
 }
 
@@ -46,9 +62,11 @@ void CObjupstage0::Draw()
 	//ï\é¶à íuÇÃê›íË
 	dst.m_top = 100.0f;
 	dst.m_left = 660.0f;
-	dst.m_right = dst.m_left + 18.75f;
-	dst.m_bottom = dst.m_top + 18.75f;
+	dst.m_right = dst.m_left + 26.25f;
+	dst.m_bottom = dst.m_top + 26.25f;
 
 	//ï`âÊ
 	Draw::Draw(30, &src, &dst, c, 0.0f);
+
+	
 }

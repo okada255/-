@@ -5,6 +5,7 @@
 #include "GameHead.h"
 #include "ObjTitle.h"
 #include"GameL/UserData.h"
+#include"GameL/Audio.h"
 
 using namespace GameL;
 
@@ -21,6 +22,7 @@ void CObjTitle::Init() {
 	{
 		//点数を0にする
 		((UserData*)Save::GetData())->m_point=0;
+		((UserData*)Save::GetData())->Gtime = 0;
 		//ランキング初期化
 		for (int i = 0; i < 16; i++)
 		{
@@ -51,6 +53,7 @@ void CObjTitle::Init() {
 }
 
 void CObjTitle::Action() {
+
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
 			Scene::SetScene(new CSceneDescription());
@@ -93,6 +96,7 @@ void CObjTitle::Action() {
 }
 
 void CObjTitle::Draw() {
+	//描画カラー情報 R G B A
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	Font::StrDraw(L"GUMMY", 220, 200, 150, c);
@@ -112,6 +116,12 @@ void CObjTitle::Draw() {
 	Font::StrDraw(L" Push [Enter]Key ", 260, 430, 32, c);
 
 	//Font::StrDraw(L"★ClickReset", 600, 380, 16, c);
+
+	
+
+	//RECT_F src;//描画元切り取り位置
+	//RECT_F dst;//描画先表示位置
+
 }
 
 void CObjTitle::RankingSort(int rank[16])

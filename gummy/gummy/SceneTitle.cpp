@@ -20,13 +20,21 @@ CSceneTitle::~CSceneTitle() {
 
 void CSceneTitle::InitScene() {
 
-	Audio::LoadAudio(0, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
-	float v = Audio::VolumeMaster(-0.1f);
-	Audio::Start(0);
+	
+
+	Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);  //ステージ2
+
+	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
+	float v = Audio::VolumeMaster(-0.85f);
+	Audio::Start(4);
 	Font::SetStrTex(L"シューティングゲーム");
 	/*Audio::Start(0);*/
 	CObjTitle* obj = new CObjTitle();
 	Objs::InsertObj(obj, OBJ_TITLE, 10);
+
+	//背景オブジェクト生成
+	CObjBackGround* back = new CObjBackGround();
+	Objs::InsertObj(back, OBJ_BACKGROUND, 1);
 }
 
 void CSceneTitle::Scene() {

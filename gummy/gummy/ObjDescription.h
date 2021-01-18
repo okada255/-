@@ -18,4 +18,5 @@ private:
 	bool m_mou_l; //マウスの左ボタン
 
 	bool m_key_flag;
+	int ai = 0;
 };

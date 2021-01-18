@@ -1,6 +1,6 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/SceneObjManager.h"
-#include"Objupstage.h"
+#include"Objupstage2.h"
 #include"GameHead.h"
 #include"GameL/WinInputs.h"
 #include"GameL/HitBoxManager.h"
@@ -8,11 +8,15 @@
 
 using namespace GameL;
 
+CObjupstage2::CObjupstage2(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
+
 void CObjupstage2::Init()
 {
-	m_x = 660;
-	m_y = 530;
-	Hits::SetHitBox(this, m_x, m_y, 18.75, 18.75, ELEMENT_ITEM, OBJ_UPSTAGE2, 30);
+	Hits::SetHitBox(this, m_x, m_y, 26.25, 26.25, ELEMENT_ITEM, OBJ_UPSTAGE2, 30);
 }
 
 void CObjupstage2::Action()
@@ -27,7 +31,6 @@ void CObjupstage2::Action()
 		this->SetStatus(false);
 		Scene::SetScene(new CSceneMap3());
 
-		Audio::Stop(0);
 	}
 }
 
@@ -46,10 +49,10 @@ void CObjupstage2::Draw()
 	src.m_bottom = 499.0f;
 
 	//ï\é¶à íuÇÃê›íË
-	dst.m_top = 530.0f;
-	dst.m_left = 660.0f;
-	dst.m_right = dst.m_left + 18.75f;
-	dst.m_bottom = dst.m_top + 18.75f;
+	dst.m_top = m_y;
+	dst.m_left = m_x;
+	dst.m_right = dst.m_left + 26.25f;
+	dst.m_bottom = dst.m_top + 26.25f;
 
 	//ï`âÊ
 	Draw::Draw(30, &src, &dst, c, 0.0f);

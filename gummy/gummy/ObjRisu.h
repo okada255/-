@@ -3,6 +3,7 @@
 #include"GameL/DrawTexture.h"
 using namespace GameL;
 
+
 class CObjRisu :public CObj
 {
 public:
@@ -12,6 +13,7 @@ public:
 	void Action(); //アクション
 	void Draw();   //ドロー
 
+	float m_speed_power; //スピードパワー
 	float GetX() { return m_px; }
 	float GetY() { return m_py; }
 	float GetVY() { return m_vy; }
@@ -25,6 +27,10 @@ public:
 	void SetDown(bool b) { m_hit_down = b; }
 	void SetLeft(bool b) { m_hit_left = b; }
 	void SetRight(bool b) { m_hit_right = b; }
+
+	float m_dash = 200;//ダッシュのクールタイム用変数
+
+
 private:
 	float m_px;
 	float m_py;
@@ -36,8 +42,6 @@ private:
 
 	int m_ani_time;//アニメーションフレーム動作間隔
 	int m_ani_frame;//描画フレーム
-
-	float m_speed_power; //スピードパワー
 	float m_ani_max_time;//アニメーション動作間隔最大値
 
 	//blockとの衝突状態確認用

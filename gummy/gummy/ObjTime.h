@@ -17,6 +17,5 @@ public:
 
 	void SetTimeFlag(bool b) { m_flag_time = b; }
 private:
-	int m_time; //ŠÔ
 	bool  m_flag_time; //ŠÔŒv‘ªƒtƒ‰ƒO
 };

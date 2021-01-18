@@ -8,7 +8,7 @@ using namespace GameL;
 #include "SceneMap1.h"
 #include "GameHead.h"
 #include "GameL\DrawFont.h"
-#include "GameL\Audio.h"
+#include "GameL/Audio.h"
 #include"ObjDescription.h"
 
 CSceneDescription::CSceneDescription() {
@@ -35,9 +35,7 @@ void CSceneDescription::InitScene()
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
 
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);//階段
-	
-	
-
+	Audio::LoadAudio(2, L"upstage.wav", SOUND_TYPE::BACK_MUSIC);
 	//リス作成
 	CObjRisu* objr = new CObjRisu();
 	Objs::InsertObj(objr, OBJ_RISU, 12);
@@ -75,6 +73,10 @@ void CSceneDescription::InitScene()
 	CObjupstage0* obju = new CObjupstage0();
 	Objs::InsertObj(obju, OBJ_UPSTAGE0, 18);
 	
+	//スタミナ作成
+	CObjGage* objG = new CObjGage();
+	Objs::InsertObj(objG, OBJ_GAGE, 27);
+
 	//↓これはCObjDescriptionを表示してます
 	CObjDescription* obj = new CObjDescription();
 	Objs::InsertObj(obj, OBJ_DESCRIPTION, 10);
