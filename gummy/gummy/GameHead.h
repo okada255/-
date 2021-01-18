@@ -33,6 +33,7 @@ enum OBJ_NAME
 	OBJ_UPSTAGE0,
 	OBJ_DESCRIPTION,
 	OBJ_GAGE,
+	OBJ_SNKSCR,
 };
 //------------------------------------------------
 
@@ -106,6 +107,11 @@ struct UserData
 #include"Objupstage2.h"
 #include"Objupstage0.h"
 #include"ObjGage.h"
+
+#include"ObjSnkscr.h"
+
+
+
 
 
 

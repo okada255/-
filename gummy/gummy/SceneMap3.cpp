@@ -71,6 +71,7 @@ void CSceneMap3::InitScene()
 	Draw::LoadImageW(L"risu(2).png", 2, TEX_SIZE_128);//リス
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
+	Draw::LoadImageW(L"Snkscr.png", 20, TEX_SIZE_64);
 
 	//Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);  //ステージ2
 	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
@@ -190,9 +191,14 @@ void CSceneMap3::Scene()
 		objg = new CObjGummy(610, 300);//
 		Objs::InsertObj(objg, OBJ_GUMMY, 13);
 
-		////BigCakeオブジェクト作成
-		CObjBigCake* objZ = new CObjBigCake(610,330);
-		Objs::InsertObj(objZ, OBJ_BIG_CAKE, 50);
+		//////BigCakeオブジェクト作成
+		//CObjBigCake* objZ = new CObjBigCake(610,330);
+		//Objs::InsertObj(objZ, OBJ_BIG_CAKE, 50);
+
+
+		//Snkscr画像
+		CObjSnkscr* objS = new CObjSnkscr(600, 270);
+		Objs::InsertObj(objS, OBJ_SNKSCR, 50);
 
 	}
 }

@@ -210,6 +210,9 @@
     <ClCompile Include="ObjGage.cpp">
       <Filter>ソース ファイル\charactor</Filter>
     </ClCompile>
+    <ClCompile Include="ObjSnkscr.cpp">
+      <Filter>ソース ファイル\MAP関連</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjGummy.h">
@@ -367,6 +370,9 @@
     </ClInclude>
     <ClInclude Include="ObjGage.h">
       <Filter>ソース ファイル\charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSnkscr.h">
+      <Filter>ソース ファイル\MAP関連</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
