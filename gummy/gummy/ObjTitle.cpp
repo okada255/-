@@ -50,6 +50,8 @@ void CObjTitle::Init() {
 	}
 	//“_”‚ğ0‚É‚·‚é
 	((UserData*)Save::GetData())->m_point = 0;
+
+	((UserData*)Save::GetData())->Gtimehakaru = 871200;//ŠÔ‰Šú‰»
 }
 
 void CObjTitle::Action() {
