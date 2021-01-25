@@ -44,6 +44,10 @@ CSceneMap2C::~CSceneMap2C()
 //初期化メソッド
 void CSceneMap2C::InitScene()
 {
+
+	//スタミナ作成
+	CObjGage* objG = new CObjGage();
+	Objs::InsertObj(objG, OBJ_GAGE, 27);
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
 	Font::SetStrTex(L"0123456789g");
@@ -187,6 +191,7 @@ void CSceneMap2C::Scene()
 
 		obj_c = new CObjChoco(150, 450);
 		Objs::InsertObj(obj_c, OBJ_CHOCO, 14);
+
 
 		//領域外お菓子・消さないで
 		obj_c = new CObjChoco(610, 360);

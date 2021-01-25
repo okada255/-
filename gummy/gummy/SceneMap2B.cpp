@@ -44,6 +44,10 @@ CSceneMap2B::~CSceneMap2B()
 //初期化メソッド
 void CSceneMap2B::InitScene()
 {
+
+	//スタミナ作成
+	CObjGage* objG = new CObjGage();
+	Objs::InsertObj(objG, OBJ_GAGE, 27);
 	//FONT作成
 	Font::SetStrTex(L"0123456789分秒");
 	Font::SetStrTex(L"0123456789g");
