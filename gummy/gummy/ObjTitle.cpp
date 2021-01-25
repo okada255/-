@@ -15,6 +15,7 @@ void CObjTitle::Init() {
 	m_mou_y = 0;
 	m_mou_r = false;
 	m_mou_l = false;
+	m_time = false;
 
 	//ÉQÅ[ÉÄé¿çsÇµÇƒàÍâÒÇÃÇ›
 	static bool init_point =false;
@@ -57,6 +58,15 @@ void CObjTitle::Action() {
 	if (Input::GetVKey(VK_RETURN) == true) {
 		if (m_key_flag == true) {
 			Scene::SetScene(new CSceneDescription());
+			if (m_time == true) {
+				CObjTime* objt = new CObjTime();
+				Objs::InsertObj(objt, OBJ_TIME, 16);
+				m_time = false;
+			}
+			else
+			{
+				m_time = false;
+			}
 			m_key_flag = false;
 		}
 	}

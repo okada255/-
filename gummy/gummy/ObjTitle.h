@@ -18,6 +18,7 @@ private:
 	bool m_mou_l; //マウスの左ボタン
 
 	bool m_key_flag;
+	bool m_time;
 
 	//ランキングソートメソッド
 	void RankingSort(int ruking[16]);
