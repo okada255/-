@@ -13,6 +13,6 @@ public:
 	void SetMageFlag(bool b) { m_flag_gage = b; }
 private:
 	bool  m_flag_gage; //ŠÔŒv‘ªƒtƒ‰ƒO
-	int m_sutamina = 1440000;
-	int m_gage=1440000;
+	int m_sutamina = 720000;
+	int m_gage=720000;
 };
