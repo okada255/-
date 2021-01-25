@@ -28,7 +28,7 @@ public:
 	void SetLeft(bool b) { m_hit_left = b; }
 	void SetRight(bool b) { m_hit_right = b; }
 
-	float m_dash = 200;//ダッシュのクールタイム用変数
+	float m_dash = 100;//ダッシュのクールタイム用変数
 
 
 private:

@@ -24,7 +24,7 @@ void CObjGage::Action()
 				m_sutamina -= 4500;
 			}
 		}
-	 if(m_sutamina<=1440000)
+	 if(m_sutamina<=720000)
 		{
 			m_sutamina+=2000;
 		}
@@ -39,8 +39,8 @@ void CObjGage::Draw()
 	wchar_t str[128];
 
 	if (second > 0)
-		Font::StrDraw(L"制限時間", 630, 10, 30, c);
+		Font::StrDraw(L"スタミナ", 630, 130, 30, c);
 	swprintf_s(str, L"%d", m_sutamina/7200);
 
-	Font::StrDraw(str, 670, 40, 50, c);
+	Font::StrDraw(str, 670, 160, 50, c);
 }
