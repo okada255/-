@@ -78,7 +78,7 @@ void CSceneMap2C::InitScene()
 	Draw::LoadImageW(L"upstage.png", 30, TEX_SIZE_64);
 	//Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);
 	//Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);
-	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
+	Draw::LoadImageW(L"シンプル1.png", 57, TEX_SIZE_64);
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(1, L"Item.wav", SOUND_TYPE::EFFECT);
@@ -119,35 +119,35 @@ void CSceneMap2C::Scene()
 		Audio::Start(0);
 
 		////キャンディ
-		//CObjCandy* objc;
-		//objc = new CObjCandy(250, 50);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
+		CObjCandy* objc;
+		objc = new CObjCandy(250, 50);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		//objc = new CObjCandy(520, 300);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
+		objc = new CObjCandy(520, 300);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		//objc = new CObjCandy(150, 550);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
+		objc = new CObjCandy(150, 550);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
-		//objc = new CObjCandy(450, 550);
-		//Objs::InsertObj(objc, OBJ_CANDY, 10);
+		objc = new CObjCandy(450, 550);
+		Objs::InsertObj(objc, OBJ_CANDY, 10);
 
 		////Cookieオブジェクト作成
-		//CObjCookie* objC;
-		//objC = new CObjCookie(50, 50);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		CObjCookie* objC;
+		objC = new CObjCookie(50, 50);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(540, 50);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(540, 50);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(200, 285);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(200, 285);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(50, 540);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(50, 540);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
-		//objC = new CObjCookie(400, 500);
-		//Objs::InsertObj(objC, OBJ_COOKIE, 10);
+		objC = new CObjCookie(400, 500);
+		Objs::InsertObj(objC, OBJ_COOKIE, 10);
 
 		//Donatuオブジェクト作成
 		CObjDonatu* objd;

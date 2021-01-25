@@ -73,6 +73,10 @@ void CSceneDescription::InitScene()
 	CObjupstage0* obju = new CObjupstage0();
 	Objs::InsertObj(obju, OBJ_UPSTAGE0, 18);
 	
+	//スタミナ作成
+	CObjGage* objG = new CObjGage();
+	Objs::InsertObj(objG, OBJ_GAGE, 27);
+
 	//↓これはCObjDescriptionを表示してます
 	CObjDescription* obj = new CObjDescription();
 	Objs::InsertObj(obj, OBJ_DESCRIPTION, 10);

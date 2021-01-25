@@ -32,6 +32,8 @@ enum OBJ_NAME
 	OBJ_UPSTAGE2,
 	OBJ_UPSTAGE0,
 	OBJ_DESCRIPTION,
+	OBJ_GAGE,
+	OBJ_SNKSCR,
 };
 //------------------------------------------------
 
@@ -61,7 +63,8 @@ struct UserData
 	int mSeveData;	//サンプルセーブデータ
 	int m_point;
 	int m_ranking[16];
-	int Gtime;
+	int Gtime;//タイム表示用変数
+	int Gtimehakaru;//時間計る用
 };
 //------------------------------------------------
 
@@ -104,6 +107,12 @@ struct UserData
 
 #include"Objupstage2.h"
 #include"Objupstage0.h"
+#include"ObjGage.h"
+
+#include"ObjSnkscr.h"
+
+
+
 
 
 

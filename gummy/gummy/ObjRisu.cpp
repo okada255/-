@@ -17,7 +17,7 @@ void CObjRisu::Init()
 	m_vy = 0.0f;
 	m_posture = 0.0f;//‰EŒü‚«0.0f,¶Œü‚«1.0f
 	//float move = 1.0f;
-	m_dash = 200;
+
 
 	//“–‚½‚è”»’è
 	Hits::SetHitBox(this, m_px, m_py, 23.00, 18.85, ELEMENT_PLAYER, OBJ_RISU, 1);
@@ -58,6 +58,7 @@ void CObjRisu::Action()
 	{
 		//’Êí‘¬“x
 		m_speed_power = 0.5f;
+		m_dash++;
 	}
 
 

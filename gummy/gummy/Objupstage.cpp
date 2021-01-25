@@ -31,8 +31,8 @@ void CObjupstage::Action()
 	if (hit->CheckObjNameHit(OBJ_RISU) != nullptr)
 	{
 		Audio::Start(2);
-		Audio::Stop(0);
-
+		int i = 0;
+		i++;
 		srand(time(NULL));
 		ai = rand() % 3;
 		if (ai == 0)

@@ -71,9 +71,10 @@ void CSceneMap3::InitScene()
 	Draw::LoadImageW(L"risu(2).png", 2, TEX_SIZE_128);//リス
 	Draw::LoadImageW(L"gumy.png", 7, TEX_SIZE_64);
 	Draw::LoadImageW(L"cake.png", 8, TEX_SIZE_64);
+	Draw::LoadImageW(L"Snkscr.png", 20, TEX_SIZE_64);
 
 	//Draw::LoadImageW(L"狂ったキャンディー.png", 57, TEX_SIZE_256);  //ステージ2
-	Draw::LoadImageW(L"目故障しな.png", 57, TEX_SIZE_64);
+	Draw::LoadImageW(L"シンプル1.png", 57, TEX_SIZE_64);
 	/*Draw::LoadImageW(L"Back irasuto.png", 50, TEX_SIZE_64);*/
 
 	Audio::LoadAudio(0, L"Map.wav", SOUND_TYPE::BACK_MUSIC);
@@ -185,9 +186,19 @@ void CSceneMap3::Scene()
 		CObjBigCake* objz;
 		objz = new CObjBigCake(460, 230);//AB-15
 		Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
+
+
+		objg = new CObjGummy(610, 300);//
+		Objs::InsertObj(objg, OBJ_GUMMY, 13);
+
 		//////BigCakeオブジェクト作成
-		//CObjBigCake* objz = new CObjBigCake();
-		//Objs::InsertObj(objz, OBJ_BIG_CAKE, 50);
+		//CObjBigCake* objZ = new CObjBigCake(610,330);
+		//Objs::InsertObj(objZ, OBJ_BIG_CAKE, 50);
+
+
+		//Snkscr画像
+		CObjSnkscr* objS = new CObjSnkscr(600, 270);
+		Objs::InsertObj(objS, OBJ_SNKSCR, 50);
 
 	}
 }
