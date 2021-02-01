@@ -19,6 +19,7 @@ void CObjTime::Init()
 //アクション
 void CObjTime::Action()
 {
+	//m_time = 871200;
 		for (int i = 1; i <= 118; i++)
 		{
 			((UserData*)Save::GetData())->Gtimehakaru--;
@@ -29,6 +30,17 @@ void CObjTime::Action()
 				Scene::SetScene(new CSceneGameOver());
 				((UserData*)Save::GetData())->Gtimehakaru = 871200;
 			}
+
+			////タイムクリア後の初期化(失敗)
+			//if (Input::GetVKey(VK_RETURN) == true)//条件（ボタン入力）
+			//{
+			//	if (m_flag_time == true)
+			//	{
+			//		Scene::SetScene(new CSceneTitle());//移動先
+			//		m_time = 871200;//制限時間
+			//		m_flag_time == false;
+			//	}
+			//}
 		}
 		((UserData*)Save::GetData())->Gtime = ((UserData*)Save::GetData())->Gtimehakaru/7200;
 }	

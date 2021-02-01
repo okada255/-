@@ -14,6 +14,7 @@ public:
 private:
 
 	bool m_key_flag;
+	bool m_time;
 
 	//ランキングソートメソッド
 	void RankingSort(int ruking[16]);

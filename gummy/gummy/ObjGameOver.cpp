@@ -31,4 +31,4 @@ void CObjGameOver::Draw()
 	Font::StrDraw(L"GAME OVER", 110, 200, 120, c);
 	Font::StrDraw(L"NEXT CHARENGE:ENTER_KEY", 70, 380, 60, c);
 }
-//100, 200, 120, c 230, 350, 32, c
+//100, 200, 120, c 230, 350, 32, c11
