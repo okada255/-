@@ -29,10 +29,10 @@ void CObjGameClear::Draw() {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	Font::StrDraw(L"GAME CLEAR", 100, 200, 120, c);
-	Font::StrDraw(L"NEXT CHARENGE:ENTER_KEY", 230, 350, 30, c);
+	Font::StrDraw(L"NEXT CHARENGE:ENTER_KEY", 70, 380, 60, c);
 
 	float cc[4] = { 1.0f,1.0f,1.0f,1.0f };
 	wchar_t str[128];
 	swprintf_s(str, L"“¾“_F%d“_", ((UserData*)Save::GetData())->m_point*30);
-	Font::StrDraw(str, 260, 50, 60, cc);
+	Font::StrDraw(str, 210, 50, 60, cc);
 }

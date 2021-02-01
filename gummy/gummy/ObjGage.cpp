@@ -24,9 +24,13 @@ void CObjGage::Action()
 				m_sutamina -= 4500;
 			}
 		}
-	 if(m_sutamina<=720000)
+		if (m_sutamina <= 720000)
 		{
-			m_sutamina+=2000;
+			m_sutamina += 2000;
+		}
+		if (m_sutamina == 0)
+		{
+			m_sutamina += 1500;
 		}
 }
 
