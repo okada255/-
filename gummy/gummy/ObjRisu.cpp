@@ -145,18 +145,6 @@ void CObjRisu::Action()
 		m_ani_time = 0;
 	}
 
-	//アニメーション
-	/*if (m_ani_time > m_ani_max_time)
-	{
-		m_ani_frame = 1;
-		m_ani_time = 0;
-	}
-
-	if (m_ani_time == 4)
-	{
-		m_ani_frame = 0;
-	}*/
-
 	//位置の更新
 	m_px += m_vx;
 	m_py += m_vy;
@@ -221,10 +209,10 @@ void CObjRisu::Draw()
 
 	//表示
 	dst.m_top = 0.0f + m_py;
-	dst.m_left = (30.0f *m_posture) + m_px;
-	dst.m_right = (30.0 -30.0f * m_posture) + m_px;// dst.m_left;
+	dst.m_left = (30.0f * m_posture) + m_px;
+	dst.m_right = (30.0 - 30.0f * m_posture) + m_px;// dst.m_left;
 	dst.m_bottom = 30.0f + m_py;// dst.m_top;
 
-	//2番目に登録したグラフィックをもとにsrc.dst.cの情報をもとに描画
-	Draw::Draw(2, &src, &dst, c, 0.0f); //左向きリスl優先度３→リス
+	//src.dst.cの情報をもとに描画
+	Draw::Draw(2, &src, &dst, c, 0.0f);
 }
