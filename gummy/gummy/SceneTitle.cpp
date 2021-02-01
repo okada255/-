@@ -5,7 +5,6 @@
 #include "SceneTitle.h"
 using namespace GameL;
 
-#include "SceneMap1.h"
 #include "GameHead.h"
 #include "GameL\DrawFont.h"
 #include "GameL\Audio.h"
@@ -27,8 +26,6 @@ void CSceneTitle::InitScene() {
 	Audio::LoadAudio(4, L"Title.wav", SOUND_TYPE::BACK_MUSIC);
 	float v = Audio::VolumeMaster(-0.85f);
 	Audio::Start(4);
-	Font::SetStrTex(L"シューティングゲーム");
-	/*Audio::Start(0);*/
 	CObjTitle* obj = new CObjTitle();
 	Objs::InsertObj(obj, OBJ_TITLE, 10);
 

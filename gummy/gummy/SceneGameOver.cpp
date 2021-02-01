@@ -29,7 +29,7 @@ void CSceneGameOver::InitScene()
 {
 
 	Font::SetStrTex(L"GAMEOVER");
-	Font::SetStrTex(L"congratulations!");
+	Font::SetStrTex(L"Congratulations!");
 	Font::SetStrTex(L"THE END");
 
 	Audio::LoadAudio(0, L"GameOver.wav", SOUND_TYPE::BACK_MUSIC);
