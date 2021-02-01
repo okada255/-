@@ -28,6 +28,7 @@ void CObjGameOver::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
-	Font::StrDraw(L"GAME OVER", 200, 200, 32, c);
-	Font::StrDraw(L"NEXT CHARENGE:ENTER_KEY", 230, 350, 32, c);
+	Font::StrDraw(L"GAME OVER", 110, 200, 120, c);
+	Font::StrDraw(L"NEXT CHARENGE:ENTER_KEY", 70, 380, 60, c);
 }
+//100, 200, 120, c 230, 350, 32, c
